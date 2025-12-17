@@ -94,44 +94,56 @@ function TowTruckAnimation() {
             repeatCount="indefinite"
           />
           
-          <path d="M200,130 L200,155 L180,155 L180,145 L190,145 L195,130 Z" fill="url(#truckYellow)" />
+          <path d="M160,155 L160,165 L155,165 L150,160 L150,155 Z" fill="#1f2937" />
+          <rect x="155" y="158" width="50" height="8" rx="2" fill="#374151" />
           
-          <rect x="200" y="100" width="100" height="55" rx="3" fill="url(#truckYellow)" />
-          <path d="M200,100 L200,155 L195,155 Q185,155 185,145 L185,130 Q185,115 200,110 Z" fill="url(#truckYellow)" />
+          <path d="M165,155 Q165,100 200,95 L200,95 Q240,90 255,95 L255,155 Z" fill="url(#truckYellow)" />
+          <path d="M165,155 L165,130 Q165,105 185,100 L185,100 Q165,105 165,130 Z" fill="#d97706" opacity="0.3" />
           
-          <rect x="210" y="108" width="45" height="35" rx="3" fill="#7dd3fc" opacity="0.9" />
-          <line x1="232" y1="108" x2="232" y2="143" stroke="#1f2937" strokeWidth="2" />
+          <path d="M160,150 Q155,150 155,145 L155,135 Q155,130 165,130 L165,150 Z" fill="url(#truckYellow)" />
+          <rect x="157" y="138" width="6" height="8" rx="1" fill="#fde047" opacity="0.8" />
           
-          <rect x="260" y="120" width="35" height="10" rx="2" fill="#1f2937" opacity="0.3" />
+          <path d="M175,110 Q175,100 195,98 L225,98 Q235,100 235,110 L235,135 L175,135 Z" fill="#7dd3fc" opacity="0.9" />
+          <line x1="205" y1="98" x2="205" y2="135" stroke="#1f2937" strokeWidth="2" />
+          <path d="M175,110 Q175,100 195,98" fill="none" stroke="#1f2937" strokeWidth="1" />
           
-          <circle cx="190" cy="115" r="6" fill="#22d3ee">
+          <rect x="240" y="115" width="12" height="25" rx="1" fill="#d97706" opacity="0.5" />
+          <line x1="243" y1="120" x2="249" y2="120" stroke="#1f2937" strokeWidth="1" />
+          <line x1="243" y1="125" x2="249" y2="125" stroke="#1f2937" strokeWidth="1" />
+          <line x1="243" y1="130" x2="249" y2="130" stroke="#1f2937" strokeWidth="1" />
+          
+          <circle cx="175" cy="95" r="5" fill="#22d3ee">
             <animate attributeName="opacity" values="1;0.4;1" dur="0.8s" repeatCount="indefinite" />
           </circle>
           
-          <rect x="300" y="125" width="120" height="30" rx="2" fill="url(#truckBed)" />
-          <rect x="300" y="120" width="120" height="8" fill="url(#truckYellow)" />
-          <line x1="320" y1="125" x2="320" y2="155" stroke="#4b5563" strokeWidth="1" />
-          <line x1="350" y1="125" x2="350" y2="155" stroke="#4b5563" strokeWidth="1" />
-          <line x1="380" y1="125" x2="380" y2="155" stroke="#4b5563" strokeWidth="1" />
+          <path d="M200,145 L200,155 L180,158 L165,155 L165,145 Z" fill="#d97706" />
           
-          <rect x="395" y="85" width="20" height="35" fill="url(#truckOrange)" />
-          <line x1="405" y1="50" x2="405" y2="85" stroke="url(#truckOrange)" strokeWidth="12" />
-          <line x1="405" y1="50" x2="480" y2="95" stroke="url(#truckOrange)" strokeWidth="8" />
+          <rect x="255" y="125" width="165" height="35" rx="2" fill="url(#truckBed)" />
+          <rect x="255" y="120" width="165" height="8" fill="url(#truckYellow)" />
+          <line x1="280" y1="128" x2="280" y2="160" stroke="#4b5563" strokeWidth="1" />
+          <line x1="320" y1="128" x2="320" y2="160" stroke="#4b5563" strokeWidth="1" />
+          <line x1="360" y1="128" x2="360" y2="160" stroke="#4b5563" strokeWidth="1" />
+          <line x1="400" y1="128" x2="400" y2="160" stroke="#4b5563" strokeWidth="1" />
           
-          <line x1="478" y1="95" x2="478" y2="140" stroke="#6b7280" strokeWidth="2">
-            <animate attributeName="y2" values="140;145;140" dur="0.5s" repeatCount="indefinite" />
+          <rect x="395" y="75" width="25" height="45" fill="url(#truckOrange)" />
+          <line x1="407" y1="35" x2="407" y2="75" stroke="url(#truckOrange)" strokeWidth="14" />
+          <line x1="407" y1="35" x2="500" y2="90" stroke="url(#truckOrange)" strokeWidth="10" />
+          <circle cx="407" cy="35" r="6" fill="#ea580c" />
+          
+          <line x1="498" y1="90" x2="498" y2="135" stroke="#6b7280" strokeWidth="3">
+            <animate attributeName="y2" values="135;142;135" dur="0.5s" repeatCount="indefinite" />
           </line>
-          <path d="M470,140 Q478,135 486,140 L483,155 Q478,160 473,155 Z" fill="#4b5563">
-            <animate attributeName="transform" attributeType="XML" type="translate" values="0,0; 0,5; 0,0" dur="0.5s" repeatCount="indefinite" />
+          <path d="M488,135 Q498,128 508,135 L504,155 Q498,162 492,155 Z" fill="#4b5563">
+            <animate attributeName="transform" attributeType="XML" type="translate" values="0,0; 0,7; 0,0" dur="0.5s" repeatCount="indefinite" />
           </path>
           
-          <circle cx="230" cy="180" r="22" fill="#1f2937" />
-          <circle cx="230" cy="180" r="16" fill="#4b5563" />
-          <circle cx="230" cy="180" r="8" fill="#f59e0b" />
+          <circle cx="210" cy="180" r="24" fill="#1f2937" />
+          <circle cx="210" cy="180" r="18" fill="#4b5563" />
+          <circle cx="210" cy="180" r="10" fill="#f59e0b" />
           
-          <circle cx="390" cy="180" r="22" fill="#1f2937" />
-          <circle cx="390" cy="180" r="16" fill="#4b5563" />
-          <circle cx="390" cy="180" r="8" fill="#f59e0b" />
+          <circle cx="390" cy="180" r="24" fill="#1f2937" />
+          <circle cx="390" cy="180" r="18" fill="#4b5563" />
+          <circle cx="390" cy="180" r="10" fill="#f59e0b" />
         </g>
         
         <g>
@@ -143,27 +155,27 @@ function TowTruckAnimation() {
             repeatCount="indefinite"
           />
           
-          <rect x="520" y="130" width="90" height="50" rx="5" fill="url(#carBodyGradient)" />
-          <path d="M530,130 L540,105 L590,105 L600,130" fill="url(#carBodyGradient)" />
+          <rect x="540" y="130" width="95" height="50" rx="5" fill="url(#carBodyGradient)" />
+          <path d="M550,130 L560,100 L615,100 L625,130" fill="url(#carBodyGradient)" />
           
-          <rect x="543" y="108" width="22" height="20" rx="2" fill="#bfdbfe" opacity="0.85" />
-          <rect x="568" y="108" width="22" height="20" rx="2" fill="#bfdbfe" opacity="0.85" />
+          <rect x="563" y="103" width="24" height="24" rx="2" fill="#bfdbfe" opacity="0.85" />
+          <rect x="590" y="103" width="24" height="24" rx="2" fill="#bfdbfe" opacity="0.85" />
           
-          <rect x="522" y="145" width="12" height="8" rx="2" fill="#fde047">
+          <rect x="542" y="145" width="14" height="10" rx="2" fill="#fde047">
             <animate attributeName="opacity" values="1;0.5;1" dur="0.8s" repeatCount="indefinite" />
           </rect>
-          <rect x="596" y="145" width="12" height="8" rx="2" fill="#ef4444" />
+          <rect x="619" y="145" width="14" height="10" rx="2" fill="#ef4444" />
           
-          <circle cx="545" cy="180" r="18" fill="#1f2937" />
-          <circle cx="545" cy="180" r="12" fill="#4b5563" />
-          <circle cx="545" cy="180" r="5" fill="#6b7280" />
+          <circle cx="565" cy="180" r="20" fill="#1f2937" />
+          <circle cx="565" cy="180" r="14" fill="#4b5563" />
+          <circle cx="565" cy="180" r="6" fill="#6b7280" />
           
-          <circle cx="590" cy="180" r="18" fill="#1f2937" />
-          <circle cx="590" cy="180" r="12" fill="#4b5563" />
-          <circle cx="590" cy="180" r="5" fill="#6b7280" />
+          <circle cx="615" cy="180" r="20" fill="#1f2937" />
+          <circle cx="615" cy="180" r="14" fill="#4b5563" />
+          <circle cx="615" cy="180" r="6" fill="#6b7280" />
           
-          <line x1="478" y1="155" x2="530" y2="120" stroke="#6b7280" strokeWidth="3" strokeDasharray="8 4">
-            <animate attributeName="stroke-dashoffset" values="0;-12;0" dur="1s" repeatCount="indefinite" />
+          <line x1="498" y1="155" x2="550" y2="115" stroke="#6b7280" strokeWidth="4" strokeDasharray="10 5">
+            <animate attributeName="stroke-dashoffset" values="0;-15;0" dur="1s" repeatCount="indefinite" />
           </line>
         </g>
         
