@@ -310,17 +310,14 @@ function HeroSection() {
           </motion.div>
 
           <motion.div 
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="hidden lg:flex justify-center items-center"
+            className="flex justify-center items-center"
           >
             <div className="relative w-full max-w-xl">
-              <div className="bg-white/5 backdrop-blur-sm rounded-3xl p-6 border border-white/10">
+              <div className="bg-white/5 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-4 sm:p-6 border border-white/10">
                 <TowTruckAnimation />
-                <div className="text-center mt-4">
-                  <p className="text-white/60 text-sm">Servicio de grúa 24/7</p>
-                </div>
               </div>
             </div>
           </motion.div>
