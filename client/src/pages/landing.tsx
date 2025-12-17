@@ -74,7 +74,7 @@ function Header() {
               Iniciar Sesión
             </Button>
           </a>
-          <a href={`${APP_DOMAIN}/register`} data-testid="link-register">
+          <a href={`${APP_DOMAIN}/onboarding`} data-testid="link-register">
             <Button size="sm" className="bg-orange text-orange-foreground">
               <UserPlus className="w-4 h-4 mr-2" />
               Registrarse
@@ -108,7 +108,7 @@ function Header() {
                 Iniciar Sesión
               </Button>
             </a>
-            <a href={`${APP_DOMAIN}/register`} className="w-full" data-testid="link-register-mobile">
+            <a href={`${APP_DOMAIN}/onboarding`} className="w-full" data-testid="link-register-mobile">
               <Button className="w-full bg-orange text-orange-foreground">
                 <UserPlus className="w-4 h-4 mr-2" />
                 Registrarse
@@ -152,7 +152,7 @@ function HeroSection() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start mb-6 sm:mb-8">
-              <a href={`${APP_DOMAIN}/register`}>
+              <a href={`${APP_DOMAIN}/onboarding`}>
                 <Button 
                   size="lg" 
                   className="w-full sm:w-auto bg-orange text-orange-foreground h-12 sm:h-14 px-6 sm:px-8 text-base sm:text-lg font-semibold"
@@ -692,7 +692,7 @@ function DownloadSection() {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center md:justify-start mb-6">
-                <a href={`${APP_DOMAIN}/register`}>
+                <a href={`${APP_DOMAIN}/onboarding`}>
                   <Button 
                     size="lg" 
                     className="w-full sm:w-auto bg-orange text-orange-foreground h-12 sm:h-14 px-6 sm:px-8 text-base sm:text-lg font-semibold"
@@ -793,8 +793,8 @@ function Footer() {
             <h4 className="font-semibold text-white text-sm sm:text-base mb-3 sm:mb-4">Acceso a la App</h4>
             <ul className="space-y-2">
               <li><a href={`${APP_DOMAIN}/login`} className="text-white/60 text-xs sm:text-sm hover:text-orange transition-colors" data-testid="link-footer-login">Iniciar Sesión</a></li>
-              <li><a href={`${APP_DOMAIN}/register`} className="text-white/60 text-xs sm:text-sm hover:text-orange transition-colors" data-testid="link-footer-register">Registrarse</a></li>
-              <li><a href={`${APP_DOMAIN}/register?type=operator`} className="text-white/60 text-xs sm:text-sm hover:text-orange transition-colors" data-testid="link-footer-operator-register">Registro Operador</a></li>
+              <li><a href={`${APP_DOMAIN}/onboarding`} className="text-white/60 text-xs sm:text-sm hover:text-orange transition-colors" data-testid="link-footer-register">Registrarse</a></li>
+              <li><a href={`${APP_DOMAIN}/onboarding?type=operator`} className="text-white/60 text-xs sm:text-sm hover:text-orange transition-colors" data-testid="link-footer-operator-register">Registro Operador</a></li>
               <li><a href="#servicios" className="text-white/60 text-xs sm:text-sm hover:text-orange transition-colors" data-testid="link-footer-servicios">Servicios</a></li>
             </ul>
           </div>
@@ -802,7 +802,7 @@ function Footer() {
           <div>
             <h4 className="font-semibold text-white text-sm sm:text-base mb-3 sm:mb-4">Para Operadores</h4>
             <ul className="space-y-2">
-              <li><a href={`${APP_DOMAIN}/register?type=operator`} className="text-white/60 text-xs sm:text-sm hover:text-orange transition-colors" data-testid="link-footer-unirse">Únete como Operador</a></li>
+              <li><a href={`${APP_DOMAIN}/onboarding?type=operator`} className="text-white/60 text-xs sm:text-sm hover:text-orange transition-colors" data-testid="link-footer-unirse">Únete como Operador</a></li>
               <li><a href="#como-funciona" className="text-white/60 text-xs sm:text-sm hover:text-orange transition-colors" data-testid="link-footer-requisitos">Cómo Funciona</a></li>
               <li><a href="#caracteristicas" className="text-white/60 text-xs sm:text-sm hover:text-orange transition-colors" data-testid="link-footer-caracteristicas">Características</a></li>
               <li><a href="mailto:soporte@gruard.com" className="text-white/60 text-xs sm:text-sm hover:text-orange transition-colors" data-testid="link-footer-soporte">Soporte</a></li>
