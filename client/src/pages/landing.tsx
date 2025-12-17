@@ -49,6 +49,116 @@ const staggerContainer = {
 
 const APP_DOMAIN = "https://app.gruard.com";
 
+function TowTruckAnimation() {
+  return (
+    <div className="relative w-full h-48 sm:h-64 overflow-hidden" data-testid="animation-tow-truck">
+      <svg 
+        viewBox="0 0 800 200" 
+        className="w-full h-full"
+        preserveAspectRatio="xMidYMid meet"
+      >
+        <defs>
+          <linearGradient id="roadGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stopColor="#374151" />
+            <stop offset="100%" stopColor="#1f2937" />
+          </linearGradient>
+          <linearGradient id="truckBodyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stopColor="#f97316" />
+            <stop offset="100%" stopColor="#ea580c" />
+          </linearGradient>
+          <linearGradient id="carBodyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stopColor="#64748b" />
+            <stop offset="100%" stopColor="#475569" />
+          </linearGradient>
+        </defs>
+        
+        <rect x="0" y="160" width="800" height="40" fill="url(#roadGradient)" />
+        <line x1="0" y1="180" x2="800" y2="180" stroke="#fbbf24" strokeWidth="3" strokeDasharray="40 20">
+          <animate attributeName="stroke-dashoffset" from="0" to="-60" dur="0.5s" repeatCount="indefinite" />
+        </line>
+        
+        <g className="animate-pulse" style={{ animation: 'bounce 1s ease-in-out infinite' }}>
+          <animateTransform
+            attributeName="transform"
+            type="translate"
+            values="0,0; 0,-2; 0,0"
+            dur="0.3s"
+            repeatCount="indefinite"
+          />
+          
+          <rect x="280" y="100" width="180" height="60" rx="8" fill="url(#truckBodyGradient)" />
+          <rect x="380" y="70" width="80" height="50" rx="6" fill="url(#truckBodyGradient)" />
+          <rect x="390" y="78" width="30" height="25" rx="3" fill="#bfdbfe" opacity="0.8" />
+          <rect x="425" y="78" width="30" height="25" rx="3" fill="#bfdbfe" opacity="0.8" />
+          
+          <polygon points="280,100 280,130 250,130 265,100" fill="url(#truckBodyGradient)" />
+          <line x1="270" y1="110" x2="270" y2="145" stroke="#f97316" strokeWidth="4" />
+          <circle cx="270" cy="148" r="5" fill="#fbbf24">
+            <animate attributeName="opacity" values="1;0.5;1" dur="0.5s" repeatCount="indefinite" />
+          </circle>
+          
+          <rect x="340" y="115" width="60" height="8" rx="2" fill="#1f2937" />
+          <text x="355" y="122" fontSize="6" fill="white" fontWeight="bold">GRUA RD</text>
+          
+          <circle cx="310" cy="160" r="18" fill="#1f2937" />
+          <circle cx="310" cy="160" r="12" fill="#374151" />
+          <circle cx="310" cy="160" r="6" fill="#6b7280" />
+          <circle cx="430" cy="160" r="18" fill="#1f2937" />
+          <circle cx="430" cy="160" r="12" fill="#374151" />
+          <circle cx="430" cy="160" r="6" fill="#6b7280" />
+          
+          <line x1="460" y1="140" x2="510" y2="140" stroke="#6b7280" strokeWidth="6" />
+          <circle cx="485" cy="140" r="4" fill="#9ca3af" />
+        </g>
+        
+        <g>
+          <animateTransform
+            attributeName="transform"
+            type="translate"
+            values="0,0; 0,-3; 0,0"
+            dur="0.25s"
+            repeatCount="indefinite"
+          />
+          
+          <rect x="510" y="115" width="100" height="45" rx="6" fill="url(#carBodyGradient)" />
+          <path d="M520,115 L530,90 L590,90 L600,115" fill="url(#carBodyGradient)" />
+          <rect x="535" y="93" width="25" height="20" rx="2" fill="#bfdbfe" opacity="0.7" />
+          <rect x="565" y="93" width="25" height="20" rx="2" fill="#bfdbfe" opacity="0.7" />
+          
+          <rect x="512" y="130" width="15" height="8" rx="2" fill="#fbbf24" opacity="0.8">
+            <animate attributeName="opacity" values="0.8;0.4;0.8" dur="1s" repeatCount="indefinite" />
+          </rect>
+          <rect x="593" y="130" width="15" height="8" rx="2" fill="#ef4444" opacity="0.8" />
+          
+          <circle cx="535" cy="160" r="15" fill="#1f2937" />
+          <circle cx="535" cy="160" r="10" fill="#374151" />
+          <circle cx="535" cy="160" r="5" fill="#6b7280" />
+          <circle cx="585" cy="160" r="15" fill="#1f2937" />
+          <circle cx="585" cy="160" r="10" fill="#374151" />
+          <circle cx="585" cy="160" r="5" fill="#6b7280" />
+          
+          <path d="M510,130 Q505,140 510,150" stroke="#6b7280" strokeWidth="3" fill="none" />
+        </g>
+        
+        <g opacity="0.6">
+          <circle cx="250" cy="140" r="3" fill="white">
+            <animate attributeName="cx" from="250" to="100" dur="2s" repeatCount="indefinite" />
+            <animate attributeName="opacity" from="0.6" to="0" dur="2s" repeatCount="indefinite" />
+          </circle>
+          <circle cx="250" cy="130" r="2" fill="white">
+            <animate attributeName="cx" from="250" to="80" dur="2.5s" repeatCount="indefinite" />
+            <animate attributeName="opacity" from="0.4" to="0" dur="2.5s" repeatCount="indefinite" />
+          </circle>
+          <circle cx="250" cy="150" r="2.5" fill="white">
+            <animate attributeName="cx" from="250" to="90" dur="1.8s" repeatCount="indefinite" />
+            <animate attributeName="opacity" from="0.5" to="0" dur="1.8s" repeatCount="indefinite" />
+          </circle>
+        </g>
+      </svg>
+    </div>
+  );
+}
+
 function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -203,44 +313,14 @@ function HeroSection() {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="hidden lg:flex justify-center"
+            className="hidden lg:flex justify-center items-center"
           >
-            <div className="relative">
-              <div className="w-72 h-[580px] bg-gradient-to-b from-card to-card/80 rounded-[3rem] border-8 border-foreground/20 shadow-2xl overflow-hidden">
-                <div className="h-full bg-gradient-to-b from-primary/5 to-orange/5 p-4 flex flex-col">
-                  <div className="flex items-center justify-between mb-4">
-                    <div className="flex items-center gap-2">
-                      <img src={logoImage} alt="Grúa RD" className="w-8 h-8 rounded-lg" />
-                      <span className="font-semibold text-sm">Grúa RD</span>
-                    </div>
-                    <Badge variant="secondary" className="text-xs">En línea</Badge>
-                  </div>
-                  <div className="flex-1 bg-muted/50 rounded-2xl mb-4 flex items-center justify-center">
-                    <div className="text-center">
-                      <MapPin className="w-12 h-12 text-orange mx-auto mb-2" />
-                      <p className="text-sm text-muted-foreground">Mapa GPS</p>
-                    </div>
-                  </div>
-                  <Card className="bg-card/80 backdrop-blur">
-                    <CardContent className="p-4">
-                      <div className="flex items-center gap-3 mb-3">
-                        <div className="w-10 h-10 rounded-full bg-orange/20 flex items-center justify-center">
-                          <Truck className="w-5 h-5 text-orange" />
-                        </div>
-                        <div>
-                          <p className="font-medium text-sm">Grúa en camino</p>
-                          <p className="text-xs text-muted-foreground">ETA: 8 minutos</p>
-                        </div>
-                      </div>
-                      <div className="h-2 bg-muted rounded-full overflow-hidden">
-                        <div className="h-full w-3/4 bg-orange rounded-full" />
-                      </div>
-                    </CardContent>
-                  </Card>
+            <div className="relative w-full max-w-xl">
+              <div className="bg-white/5 backdrop-blur-sm rounded-3xl p-6 border border-white/10">
+                <TowTruckAnimation />
+                <div className="text-center mt-4">
+                  <p className="text-white/60 text-sm">Servicio de grúa 24/7</p>
                 </div>
-              </div>
-              <div className="absolute -bottom-4 -right-4 w-20 h-20 bg-orange rounded-full flex items-center justify-center shadow-lg">
-                <Truck className="w-10 h-10 text-orange-foreground" />
               </div>
             </div>
           </motion.div>
