@@ -43,7 +43,9 @@
   --chart-3: 150 60% 35%;
   --chart-4: 280 65% 35%;
   --chart-5: 25 75% 40%;
-  --font-sans: Open Sans, sans-serif;
+  --orange: 38 91% 55%;
+  --orange-foreground: 210 65% 17%;
+  --font-sans: Inter, sans-serif;
   --font-serif: Georgia, serif;
   --font-mono: Menlo, monospace;
   --radius: .5rem;
@@ -127,6 +129,8 @@
   --chart-3: 150 60% 60%;
   --chart-4: 280 65% 65%;
   --chart-5: 25 75% 65%;
+  --orange: 38 91% 55%;
+  --orange-foreground: 0 0% 98%;
   --shadow-2xs: 0px 2px 0px 0px hsl(210 10% 5% / 0.00);
   --shadow-xs: 0px 2px 0px 0px hsl(210 10% 5% / 0.00);
   --shadow-sm: 0px 2px 0px 0px hsl(210 10% 5% / 0.00), 0px 1px 2px -1px hsl(210 10% 5% / 0.00);
