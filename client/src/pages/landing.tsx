@@ -53,7 +53,7 @@ function TowTruckAnimation() {
   return (
     <div className="relative w-full h-48 sm:h-64 overflow-hidden" data-testid="animation-tow-truck">
       <svg 
-        viewBox="0 0 800 200" 
+        viewBox="0 0 800 220" 
         className="w-full h-full"
         preserveAspectRatio="xMidYMid meet"
       >
@@ -62,22 +62,30 @@ function TowTruckAnimation() {
             <stop offset="0%" stopColor="#374151" />
             <stop offset="100%" stopColor="#1f2937" />
           </linearGradient>
-          <linearGradient id="truckBodyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+          <linearGradient id="truckYellow" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stopColor="#fbbf24" />
+            <stop offset="100%" stopColor="#f59e0b" />
+          </linearGradient>
+          <linearGradient id="truckOrange" x1="0%" y1="0%" x2="0%" y2="100%">
             <stop offset="0%" stopColor="#f97316" />
             <stop offset="100%" stopColor="#ea580c" />
           </linearGradient>
+          <linearGradient id="truckBed" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stopColor="#374151" />
+            <stop offset="100%" stopColor="#1f2937" />
+          </linearGradient>
           <linearGradient id="carBodyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" stopColor="#64748b" />
-            <stop offset="100%" stopColor="#475569" />
+            <stop offset="0%" stopColor="#3b82f6" />
+            <stop offset="100%" stopColor="#2563eb" />
           </linearGradient>
         </defs>
         
-        <rect x="0" y="160" width="800" height="40" fill="url(#roadGradient)" />
-        <line x1="0" y1="180" x2="800" y2="180" stroke="#fbbf24" strokeWidth="3" strokeDasharray="40 20">
+        <rect x="0" y="180" width="800" height="40" fill="url(#roadGradient)" />
+        <line x1="0" y1="200" x2="800" y2="200" stroke="#fbbf24" strokeWidth="3" strokeDasharray="40 20">
           <animate attributeName="stroke-dashoffset" from="0" to="-60" dur="0.5s" repeatCount="indefinite" />
         </line>
         
-        <g className="animate-pulse" style={{ animation: 'bounce 1s ease-in-out infinite' }}>
+        <g>
           <animateTransform
             attributeName="transform"
             type="translate"
@@ -86,29 +94,44 @@ function TowTruckAnimation() {
             repeatCount="indefinite"
           />
           
-          <rect x="280" y="100" width="180" height="60" rx="8" fill="url(#truckBodyGradient)" />
-          <rect x="380" y="70" width="80" height="50" rx="6" fill="url(#truckBodyGradient)" />
-          <rect x="390" y="78" width="30" height="25" rx="3" fill="#bfdbfe" opacity="0.8" />
-          <rect x="425" y="78" width="30" height="25" rx="3" fill="#bfdbfe" opacity="0.8" />
+          <path d="M200,130 L200,155 L180,155 L180,145 L190,145 L195,130 Z" fill="url(#truckYellow)" />
           
-          <polygon points="280,100 280,130 250,130 265,100" fill="url(#truckBodyGradient)" />
-          <line x1="270" y1="110" x2="270" y2="145" stroke="#f97316" strokeWidth="4" />
-          <circle cx="270" cy="148" r="5" fill="#fbbf24">
-            <animate attributeName="opacity" values="1;0.5;1" dur="0.5s" repeatCount="indefinite" />
+          <rect x="200" y="100" width="100" height="55" rx="3" fill="url(#truckYellow)" />
+          <path d="M200,100 L200,155 L195,155 Q185,155 185,145 L185,130 Q185,115 200,110 Z" fill="url(#truckYellow)" />
+          
+          <rect x="210" y="108" width="45" height="35" rx="3" fill="#7dd3fc" opacity="0.9" />
+          <line x1="232" y1="108" x2="232" y2="143" stroke="#1f2937" strokeWidth="2" />
+          
+          <rect x="260" y="120" width="35" height="10" rx="2" fill="#1f2937" opacity="0.3" />
+          
+          <circle cx="190" cy="115" r="6" fill="#22d3ee">
+            <animate attributeName="opacity" values="1;0.4;1" dur="0.8s" repeatCount="indefinite" />
           </circle>
           
-          <rect x="340" y="115" width="60" height="8" rx="2" fill="#1f2937" />
-          <text x="355" y="122" fontSize="6" fill="white" fontWeight="bold">GRUA RD</text>
+          <rect x="300" y="125" width="120" height="30" rx="2" fill="url(#truckBed)" />
+          <rect x="300" y="120" width="120" height="8" fill="url(#truckYellow)" />
+          <line x1="320" y1="125" x2="320" y2="155" stroke="#4b5563" strokeWidth="1" />
+          <line x1="350" y1="125" x2="350" y2="155" stroke="#4b5563" strokeWidth="1" />
+          <line x1="380" y1="125" x2="380" y2="155" stroke="#4b5563" strokeWidth="1" />
           
-          <circle cx="310" cy="160" r="18" fill="#1f2937" />
-          <circle cx="310" cy="160" r="12" fill="#374151" />
-          <circle cx="310" cy="160" r="6" fill="#6b7280" />
-          <circle cx="430" cy="160" r="18" fill="#1f2937" />
-          <circle cx="430" cy="160" r="12" fill="#374151" />
-          <circle cx="430" cy="160" r="6" fill="#6b7280" />
+          <rect x="395" y="85" width="20" height="35" fill="url(#truckOrange)" />
+          <line x1="405" y1="50" x2="405" y2="85" stroke="url(#truckOrange)" strokeWidth="12" />
+          <line x1="405" y1="50" x2="480" y2="95" stroke="url(#truckOrange)" strokeWidth="8" />
           
-          <line x1="460" y1="140" x2="510" y2="140" stroke="#6b7280" strokeWidth="6" />
-          <circle cx="485" cy="140" r="4" fill="#9ca3af" />
+          <line x1="478" y1="95" x2="478" y2="140" stroke="#6b7280" strokeWidth="2">
+            <animate attributeName="y2" values="140;145;140" dur="0.5s" repeatCount="indefinite" />
+          </line>
+          <path d="M470,140 Q478,135 486,140 L483,155 Q478,160 473,155 Z" fill="#4b5563">
+            <animate attributeName="transform" attributeType="XML" type="translate" values="0,0; 0,5; 0,0" dur="0.5s" repeatCount="indefinite" />
+          </path>
+          
+          <circle cx="230" cy="180" r="22" fill="#1f2937" />
+          <circle cx="230" cy="180" r="16" fill="#4b5563" />
+          <circle cx="230" cy="180" r="8" fill="#f59e0b" />
+          
+          <circle cx="390" cy="180" r="22" fill="#1f2937" />
+          <circle cx="390" cy="180" r="16" fill="#4b5563" />
+          <circle cx="390" cy="180" r="8" fill="#f59e0b" />
         </g>
         
         <g>
@@ -120,38 +143,40 @@ function TowTruckAnimation() {
             repeatCount="indefinite"
           />
           
-          <rect x="510" y="115" width="100" height="45" rx="6" fill="url(#carBodyGradient)" />
-          <path d="M520,115 L530,90 L590,90 L600,115" fill="url(#carBodyGradient)" />
-          <rect x="535" y="93" width="25" height="20" rx="2" fill="#bfdbfe" opacity="0.7" />
-          <rect x="565" y="93" width="25" height="20" rx="2" fill="#bfdbfe" opacity="0.7" />
+          <rect x="520" y="130" width="90" height="50" rx="5" fill="url(#carBodyGradient)" />
+          <path d="M530,130 L540,105 L590,105 L600,130" fill="url(#carBodyGradient)" />
           
-          <rect x="512" y="130" width="15" height="8" rx="2" fill="#fbbf24" opacity="0.8">
-            <animate attributeName="opacity" values="0.8;0.4;0.8" dur="1s" repeatCount="indefinite" />
+          <rect x="543" y="108" width="22" height="20" rx="2" fill="#bfdbfe" opacity="0.85" />
+          <rect x="568" y="108" width="22" height="20" rx="2" fill="#bfdbfe" opacity="0.85" />
+          
+          <rect x="522" y="145" width="12" height="8" rx="2" fill="#fde047">
+            <animate attributeName="opacity" values="1;0.5;1" dur="0.8s" repeatCount="indefinite" />
           </rect>
-          <rect x="593" y="130" width="15" height="8" rx="2" fill="#ef4444" opacity="0.8" />
+          <rect x="596" y="145" width="12" height="8" rx="2" fill="#ef4444" />
           
-          <circle cx="535" cy="160" r="15" fill="#1f2937" />
-          <circle cx="535" cy="160" r="10" fill="#374151" />
-          <circle cx="535" cy="160" r="5" fill="#6b7280" />
-          <circle cx="585" cy="160" r="15" fill="#1f2937" />
-          <circle cx="585" cy="160" r="10" fill="#374151" />
-          <circle cx="585" cy="160" r="5" fill="#6b7280" />
+          <circle cx="545" cy="180" r="18" fill="#1f2937" />
+          <circle cx="545" cy="180" r="12" fill="#4b5563" />
+          <circle cx="545" cy="180" r="5" fill="#6b7280" />
           
-          <path d="M510,130 Q505,140 510,150" stroke="#6b7280" strokeWidth="3" fill="none" />
+          <circle cx="590" cy="180" r="18" fill="#1f2937" />
+          <circle cx="590" cy="180" r="12" fill="#4b5563" />
+          <circle cx="590" cy="180" r="5" fill="#6b7280" />
+          
+          <line x1="478" y1="155" x2="530" y2="120" stroke="#6b7280" strokeWidth="3" strokeDasharray="8 4">
+            <animate attributeName="stroke-dashoffset" values="0;-12;0" dur="1s" repeatCount="indefinite" />
+          </line>
         </g>
         
-        <g opacity="0.6">
-          <circle cx="250" cy="140" r="3" fill="white">
-            <animate attributeName="cx" from="250" to="100" dur="2s" repeatCount="indefinite" />
-            <animate attributeName="opacity" from="0.6" to="0" dur="2s" repeatCount="indefinite" />
+        <g opacity="0.5">
+          <circle r="3" fill="white">
+            <animate attributeName="cx" from="180" to="50" dur="1.5s" repeatCount="indefinite" />
+            <animate attributeName="cy" values="160;155;165;160" dur="1.5s" repeatCount="indefinite" />
+            <animate attributeName="opacity" from="0.5" to="0" dur="1.5s" repeatCount="indefinite" />
           </circle>
-          <circle cx="250" cy="130" r="2" fill="white">
-            <animate attributeName="cx" from="250" to="80" dur="2.5s" repeatCount="indefinite" />
-            <animate attributeName="opacity" from="0.4" to="0" dur="2.5s" repeatCount="indefinite" />
-          </circle>
-          <circle cx="250" cy="150" r="2.5" fill="white">
-            <animate attributeName="cx" from="250" to="90" dur="1.8s" repeatCount="indefinite" />
-            <animate attributeName="opacity" from="0.5" to="0" dur="1.8s" repeatCount="indefinite" />
+          <circle r="2" fill="white">
+            <animate attributeName="cx" from="180" to="30" dur="2s" repeatCount="indefinite" />
+            <animate attributeName="cy" values="150;145;155;150" dur="2s" repeatCount="indefinite" />
+            <animate attributeName="opacity" from="0.4" to="0" dur="2s" repeatCount="indefinite" />
           </circle>
         </g>
       </svg>
