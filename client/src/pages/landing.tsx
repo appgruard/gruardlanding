@@ -64,7 +64,6 @@ function Header() {
           <a href="#servicios" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors" data-testid="link-servicios">Servicios</a>
           <a href="#caracteristicas" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors" data-testid="link-caracteristicas">Características</a>
           <a href="#como-funciona" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors" data-testid="link-como-funciona">Cómo Funciona</a>
-          <a href="#testimonios" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors" data-testid="link-testimonios">Testimonios</a>
         </nav>
         
         <div className="hidden sm:flex items-center gap-2">
@@ -99,7 +98,6 @@ function Header() {
             <a href="#servicios" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>Servicios</a>
             <a href="#caracteristicas" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>Características</a>
             <a href="#como-funciona" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>Cómo Funciona</a>
-            <a href="#testimonios" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>Testimonios</a>
           </nav>
           <div className="flex flex-col gap-2 pt-2 border-t border-border">
             <a href={`${APP_DOMAIN}/login`} className="w-full" data-testid="link-login-mobile">
@@ -537,83 +535,6 @@ function HowItWorksSection() {
   );
 }
 
-function TestimonialsSection() {
-  const testimonials = [
-    {
-      name: "María García",
-      role: "Cliente Frecuente",
-      rating: 5,
-      quote: "Excelente servicio. La grúa llegó en menos de 15 minutos y el operador fue muy profesional. La app es muy fácil de usar.",
-      avatar: "MG"
-    },
-    {
-      name: "Carlos Rodríguez",
-      role: "Operador de Grúa",
-      rating: 5,
-      quote: "Desde que me uní a Grúa RD mis ingresos han aumentado significativamente. El sistema de wallet es muy conveniente.",
-      avatar: "CR"
-    },
-    {
-      name: "Seguros del Caribe",
-      role: "Empresa Asociada",
-      rating: 5,
-      quote: "La integración con nuestro sistema ha sido perfecta. Nuestros clientes están muy satisfechos con el servicio.",
-      avatar: "SC"
-    }
-  ];
-
-  return (
-    <section id="testimonios" className="py-12 sm:py-20 md:py-32 bg-muted/30" data-testid="section-testimonios">
-      <div className="max-w-7xl mx-auto px-4 md:px-6">
-        <motion.div {...fadeInUp} className="text-center mb-10 sm:mb-16">
-          <Badge className="mb-3 sm:mb-4 bg-orange/10 text-orange border-orange/20" data-testid="badge-testimonios">
-            Testimonios
-          </Badge>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-3 sm:mb-4" data-testid="text-testimonios-title">
-            Lo Que Dicen{" "}
-            <span className="text-orange">Nuestros Usuarios</span>
-          </h2>
-          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto" data-testid="text-testimonios-subtitle">
-            Miles de clientes, operadores y empresas confían en Grúa RD
-          </p>
-        </motion.div>
-
-        <motion.div 
-          variants={staggerContainer}
-          initial="initial"
-          whileInView="whileInView"
-          viewport={{ once: true }}
-          className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6"
-        >
-          {testimonials.map((testimonial, index) => (
-            <motion.div key={index} variants={fadeInUp}>
-              <Card className="h-full" data-testid={`testimonial-${index}`}>
-                <CardContent className="p-6">
-                  <div className="flex gap-1 mb-4">
-                    {Array.from({ length: testimonial.rating }).map((_, i) => (
-                      <Star key={i} className="w-5 h-5 fill-orange text-orange" />
-                    ))}
-                  </div>
-                  <p className="text-foreground mb-6 italic">"{testimonial.quote}"</p>
-                  <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 rounded-full bg-orange/20 flex items-center justify-center">
-                      <span className="font-bold text-orange">{testimonial.avatar}</span>
-                    </div>
-                    <div>
-                      <p className="font-semibold text-foreground">{testimonial.name}</p>
-                      <p className="text-sm text-muted-foreground">{testimonial.role}</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </motion.div>
-          ))}
-        </motion.div>
-      </div>
-    </section>
-  );
-}
-
 function CoverageSection() {
   const stats = [
     { value: "32", label: "Provincias" },
@@ -845,7 +766,6 @@ export default function LandingPage() {
         <ServicesSection />
         <FeaturesSection />
         <HowItWorksSection />
-        <TestimonialsSection />
         <CoverageSection />
         <DownloadSection />
       </main>
