@@ -48,7 +48,8 @@ const staggerContainer = {
 };
 
 const APP_DOMAIN = "https://app.gruard.com";
-
+const Google_APP="https://app.gruard.com";
+const Apple_APP= "https://";
 function TowTruckAnimation() {
   return (
     <div className="relative w-full h-48 sm:h-64 overflow-hidden" data-testid="animation-tow-truck">
@@ -283,9 +284,6 @@ function HeroSection() {
             transition={{ duration: 0.8 }}
             className="text-center lg:text-left"
           >
-            <Badge className="bg-orange/20 text-orange border-orange/30 mb-4 sm:mb-6 text-xs sm:text-sm" data-testid="badge-pwa">
-              Disponible en iOS, Android y Web
-            </Badge>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight" data-testid="text-hero-title">
               Asistencia Vial{" "}
               <span className="text-orange">Cuando Más</span>{" "}
@@ -322,21 +320,21 @@ function HeroSection() {
 
             <div className="flex flex-col xs:flex-row flex-wrap gap-3 sm:gap-4 justify-center lg:justify-start">
               <a 
-                href="#" 
+                href={`${Google_APP}`} 
                 className="flex items-center justify-center xs:justify-start gap-2 bg-black/50 backdrop-blur-sm rounded-lg px-4 py-3 transition-transform hover:scale-105"
                 data-testid="link-google-play"
               >
                 <SiGoogleplay className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                 <div className="text-left">
-                  <p className="text-xs text-white/70">Disponible en</p>
+                  <p className="text-xs text-white/70">Disponible próximamente en</p>
                   <p className="text-sm font-semibold text-white">Google Play</p>
                 </div>
               </a>
               <a 
-                href="#" 
+                href={`${Apple_APP}`} 
                 className="flex items-center justify-center xs:justify-start gap-2 bg-black/50 backdrop-blur-sm rounded-lg px-4 py-3 transition-transform hover:scale-105"
                 data-testid="link-app-store"
-              >
+               >
                 <SiAppstore className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                 <div className="text-left">
                   <p className="text-xs text-white/70">Disponible en</p>
