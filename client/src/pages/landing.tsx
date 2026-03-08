@@ -13,16 +13,17 @@ import {
   Shield,
   Wifi,
   CheckCircle2,
-  Star,
-  Phone,
-  Mail,
   ChevronRight,
-  Play,
-  Download,
+  Phone,
+  Star,
   LogIn,
   UserPlus,
   Menu,
-  X
+  X,
+  Sparkles,
+  Bell,
+  Wrench,
+  Key
 } from "lucide-react";
 import { useState } from "react";
 import { SiGoogleplay, SiAppstore } from "react-icons/si";
@@ -30,6 +31,9 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import logoImage from "@assets/20251126_144937_0000_1765970748932.png";
+import { DominicanMap } from "@/components/dominican-map";
+
+import LandingLayout from "./landing-layout";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 30 },
@@ -48,268 +52,52 @@ const staggerContainer = {
 };
 
 const APP_DOMAIN = "https://app.gruard.com";
-const Google_APP="https://app.gruard.com";
-const Apple_APP= "https://";
-function TowTruckAnimation() {
-  return (
-    <div className="relative w-full h-48 sm:h-64 overflow-hidden" data-testid="animation-tow-truck">
-      <svg 
-        viewBox="0 0 800 220" 
-        className="w-full h-full"
-        preserveAspectRatio="xMidYMid meet"
-      >
-        <defs>
-          <linearGradient id="roadGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" stopColor="#374151" />
-            <stop offset="100%" stopColor="#1f2937" />
-          </linearGradient>
-          <linearGradient id="truckYellow" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" stopColor="#fbbf24" />
-            <stop offset="100%" stopColor="#f59e0b" />
-          </linearGradient>
-          <linearGradient id="truckOrange" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" stopColor="#f97316" />
-            <stop offset="100%" stopColor="#ea580c" />
-          </linearGradient>
-          <linearGradient id="truckBed" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" stopColor="#374151" />
-            <stop offset="100%" stopColor="#1f2937" />
-          </linearGradient>
-          <linearGradient id="carBodyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" stopColor="#3b82f6" />
-            <stop offset="100%" stopColor="#2563eb" />
-          </linearGradient>
-        </defs>
-        
-        <rect x="0" y="180" width="800" height="40" fill="url(#roadGradient)" />
-        <line x1="0" y1="200" x2="800" y2="200" stroke="#fbbf24" strokeWidth="3" strokeDasharray="40 20">
-          <animate attributeName="stroke-dashoffset" from="0" to="-60" dur="0.5s" repeatCount="indefinite" />
-        </line>
-        
-        <g>
-          <animateTransform
-            attributeName="transform"
-            type="translate"
-            values="0,0; 0,-2; 0,0"
-            dur="0.3s"
-            repeatCount="indefinite"
-          />
-          
-          <path d="M160,155 L160,165 L155,165 L150,160 L150,155 Z" fill="#1f2937" />
-          <rect x="155" y="158" width="50" height="8" rx="2" fill="#374151" />
-          
-          <path d="M165,155 Q165,100 200,95 L200,95 Q240,90 255,95 L255,155 Z" fill="url(#truckYellow)" />
-          <path d="M165,155 L165,130 Q165,105 185,100 L185,100 Q165,105 165,130 Z" fill="#d97706" opacity="0.3" />
-          
-          <path d="M160,150 Q155,150 155,145 L155,135 Q155,130 165,130 L165,150 Z" fill="url(#truckYellow)" />
-          <rect x="157" y="138" width="6" height="8" rx="1" fill="#fde047" opacity="0.8" />
-          
-          <path d="M175,110 Q175,100 195,98 L225,98 Q235,100 235,110 L235,135 L175,135 Z" fill="#7dd3fc" opacity="0.9" />
-          <line x1="205" y1="98" x2="205" y2="135" stroke="#1f2937" strokeWidth="2" />
-          <path d="M175,110 Q175,100 195,98" fill="none" stroke="#1f2937" strokeWidth="1" />
-          
-          <rect x="240" y="115" width="12" height="25" rx="1" fill="#d97706" opacity="0.5" />
-          <line x1="243" y1="120" x2="249" y2="120" stroke="#1f2937" strokeWidth="1" />
-          <line x1="243" y1="125" x2="249" y2="125" stroke="#1f2937" strokeWidth="1" />
-          <line x1="243" y1="130" x2="249" y2="130" stroke="#1f2937" strokeWidth="1" />
-          
-          <circle cx="175" cy="95" r="5" fill="#22d3ee">
-            <animate attributeName="opacity" values="1;0.4;1" dur="0.8s" repeatCount="indefinite" />
-          </circle>
-          
-          <path d="M200,145 L200,155 L180,158 L165,155 L165,145 Z" fill="#d97706" />
-          
-          <rect x="255" y="125" width="165" height="35" rx="2" fill="url(#truckBed)" />
-          <rect x="255" y="120" width="165" height="8" fill="url(#truckYellow)" />
-          <line x1="280" y1="128" x2="280" y2="160" stroke="#4b5563" strokeWidth="1" />
-          <line x1="320" y1="128" x2="320" y2="160" stroke="#4b5563" strokeWidth="1" />
-          <line x1="360" y1="128" x2="360" y2="160" stroke="#4b5563" strokeWidth="1" />
-          <line x1="400" y1="128" x2="400" y2="160" stroke="#4b5563" strokeWidth="1" />
-          
-          <rect x="395" y="75" width="25" height="45" fill="url(#truckOrange)" />
-          <line x1="407" y1="35" x2="407" y2="75" stroke="url(#truckOrange)" strokeWidth="14" />
-          <line x1="407" y1="35" x2="500" y2="90" stroke="url(#truckOrange)" strokeWidth="10" />
-          <circle cx="407" cy="35" r="6" fill="#ea580c" />
-          
-          <line x1="498" y1="90" x2="498" y2="135" stroke="#6b7280" strokeWidth="3">
-            <animate attributeName="y2" values="135;142;135" dur="0.5s" repeatCount="indefinite" />
-          </line>
-          <path d="M488,135 Q498,128 508,135 L504,155 Q498,162 492,155 Z" fill="#4b5563">
-            <animate attributeName="transform" attributeType="XML" type="translate" values="0,0; 0,7; 0,0" dur="0.5s" repeatCount="indefinite" />
-          </path>
-          
-          <circle cx="210" cy="180" r="24" fill="#1f2937" />
-          <circle cx="210" cy="180" r="18" fill="#4b5563" />
-          <circle cx="210" cy="180" r="10" fill="#f59e0b" />
-          
-          <circle cx="390" cy="180" r="24" fill="#1f2937" />
-          <circle cx="390" cy="180" r="18" fill="#4b5563" />
-          <circle cx="390" cy="180" r="10" fill="#f59e0b" />
-        </g>
-        
-        <g>
-          <animateTransform
-            attributeName="transform"
-            type="translate"
-            values="0,0; 0,-3; 0,0"
-            dur="0.25s"
-            repeatCount="indefinite"
-          />
-          
-          <rect x="540" y="130" width="95" height="50" rx="5" fill="url(#carBodyGradient)" />
-          <path d="M550,130 L560,100 L615,100 L625,130" fill="url(#carBodyGradient)" />
-          
-          <rect x="563" y="103" width="24" height="24" rx="2" fill="#bfdbfe" opacity="0.85" />
-          <rect x="590" y="103" width="24" height="24" rx="2" fill="#bfdbfe" opacity="0.85" />
-          
-          <rect x="542" y="145" width="14" height="10" rx="2" fill="#fde047">
-            <animate attributeName="opacity" values="1;0.5;1" dur="0.8s" repeatCount="indefinite" />
-          </rect>
-          <rect x="619" y="145" width="14" height="10" rx="2" fill="#ef4444" />
-          
-          <circle cx="565" cy="180" r="20" fill="#1f2937" />
-          <circle cx="565" cy="180" r="14" fill="#4b5563" />
-          <circle cx="565" cy="180" r="6" fill="#6b7280" />
-          
-          <circle cx="615" cy="180" r="20" fill="#1f2937" />
-          <circle cx="615" cy="180" r="14" fill="#4b5563" />
-          <circle cx="615" cy="180" r="6" fill="#6b7280" />
-          
-          <line x1="498" y1="155" x2="550" y2="115" stroke="#6b7280" strokeWidth="4" strokeDasharray="10 5">
-            <animate attributeName="stroke-dashoffset" values="0;-15;0" dur="1s" repeatCount="indefinite" />
-          </line>
-        </g>
-        
-        <g opacity="0.5">
-          <circle r="3" fill="white">
-            <animate attributeName="cx" from="180" to="50" dur="1.5s" repeatCount="indefinite" />
-            <animate attributeName="cy" values="160;155;165;160" dur="1.5s" repeatCount="indefinite" />
-            <animate attributeName="opacity" from="0.5" to="0" dur="1.5s" repeatCount="indefinite" />
-          </circle>
-          <circle r="2" fill="white">
-            <animate attributeName="cx" from="180" to="30" dur="2s" repeatCount="indefinite" />
-            <animate attributeName="cy" values="150;145;155;150" dur="2s" repeatCount="indefinite" />
-            <animate attributeName="opacity" from="0.4" to="0" dur="2s" repeatCount="indefinite" />
-          </circle>
-        </g>
-      </svg>
-    </div>
-  );
-}
-
-function Header() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-  return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
-      <div className="max-w-7xl mx-auto px-4 md:px-6 h-16 flex items-center justify-between gap-4">
-        <div className="flex items-center gap-3">
-          <img src={logoImage} alt="Grúa RD" className="h-8 w-8 sm:h-10 sm:w-10 rounded-lg" data-testid="img-logo" />
-          <span className="font-bold text-lg sm:text-xl text-foreground">Grúa RD</span>
-        </div>
-        
-        <nav className="hidden lg:flex items-center gap-6">
-          <a href="#servicios" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors" data-testid="link-servicios">Servicios</a>
-          <a href="#caracteristicas" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors" data-testid="link-caracteristicas">Características</a>
-          <a href="#como-funciona" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors" data-testid="link-como-funciona">Cómo Funciona</a>
-        </nav>
-        
-        <div className="hidden sm:flex items-center gap-2">
-          <a href={`${APP_DOMAIN}/login`} data-testid="link-login">
-            <Button variant="ghost" size="sm">
-              <LogIn className="w-4 h-4 mr-2" />
-              Iniciar Sesión
-            </Button>
-          </a>
-          <a href={`${APP_DOMAIN}/onboarding`} data-testid="link-register">
-            <Button size="sm" className="bg-orange text-orange-foreground">
-              <UserPlus className="w-4 h-4 mr-2" />
-              Registrarse
-            </Button>
-          </a>
-        </div>
-
-        <Button 
-          variant="ghost" 
-          size="icon" 
-          className="sm:hidden"
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          data-testid="button-mobile-menu"
-        >
-          {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-        </Button>
-      </div>
-
-      {mobileMenuOpen && (
-        <div className="sm:hidden bg-background border-b border-border px-4 py-4 space-y-3">
-          <nav className="flex flex-col gap-2">
-            <a href="#servicios" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>Servicios</a>
-            <a href="#caracteristicas" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>Características</a>
-            <a href="#como-funciona" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>Cómo Funciona</a>
-          </nav>
-          <div className="flex flex-col gap-2 pt-2 border-t border-border">
-            <a href={`${APP_DOMAIN}/login`} className="w-full" data-testid="link-login-mobile">
-              <Button variant="outline" className="w-full">
-                <LogIn className="w-4 h-4 mr-2" />
-                Iniciar Sesión
-              </Button>
-            </a>
-            <a href={`${APP_DOMAIN}/onboarding`} className="w-full" data-testid="link-register-mobile">
-              <Button className="w-full bg-orange text-orange-foreground">
-                <UserPlus className="w-4 h-4 mr-2" />
-                Registrarse
-              </Button>
-            </a>
-          </div>
-        </div>
-      )}
-    </header>
-  );
-}
+const GOOGLE_PLAY_URL = "https://play.google.com/store/apps/details?id=com.fouronesolutions.gruard";
+const APP_STORE_URL = "https://apps.apple.com/do/app/gr%C3%BAa-rd/id6759132391";
 
 function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16" data-testid="section-hero">
+    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-20" data-testid="section-hero">
       <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/95 to-primary/90" />
       <div className="absolute inset-0 opacity-20 overflow-hidden">
         <div className="absolute top-10 left-5 sm:top-20 sm:left-10 w-48 sm:w-72 h-48 sm:h-72 bg-orange/30 rounded-full blur-3xl" />
         <div className="absolute bottom-10 right-5 sm:bottom-20 sm:right-10 w-64 sm:w-96 h-64 sm:h-96 bg-orange/20 rounded-full blur-3xl" />
       </div>
       
-      <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-6 py-12 sm:py-20 md:py-32">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-6 py-12">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
           <motion.div 
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             className="text-center lg:text-left"
           >
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight" data-testid="text-hero-title">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-[1.1]" data-testid="text-hero-title">
               Asistencia Vial{" "}
               <span className="text-orange">Cuando Más</span>{" "}
               La Necesitas
             </h1>
-            <p className="text-base sm:text-lg md:text-xl text-white/80 mb-6 sm:mb-8 max-w-xl mx-auto lg:mx-0" data-testid="text-hero-subtitle">
-              La plataforma líder de servicios de grúa en República Dominicana. 
-              Conectamos clientes con operadores en tiempo real, 24/7.
+            <p className="text-lg sm:text-xl text-white/80 mb-8 max-w-xl mx-auto lg:mx-0" data-testid="text-hero-subtitle">
+              La plataforma emergente de servicios de grúa en República Dominicana. 
+              Conectamos clientes con operadores certificados de forma rápida.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start mb-6 sm:mb-8">
-              <a href={`${APP_DOMAIN}/onboarding`}>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
+              <a href={`${APP_DOMAIN}/onboarding`} className="w-full sm:w-auto">
                 <Button 
                   size="lg" 
-                  className="w-full sm:w-auto bg-orange text-orange-foreground h-12 sm:h-14 px-6 sm:px-8 text-base sm:text-lg font-semibold"
+                  className="w-full sm:w-auto bg-orange text-orange-foreground h-14 px-8 text-lg font-semibold"
                   data-testid="button-register-hero"
                 >
                   <UserPlus className="w-5 h-5 mr-2" />
                   Registrarse Gratis
                 </Button>
               </a>
-              <a href={`${APP_DOMAIN}/login`}>
+              <a href={`${APP_DOMAIN}/login`} className="w-full sm:w-auto">
                 <Button 
                   size="lg" 
                   variant="outline" 
-                  className="w-full sm:w-auto h-12 sm:h-14 px-6 sm:px-8 text-base sm:text-lg font-semibold border-white/30 text-white bg-white/10 backdrop-blur-sm"
+                  className="w-full sm:w-auto h-14 px-8 text-lg font-semibold border-white/30 text-white bg-white/10 backdrop-blur-sm"
                   data-testid="button-login-hero"
                 >
                   <LogIn className="w-5 h-5 mr-2" />
@@ -318,26 +106,30 @@ function HeroSection() {
               </a>
             </div>
 
-            <div className="flex flex-col xs:flex-row flex-wrap gap-3 sm:gap-4 justify-center lg:justify-start">
+            <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
               <a 
-                href={`${Google_APP}`} 
-                className="flex items-center justify-center xs:justify-start gap-2 bg-black/50 backdrop-blur-sm rounded-lg px-4 py-3 transition-transform hover:scale-105"
+                href={GOOGLE_PLAY_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="store-btn-dark"
                 data-testid="link-google-play"
               >
-                <SiGoogleplay className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
-                <div className="text-left">
-                  <p className="text-xs text-white/70">Disponible próximamente en</p>
+                <SiGoogleplay className="w-6 h-6 text-white flex-shrink-0" />
+                <div className="text-left leading-tight">
+                  <p className="text-[10px] text-white/70">Disponible en</p>
                   <p className="text-sm font-semibold text-white">Google Play</p>
                 </div>
               </a>
               <a 
-                href={`${Apple_APP}`} 
-                className="flex items-center justify-center xs:justify-start gap-2 bg-black/50 backdrop-blur-sm rounded-lg px-4 py-3 transition-transform hover:scale-105"
+                href={APP_STORE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="store-btn-dark"
                 data-testid="link-app-store"
-               >
-                <SiAppstore className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
-                <div className="text-left">
-                  <p className="text-xs text-white/70">Disponible en</p>
+              >
+                <SiAppstore className="w-6 h-6 text-white flex-shrink-0" />
+                <div className="text-left leading-tight">
+                  <p className="text-[10px] text-white/70">Disponible en</p>
                   <p className="text-sm font-semibold text-white">App Store</p>
                 </div>
               </a>
@@ -345,37 +137,19 @@ function HeroSection() {
           </motion.div>
 
           <motion.div 
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="flex justify-center items-center"
+            className="flex justify-center"
           >
-            <div className="relative w-full max-w-xl">
-              <div className="bg-white/5 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-4 sm:p-6 border border-white/10">
-                <TowTruckAnimation />
+            <div className="relative w-full max-w-lg">
+              <div className="w-full h-[350px] sm:h-[500px] bg-card rounded-3xl shadow-2xl overflow-hidden relative border-4 border-foreground/10">
+                <DominicanMap />
               </div>
             </div>
           </motion.div>
         </div>
 
-        <motion.div 
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.6 }}
-          className="mt-10 sm:mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8"
-        >
-          {[
-            { value: "24/7", label: "Disponibilidad" },
-            { value: "150+", label: "Operadores" },
-            { value: "10K+", label: "Servicios" },
-            { value: "4.8", label: "Calificación" }
-          ].map((stat, index) => (
-            <div key={index} className="text-center p-3 sm:p-4 rounded-xl bg-white/5 backdrop-blur-sm" data-testid={`stat-${stat.label.toLowerCase()}`}>
-              <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-orange">{stat.value}</p>
-              <p className="text-xs sm:text-sm text-white/70">{stat.label}</p>
-            </div>
-          ))}
-        </motion.div>
       </div>
     </section>
   );
@@ -391,7 +165,7 @@ function ServicesSection() {
       features: [
         { icon: MapPin, text: "Selección de ubicación en mapa" },
         { icon: Clock, text: "Seguimiento GPS en tiempo real" },
-        { icon: CreditCard, text: "Múltiples métodos de pago" },
+        { icon: CreditCard, text: "Pagos en RD$ (Visa/MasterCard)" },
         { icon: FileText, text: "Historial y recibos PDF" }
       ],
       color: "bg-blue-500/10 text-blue-500",
@@ -404,7 +178,7 @@ function ServicesSection() {
       description: "Gestiona tu negocio de grúas de forma eficiente",
       features: [
         { icon: Smartphone, text: "Dashboard de solicitudes" },
-        { icon: Navigation, text: "Navegación con Waze" },
+        { icon: Navigation, text: "Navegación asistida" },
         { icon: Wallet, text: "Sistema de Wallet" },
         { icon: Truck, text: "Gestión de vehículos" }
       ],
@@ -483,10 +257,10 @@ function FeaturesSection() {
   const features = [
     { icon: Smartphone, title: "Apps Nativas", description: "Disponible en iOS, Android y como PWA" },
     { icon: MapPin, title: "GPS Preciso", description: "Seguimiento en tiempo real de alta precisión" },
-    { icon: Shield, title: "Verificación OCR", description: "Validación de cédula dominicana con Verifik" },
-    { icon: Wifi, title: "Modo Offline", description: "Funciona sin conexión a internet" },
-    { icon: Clock, title: "Notificaciones Push", description: "Alertas en tiempo real del servicio" },
-    { icon: CreditCard, title: "Pagos Seguros", description: "Efectivo, tarjeta o aseguradora" }
+    { icon: Shield, title: "Verificación", description: "Validación de identidad para mayor seguridad" },
+    { icon: Wifi, title: "Conectividad", description: "Optimizado para bajo consumo de datos" },
+    { icon: Clock, title: "Notificaciones", description: "Alertas en tiempo real del servicio" },
+    { icon: CreditCard, title: "Pagos Seguros", description: "RD$ - Tarjeta, Efectivo o Aseguradora" }
   ];
 
   return (
@@ -584,8 +358,8 @@ function HowItWorksSection() {
     },
     {
       number: "02",
-      title: "Rastreamos en Tiempo Real",
-      description: "Visualiza la llegada del operador con GPS en vivo y recibe actualizaciones",
+      title: "Confirmación en Tiempo Real",
+      description: "Visualiza la asignación del operador y recibe actualizaciones de su llegada",
       icon: Navigation
     },
     {
@@ -647,54 +421,251 @@ function HowItWorksSection() {
   );
 }
 
-function CoverageSection() {
-  const stats = [
-    { value: "32", label: "Provincias" },
-    { value: "150+", label: "Operadores Activos" },
-    { value: "10,000+", label: "Servicios Completados" },
-    { value: "4.8/5", label: "Satisfacción" }
+function BenefitsSection() {
+  const benefits = [
+    {
+      title: "Respuesta Inmediata",
+      description: "Localizamos al operador más cercano a tu ubicación para minimizar el tiempo de espera.",
+      icon: Clock
+    },
+    {
+      title: "Precios Transparentes",
+      description: "Conoce el costo estimado antes de solicitar el servicio, sin cargos ocultos.",
+      icon: Wallet
+    },
+    {
+      title: "Seguridad Garantizada",
+      description: "Todos nuestros operadores pasan por un proceso de verificación y seguimiento continuo.",
+      icon: Shield
+    },
+    {
+      title: "Pagos Flexibles",
+      description: "Paga de forma segura con tarjeta de crédito (RD$), efectivo o a través de tu aseguradora.",
+      icon: CreditCard
+    }
   ];
 
   return (
-    <section className="py-12 sm:py-20 md:py-32 bg-primary relative overflow-hidden" data-testid="section-cobertura">
-      <div className="absolute inset-0 opacity-10 overflow-hidden">
-        <div className="absolute top-0 right-0 w-64 sm:w-96 h-64 sm:h-96 bg-orange rounded-full blur-3xl" />
-        <div className="absolute bottom-0 left-0 w-48 sm:w-72 h-48 sm:h-72 bg-orange rounded-full blur-3xl" />
-      </div>
-      
-      <div className="relative max-w-7xl mx-auto px-4 md:px-6">
+    <section id="beneficios" className="py-12 sm:py-20 md:py-32 bg-muted/30" data-testid="section-beneficios">
+      <div className="max-w-7xl mx-auto px-4 md:px-6">
         <motion.div {...fadeInUp} className="text-center mb-10 sm:mb-16">
-          <Badge className="mb-3 sm:mb-4 bg-orange/20 text-orange border-orange/30" data-testid="badge-cobertura">
-            Cobertura Nacional
+          <Badge className="mb-4 bg-orange/10 text-orange border-orange/20">
+            Beneficios
           </Badge>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-3 sm:mb-4" data-testid="text-cobertura-title">
-            Presentes en Toda{" "}
-            <span className="text-orange">República Dominicana</span>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-3 sm:mb-4">
+            ¿Por Qué Elegir <span className="text-orange">Grúa RD</span>?
           </h2>
-          <p className="text-base sm:text-lg text-white/70 max-w-2xl mx-auto" data-testid="text-cobertura-subtitle">
-            Red de operadores en las 32 provincias del país, listos para asistirte
+          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
+            Nos enfocamos en brindar una experiencia de asistencia vial moderna, segura y eficiente.
           </p>
         </motion.div>
 
-        <motion.div 
-          variants={staggerContainer}
-          initial="initial"
-          whileInView="whileInView"
-          viewport={{ once: true }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6 md:gap-8"
-        >
-          {stats.map((stat, index) => (
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+          {benefits.map((benefit, index) => (
             <motion.div 
-              key={index} 
-              variants={fadeInUp}
-              className="text-center p-4 sm:p-6 rounded-xl sm:rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10"
-              data-testid={`coverage-stat-${index}`}
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1 }}
             >
-              <p className="text-xl sm:text-3xl md:text-4xl font-bold text-orange mb-1 sm:mb-2">{stat.value}</p>
-              <p className="text-xs sm:text-sm text-white/70">{stat.label}</p>
+              <Card className="h-full border-none shadow-sm hover-elevate">
+                <CardContent className="p-6 text-center">
+                  <div className="w-12 h-12 rounded-full bg-orange/10 flex items-center justify-center mx-auto mb-4">
+                    <benefit.icon className="w-6 h-6 text-orange" />
+                  </div>
+                  <h3 className="text-lg font-bold mb-2">{benefit.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{benefit.description}</p>
+                </CardContent>
+              </Card>
             </motion.div>
           ))}
-        </motion.div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function CoverageSection() {
+  return (
+    <section className="py-12 sm:py-20 md:py-32 bg-background overflow-hidden" data-testid="section-cobertura">
+      <div className="max-w-7xl mx-auto px-4 md:px-6">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <motion.div {...fadeInUp}>
+            <Badge className="mb-4 bg-orange/10 text-orange border-orange/20">
+              Cobertura
+            </Badge>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-6">
+              Servicio en Toda la{" "}
+              <span className="text-orange">República Dominicana</span>
+            </h2>
+            <p className="text-base sm:text-lg text-muted-foreground mb-8">
+              Nuestra red de operadores independientes se extiende por las principales 
+              provincias del país, asegurando que siempre haya una grúa cerca de ti.
+            </p>
+            <div className="space-y-4">
+              {[
+                "Santo Domingo & Distrito Nacional",
+                "Santiago & Zona Norte",
+                "Punta Cana & Zona Este",
+                "Barahona & Zona Sur",
+                "Moca, Licey & Toda La Provincia Espaillat"
+              ].map((city, i) => (
+                <div key={i} className="flex items-center gap-3">
+                  <div className="w-6 h-6 rounded-full bg-green-500/10 flex items-center justify-center">
+                    <CheckCircle2 className="w-4 h-4 text-green-500" />
+                  </div>
+                  <span className="font-medium text-foreground">{city}</span>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            className="relative h-[350px] sm:h-[500px] bg-muted rounded-3xl flex items-center justify-center overflow-hidden border-4 border-foreground/10"
+          >
+            <DominicanMap />
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function AppInfoSection() {
+  const whatsNew = [
+    {
+      icon: Wrench,
+      title: "Nuevos tipos de servicio",
+      description: "Izaje y Construcción con subtipos como materiales, muebles, equipos y maquinaria. Formulario específico para Remoción de Escombros."
+    },
+    {
+      icon: Truck,
+      title: "Extracción con traslado",
+      description: "Toggle de transporte en Extracción de Vehículo: indica si necesitas traslado además de la extracción."
+    },
+    {
+      icon: Key,
+      title: "Cerrajería y batería",
+      description: "Nuevas opciones de Auxilio Vial: cerrajería automotriz y envío/instalación de batería con precios variables según el servicio."
+    },
+    {
+      icon: MapPin,
+      title: "Mapa mejorado",
+      description: "Marcadores con vista aérea que se orientan automáticamente según la dirección del conductor. Tamaño adaptativo según nivel de zoom."
+    },
+    {
+      icon: Navigation,
+      title: "Posición más precisa",
+      description: "La ubicación del conductor se ajusta automáticamente a la calle más cercana, eliminando saltos a edificios o aceras."
+    },
+    {
+      icon: Bell,
+      title: "Notificaciones mejoradas",
+      description: "Al tocar una notificación de mensaje nuevo, la app abre directamente la conversación correcta. Acceso rápido a servicios activos."
+    }
+  ];
+
+  return (
+    <section id="novedades" className="py-12 sm:py-20 md:py-32 bg-muted/30" data-testid="section-novedades">
+      <div className="max-w-7xl mx-auto px-4 md:px-6">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+          <motion.div {...fadeInUp}>
+            <Badge className="mb-4 bg-orange/10 text-orange border-orange/20" data-testid="badge-sobre-la-app">
+              Sobre la App
+            </Badge>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-6" data-testid="text-novedades-title">
+              Asistencia Vial{" "}
+              <span className="text-orange">Rápida y Segura</span>
+            </h2>
+            <p className="text-base sm:text-lg text-muted-foreground mb-4 leading-relaxed">
+              Grúa RD es una plataforma digital de asistencia vial diseñada para ofrecer una solución rápida, segura y eficiente ante emergencias en carretera en la República Dominicana.
+            </p>
+            <p className="text-base sm:text-lg text-muted-foreground mb-6 leading-relaxed">
+              Solicita servicios de grúa en minutos mediante geolocalización precisa. El sistema asigna automáticamente el proveedor disponible más cercano, optimizando el tiempo de respuesta y reduciendo la espera.
+            </p>
+            <ul className="space-y-3 mb-8">
+              {[
+                "Solicitud de grúa en pocos pasos",
+                "Geolocalización automática del usuario",
+                "Asignación inteligente del proveedor más cercano",
+                "Seguimiento del servicio en tiempo real",
+                "Confirmaciones claras del estado del servicio",
+                "Interfaz simple y fácil de usar"
+              ].map((item, i) => (
+                <li key={i} className="flex items-start gap-3">
+                  <div className="w-5 h-5 rounded-full bg-orange/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <CheckCircle2 className="w-3 h-3 text-orange" />
+                  </div>
+                  <span className="text-sm text-foreground">{item}</span>
+                </li>
+              ))}
+            </ul>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <a
+                href={GOOGLE_PLAY_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="store-btn-light"
+                data-testid="link-google-play-info"
+              >
+                <SiGoogleplay className="w-6 h-6 flex-shrink-0" />
+                <div className="text-left leading-tight">
+                  <p className="text-[10px] opacity-60">Disponible en</p>
+                  <p className="text-sm font-semibold">Google Play</p>
+                </div>
+              </a>
+              <a
+                href={APP_STORE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="store-btn-light"
+                data-testid="link-app-store-info"
+              >
+                <SiAppstore className="w-6 h-6 flex-shrink-0" />
+                <div className="text-left leading-tight">
+                  <p className="text-[10px] opacity-60">Disponible en</p>
+                  <p className="text-sm font-semibold">App Store</p>
+                </div>
+              </a>
+            </div>
+          </motion.div>
+
+          <motion.div {...fadeInUp}>
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-10 h-10 rounded-xl bg-orange flex items-center justify-center">
+                <Sparkles className="w-5 h-5 text-white" />
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-foreground" data-testid="text-whats-new-title">Novedades de la Última Versión</h3>
+                <p className="text-sm text-muted-foreground">Últimas mejoras y funciones añadidas</p>
+              </div>
+            </div>
+            <div className="grid sm:grid-cols-2 gap-4">
+              {whatsNew.map((item, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.08 }}
+                >
+                  <Card className="h-full hover-elevate" data-testid={`card-whats-new-${index}`}>
+                    <CardContent className="p-4">
+                      <div className="w-9 h-9 rounded-lg bg-orange/10 flex items-center justify-center mb-3">
+                        <item.icon className="w-4 h-4 text-orange" />
+                      </div>
+                      <h4 className="font-semibold text-foreground text-sm mb-1">{item.title}</h4>
+                      <p className="text-xs text-muted-foreground leading-relaxed">{item.description}</p>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+        </div>
       </div>
     </section>
   );
@@ -702,88 +673,47 @@ function CoverageSection() {
 
 function DownloadSection() {
   return (
-    <section className="py-12 sm:py-20 md:py-32 bg-background" data-testid="section-download">
-      <div className="max-w-7xl mx-auto px-4 md:px-6">
-        <motion.div 
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="relative overflow-hidden rounded-2xl sm:rounded-3xl bg-gradient-to-r from-primary to-primary/90 p-6 sm:p-8 md:p-16"
-        >
-          <div className="absolute top-0 right-0 w-48 sm:w-64 h-48 sm:h-64 bg-orange/20 rounded-full blur-3xl" />
-          <div className="absolute bottom-0 left-0 w-32 sm:w-48 h-32 sm:h-48 bg-orange/10 rounded-full blur-3xl" />
-          
-          <div className="relative grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
-            <div className="text-center md:text-left">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-3 sm:mb-4" data-testid="text-download-title">
-                Comienza{" "}
-                <span className="text-orange">Ahora</span>
-              </h2>
-              <p className="text-base sm:text-lg text-white/80 mb-6 sm:mb-8" data-testid="text-download-subtitle">
-                Únete a miles de usuarios que ya disfrutan de asistencia vial 
-                confiable en República Dominicana
-              </p>
-              
-              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center md:justify-start mb-6">
-                <a href={`${APP_DOMAIN}/onboarding`}>
-                  <Button 
-                    size="lg" 
-                    className="w-full sm:w-auto bg-orange text-orange-foreground h-12 sm:h-14 px-6 sm:px-8 text-base sm:text-lg font-semibold"
-                    data-testid="button-register-download"
-                  >
-                    <UserPlus className="w-5 h-5 mr-2" />
-                    Crear Cuenta Gratis
-                  </Button>
-                </a>
-                <a href={`${APP_DOMAIN}/login`}>
-                  <Button 
-                    size="lg" 
-                    variant="outline" 
-                    className="w-full sm:w-auto h-12 sm:h-14 px-6 sm:px-8 text-base sm:text-lg font-semibold border-white/30 text-white bg-white/10 backdrop-blur-sm"
-                    data-testid="button-login-download"
-                  >
-                    <LogIn className="w-5 h-5 mr-2" />
-                    Ya tengo cuenta
-                  </Button>
-                </a>
-              </div>
+    <section className="py-12 sm:py-20 md:py-32 bg-primary relative overflow-hidden" data-testid="section-download">
+      <div className="absolute inset-0 opacity-10 overflow-hidden">
+        <div className="absolute top-0 right-0 w-64 sm:w-96 h-64 sm:h-96 bg-orange rounded-full blur-3xl" />
+        <div className="absolute bottom-0 left-0 w-64 sm:w-96 h-64 sm:h-96 bg-white rounded-full blur-3xl" />
+      </div>
 
-              <div className="flex flex-col xs:flex-row gap-3 justify-center md:justify-start">
-                <a 
-                  href="#" 
-                  className="inline-flex items-center justify-center gap-3 bg-black rounded-xl px-4 sm:px-6 py-3 sm:py-4 transition-transform hover:scale-105"
-                  data-testid="link-google-play-download"
-                >
-                  <SiGoogleplay className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
-                  <div className="text-left">
-                    <p className="text-xs text-white/70">Disponible en</p>
-                    <p className="text-sm sm:text-lg font-semibold text-white">Google Play</p>
-                  </div>
-                </a>
-                <a 
-                  href="#" 
-                  className="inline-flex items-center justify-center gap-3 bg-black rounded-xl px-4 sm:px-6 py-3 sm:py-4 transition-transform hover:scale-105"
-                  data-testid="link-app-store-download"
-                >
-                  <SiAppstore className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
-                  <div className="text-left">
-                    <p className="text-xs text-white/70">Disponible en</p>
-                    <p className="text-sm sm:text-lg font-semibold text-white">App Store</p>
-                  </div>
-                </a>
+      <div className="max-w-4xl mx-auto px-4 md:px-6 text-center relative z-10">
+        <motion.div {...fadeInUp}>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6">
+            Descarga la App y <span className="text-orange">Viaja Seguro</span>
+          </h2>
+          <p className="text-lg sm:text-xl text-white/80 mb-10 max-w-2xl mx-auto">
+            Únete a los conductores que ya confían en Grúa RD para su tranquilidad en las carreteras.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
+            <a 
+              href={GOOGLE_PLAY_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="store-btn-dark"
+              data-testid="link-google-play-footer"
+            >
+              <SiGoogleplay className="w-6 h-6 text-white flex-shrink-0" />
+              <div className="text-left leading-tight">
+                <p className="text-[10px] text-white/70">Disponible en</p>
+                <p className="text-sm font-semibold text-white">Google Play</p>
               </div>
-            </div>
-
-            <div className="hidden md:flex justify-center">
-              <div className="relative">
-                <div className="w-48 h-48 bg-white/10 backdrop-blur-sm rounded-3xl flex items-center justify-center border border-white/20">
-                  <div className="text-center">
-                    <img src={logoImage} alt="Grúa RD QR" className="w-24 h-24 mx-auto rounded-xl mb-2" />
-                    <p className="text-sm text-white/70">Escanea para descargar</p>
-                  </div>
-                </div>
+            </a>
+            <a 
+              href={APP_STORE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="store-btn-dark"
+              data-testid="link-app-store-footer"
+            >
+              <SiAppstore className="w-6 h-6 text-white flex-shrink-0" />
+              <div className="text-left leading-tight">
+                <p className="text-[10px] text-white/70">Disponible en</p>
+                <p className="text-sm font-semibold text-white">App Store</p>
               </div>
-            </div>
+            </a>
           </div>
         </motion.div>
       </div>
@@ -791,97 +721,17 @@ function DownloadSection() {
   );
 }
 
-function Footer() {
-  return (
-    <footer className="bg-primary py-10 sm:py-16" data-testid="section-footer">
-      <div className="max-w-7xl mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 mb-8 sm:mb-12">
-          <div className="col-span-2 md:col-span-1">
-            <div className="flex items-center gap-3 mb-4">
-              <img src={logoImage} alt="Grúa RD" className="h-8 w-8 sm:h-10 sm:w-10 rounded-lg" />
-              <span className="font-bold text-lg sm:text-xl text-white">Grúa RD</span>
-            </div>
-            <p className="text-white/60 text-xs sm:text-sm mb-4">
-              La plataforma líder de servicios de grúa y asistencia vial en República Dominicana.
-            </p>
-            <div className="flex gap-3">
-              <a 
-                href="tel:+18095551234" 
-                className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-white/10 flex items-center justify-center transition-colors hover:bg-orange"
-                data-testid="link-social-phone"
-              >
-                <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
-              </a>
-              <a 
-                href="mailto:info@gruard.com" 
-                className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-white/10 flex items-center justify-center transition-colors hover:bg-orange"
-                data-testid="link-social-email"
-              >
-                <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
-              </a>
-            </div>
-          </div>
-
-          <div>
-            <h4 className="font-semibold text-white text-sm sm:text-base mb-3 sm:mb-4">Acceso a la App</h4>
-            <ul className="space-y-2">
-              <li><a href={`${APP_DOMAIN}/login`} className="text-white/60 text-xs sm:text-sm hover:text-orange transition-colors" data-testid="link-footer-login">Iniciar Sesión</a></li>
-              <li><a href={`${APP_DOMAIN}/onboarding`} className="text-white/60 text-xs sm:text-sm hover:text-orange transition-colors" data-testid="link-footer-register">Registrarse</a></li>
-              <li><a href={`${APP_DOMAIN}/onboarding?type=operator`} className="text-white/60 text-xs sm:text-sm hover:text-orange transition-colors" data-testid="link-footer-operator-register">Registro Operador</a></li>
-              <li><a href="#servicios" className="text-white/60 text-xs sm:text-sm hover:text-orange transition-colors" data-testid="link-footer-servicios">Servicios</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="font-semibold text-white text-sm sm:text-base mb-3 sm:mb-4">Para Operadores</h4>
-            <ul className="space-y-2">
-              <li><a href={`${APP_DOMAIN}/onboarding?type=operator`} className="text-white/60 text-xs sm:text-sm hover:text-orange transition-colors" data-testid="link-footer-unirse">Únete como Operador</a></li>
-              <li><a href="#como-funciona" className="text-white/60 text-xs sm:text-sm hover:text-orange transition-colors" data-testid="link-footer-requisitos">Cómo Funciona</a></li>
-              <li><a href="#caracteristicas" className="text-white/60 text-xs sm:text-sm hover:text-orange transition-colors" data-testid="link-footer-caracteristicas">Características</a></li>
-              <li><a href="mailto:soporte@gruard.com" className="text-white/60 text-xs sm:text-sm hover:text-orange transition-colors" data-testid="link-footer-soporte">Soporte</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="font-semibold text-white text-sm sm:text-base mb-3 sm:mb-4">Legal</h4>
-            <ul className="space-y-2">
-              <li><a href="#" className="text-white/60 text-xs sm:text-sm hover:text-orange transition-colors" data-testid="link-footer-terminos">Términos de Servicio</a></li>
-              <li><a href="#" className="text-white/60 text-xs sm:text-sm hover:text-orange transition-colors" data-testid="link-footer-privacidad">Política de Privacidad</a></li>
-              <li><a href="#" className="text-white/60 text-xs sm:text-sm hover:text-orange transition-colors" data-testid="link-footer-cookies">Cookies</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="pt-6 sm:pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-white/50 text-xs sm:text-sm" data-testid="text-copyright">
-            © 2024 Grúa RD. Todos los derechos reservados.
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
-            <Badge className="bg-white/10 text-white/70 border-white/20 text-xs">
-              <CheckCircle2 className="w-3 h-3 mr-1" />
-              Verificado
-            </Badge>
-            <p className="text-white/50 text-xs sm:text-sm">Hecho con dedicación en RD</p>
-          </div>
-        </div>
-      </div>
-    </footer>
-  );
-}
-
 export default function LandingPage() {
   return (
-    <div className="min-h-screen bg-background">
-      <Header />
-      <main>
-        <HeroSection />
-        <ServicesSection />
-        <FeaturesSection />
-        <HowItWorksSection />
-        <CoverageSection />
-        <DownloadSection />
-      </main>
-      <Footer />
-    </div>
+    <LandingLayout>
+      <HeroSection />
+      <ServicesSection />
+      <FeaturesSection />
+      <HowItWorksSection />
+      <BenefitsSection />
+      <CoverageSection />
+      <AppInfoSection />
+      <DownloadSection />
+    </LandingLayout>
   );
 }
