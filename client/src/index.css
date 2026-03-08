@@ -289,4 +289,27 @@
   .border.hover-elevate:not(.no-hover-interaction-elevate)::after {
     inset: -1px;
   }
+
+  /* Leaflet Customizations */
+  .leaflet-popup-content-wrapper {
+    @apply rounded-lg border-none shadow-xl bg-card text-card-foreground p-0 overflow-hidden;
+  }
+  .leaflet-popup-content {
+    @apply m-0 !important;
+  }
+  .leaflet-popup-tip {
+    @apply bg-card shadow-none;
+  }
+  .custom-div-icon {
+    @apply overflow-visible !important;
+  }
+}
+
+@layer components {
+  .store-btn-dark {
+    @apply flex items-center gap-3 bg-black/50 backdrop-blur-sm border border-white/10 rounded-xl px-5 py-3 transition-transform hover:scale-105;
+  }
+  .store-btn-light {
+    @apply flex items-center gap-3 bg-foreground/90 text-background rounded-xl px-5 py-3 transition-transform hover:scale-105;
+  }
 }
