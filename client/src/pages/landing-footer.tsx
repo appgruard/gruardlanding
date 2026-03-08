@@ -4,6 +4,7 @@ import {
   Mail,
   CheckCircle2
 } from "lucide-react";
+import { SiVisa, SiMastercard } from "react-icons/si";
 import { Badge } from "@/components/ui/badge";
 import logoImage from "@assets/20251126_144937_0000_1765970748932.png";
 
@@ -61,17 +62,11 @@ export default function Footer() {
               Todas las transacciones se procesan en <strong>RD$ (Pesos Dominicanos)</strong>.
             </p>
             <div className="grid grid-cols-2 gap-2">
-              <div className="bg-white/5 border border-white/10 rounded-md p-2 flex items-center justify-center">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" className="h-4 brightness-0 invert opacity-60" />
+              <div className="bg-white/5 border border-white/10 rounded-md p-3 flex items-center justify-center">
+                <SiVisa className="h-5 w-auto text-white/60" style={{ fontSize: '2rem' }} />
               </div>
-              <div className="bg-white/5 border border-white/10 rounded-md p-2 flex items-center justify-center">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard" className="h-6 brightness-0 invert opacity-60" />
-              </div>
-              <div className="bg-white/5 border border-white/10 rounded-md p-2 flex items-center justify-center">
-                <div className="text-[8px] font-bold text-white/40 leading-tight text-center">VERIFIED BY VISA</div>
-              </div>
-              <div className="bg-white/5 border border-white/10 rounded-md p-2 flex items-center justify-center">
-                <div className="text-[8px] font-bold text-white/40 leading-tight text-center">MASTERCARD ID CHECK</div>
+              <div className="bg-white/5 border border-white/10 rounded-md p-3 flex items-center justify-center">
+                <SiMastercard className="h-6 w-auto text-white/60" style={{ fontSize: '2rem' }} />
               </div>
             </div>
             <div className="mt-4">
