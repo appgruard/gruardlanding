@@ -14,7 +14,7 @@ export default function Footer() {
   return (
     <footer className="bg-primary pt-10 sm:pt-16 pb-8 border-t border-white/10" data-testid="section-footer">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-8 mb-12">
           <div className="space-y-4">
             <div className="flex items-center gap-3">
               <img src={logoImage} alt="Grúa RD" className="h-10 w-10 rounded-lg" />
@@ -53,6 +53,16 @@ export default function Footer() {
               <li><a href="/seguridad" className="text-sm text-white/60 hover:text-orange transition-colors">Políticas de Seguridad</a></li>
               <li><a href="/reembolsos" className="text-sm text-white/60 hover:text-orange transition-colors">Reembolsos y Cancelaciones</a></li>
               <li><a href="/entrega" className="text-sm text-white/60 hover:text-orange transition-colors">Políticas de Entrega</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-bold text-white mb-6">Recursos</h4>
+            <ul className="space-y-4">
+              <li><a href="/blog" className="text-sm text-white/60 hover:text-orange transition-colors">Blog</a></li>
+              <li><a href="/blog/que-hacer-cuando-tu-carro-se-dana" className="text-sm text-white/60 hover:text-orange transition-colors">¿Qué hacer en una avería?</a></li>
+              <li><a href="/blog/tipos-de-gruas-cual-necesitas" className="text-sm text-white/60 hover:text-orange transition-colors">Tipos de grúas</a></li>
+              <li><a href="/blog/cuanto-cuesta-servicio-de-grua-rd" className="text-sm text-white/60 hover:text-orange transition-colors">Precios de grúas en RD</a></li>
             </ul>
           </div>
 

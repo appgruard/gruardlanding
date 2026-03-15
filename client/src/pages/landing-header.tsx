@@ -27,6 +27,7 @@ export default function Header() {
           <a href="/#caracteristicas" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors" data-testid="link-caracteristicas">Características</a>
           <a href="/#como-funciona" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors" data-testid="link-como-funciona">Cómo Funciona</a>
           <a href="/#novedades" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors" data-testid="link-novedades">Novedades</a>
+          <a href="/blog" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors" data-testid="link-blog">Blog</a>
         </nav>
         
         <div className="hidden sm:flex items-center gap-2">
@@ -62,6 +63,7 @@ export default function Header() {
             <a href="/#caracteristicas" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>Características</a>
             <a href="/#como-funciona" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>Cómo Funciona</a>
             <a href="/#novedades" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>Novedades</a>
+            <a href="/blog" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>Blog</a>
           </nav>
           <div className="flex flex-col gap-2 pt-2 border-t border-border">
             <a href={`${APP_DOMAIN}/login`} className="w-full" data-testid="link-login-mobile">

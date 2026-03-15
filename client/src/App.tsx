@@ -10,11 +10,15 @@ import PrivacyPolicy from "@/pages/legal/privacy";
 import SecurityPolicy from "@/pages/legal/security";
 import RefundPolicy from "@/pages/legal/refunds";
 import DeliveryPolicy from "@/pages/legal/delivery";
+import BlogIndex from "@/pages/blog/index";
+import BlogArticle from "@/pages/blog/article";
 
 function Router() {
   return (
     <Switch>
       <Route path="/" component={LandingPage} />
+      <Route path="/blog" component={BlogIndex} />
+      <Route path="/blog/:slug" component={BlogArticle} />
       <Route path="/terminos" component={TermsAndConditions} />
       <Route path="/privacidad" component={PrivacyPolicy} />
       <Route path="/seguridad" component={SecurityPolicy} />
