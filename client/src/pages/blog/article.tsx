@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
 import { useParams } from "wouter";
-import { useEffect } from "react";
-import { Clock, ChevronRight, ArrowLeft, Download, User } from "lucide-react";
+import { useEffect, useMemo } from "react";
+import { Clock, ChevronRight, ArrowLeft, Download, User, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
-import { getPostBySlug, blogPosts } from "@/data/blog-posts";
+import { getPostBySlug, getPublishedPosts, isPostPublished } from "@/data/blog-posts";
 import LandingLayout from "../landing-layout";
 
 const APP_DOMAIN = "https://app.gruard.com";
@@ -46,9 +46,17 @@ function setJsonLd(data: object) {
 export default function BlogArticle() {
   const { slug } = useParams<{ slug: string }>();
   const post = slug ? getPostBySlug(slug) : undefined;
+  const published = post ? isPostPublished(post) : false;
+
+  const relatedPosts = useMemo(() => {
+    if (!post) return [];
+    return getPublishedPosts()
+      .filter(p => p.slug !== post.slug)
+      .slice(0, 3);
+  }, [post]);
 
   useEffect(() => {
-    if (post) {
+    if (post && published) {
       const title = `${post.title} | Blog Grúa RD`;
       const url = `${SITE_URL}/blog/${post.slug}`;
 
@@ -88,6 +96,8 @@ export default function BlogArticle() {
         },
         "keywords": post.keywords
       });
+    } else {
+      document.title = "Blog - Grúa RD";
     }
     window.scrollTo(0, 0);
 
@@ -95,7 +105,7 @@ export default function BlogArticle() {
       const jsonLd = document.querySelector('script[data-blog-jsonld]');
       if (jsonLd) jsonLd.remove();
     };
-  }, [post]);
+  }, [post, published]);
 
   if (!post) {
     return (
@@ -116,9 +126,31 @@ export default function BlogArticle() {
     );
   }
 
-  const relatedPosts = blogPosts
-    .filter(p => p.slug !== post.slug)
-    .slice(0, 3);
+  if (!published) {
+    return (
+      <LandingLayout>
+        <div className="pt-24 pb-16 min-h-[60vh] bg-background flex items-center justify-center">
+          <div className="text-center max-w-md mx-auto px-4">
+            <div className="w-16 h-16 rounded-full bg-orange/10 flex items-center justify-center mx-auto mb-6">
+              <Calendar className="w-8 h-8 text-orange" />
+            </div>
+            <h1 className="text-2xl font-bold text-foreground mb-4" data-testid="text-coming-soon">Próximamente</h1>
+            <p className="text-muted-foreground mb-2">Este artículo será publicado el</p>
+            <p className="text-lg font-semibold text-foreground mb-6" data-testid="text-publish-date">
+              {new Date(post.date).toLocaleDateString("es-DO", { year: "numeric", month: "long", day: "numeric" })}
+            </p>
+            <p className="text-sm text-muted-foreground mb-8">{post.title}</p>
+            <a href="/blog">
+              <Button variant="outline" data-testid="button-back-to-blog-coming-soon">
+                <ArrowLeft className="w-4 h-4 mr-2" />
+                Volver al Blog
+              </Button>
+            </a>
+          </div>
+        </div>
+      </LandingLayout>
+    );
+  }
 
   return (
     <LandingLayout>

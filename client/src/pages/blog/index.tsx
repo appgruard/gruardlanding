@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
-import { Clock, ChevronRight, BookOpen, AlertTriangle, Truck, DollarSign, AlertCircle, ShieldCheck, ClipboardList, Shield, type LucideIcon } from "lucide-react";
+import { Clock, ChevronRight, BookOpen, AlertTriangle, Truck, DollarSign, AlertCircle, ShieldCheck, ClipboardList, Shield, Wrench, FileText, Moon, Zap, Scale, MapPin, Settings, CloudRain, Car, Smartphone, Navigation, Users, Building, Thermometer, Sun, type LucideIcon } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { blogPosts } from "@/data/blog-posts";
+import { getPublishedPosts } from "@/data/blog-posts";
 import LandingLayout from "../landing-layout";
-import { useEffect } from "react";
+import { useEffect, useMemo } from "react";
 
 const iconMap: Record<string, LucideIcon> = {
   AlertTriangle,
@@ -15,6 +15,22 @@ const iconMap: Record<string, LucideIcon> = {
   ShieldCheck,
   ClipboardList,
   Shield,
+  Wrench,
+  FileText,
+  Moon,
+  Zap,
+  Scale,
+  MapPin,
+  Settings,
+  CloudRain,
+  Car,
+  Smartphone,
+  Clock,
+  Sun,
+  Navigation,
+  Users,
+  Building,
+  Thermometer,
 };
 
 const SITE_URL = "https://gruard.com";
@@ -59,6 +75,8 @@ function setJsonLd(data: object) {
 }
 
 export default function BlogIndex() {
+  const publishedPosts = useMemo(() => getPublishedPosts(), []);
+
   useEffect(() => {
     const title = "Blog - Grúa RD | Guías de Asistencia Vial en República Dominicana";
     const description = "Artículos y guías sobre servicios de grúa, asistencia vial, seguridad en carretera y mantenimiento vehicular en República Dominicana.";
@@ -114,13 +132,13 @@ export default function BlogIndex() {
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {blogPosts.map((post, index) => (
+            {publishedPosts.map((post, index) => (
               <motion.div
                 key={post.slug}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                transition={{ duration: 0.5, delay: Math.min(index, 5) * 0.1 }}
               >
                 <a href={`/blog/${post.slug}`} className="block h-full group" data-testid={`link-blog-${post.slug}`}>
                   <Card className="h-full border border-border hover:border-orange/40 hover:shadow-lg transition-all duration-300 overflow-hidden">
