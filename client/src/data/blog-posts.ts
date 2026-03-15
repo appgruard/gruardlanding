@@ -2798,5 +2798,593 @@ export const blogPosts: BlogPost[] = [
         ]
       }
     ]
+  },
+  {
+    slug: "gps-vehicular-antirrobo-rd",
+    title: "GPS vehicular y sistemas antirrobo en República Dominicana",
+    description: "Guía sobre dispositivos GPS para rastreo vehicular y sistemas antirrobo disponibles en RD: tipos, costos, instalación y cómo ayudan a recuperar tu vehículo.",
+    category: "Tecnología",
+    readTime: 7,
+    date: "2027-02-16",
+    author: "Grúa RD",
+    keywords: "GPS vehicular RD, sistema antirrobo carro, rastreo vehículo dominicana, seguridad vehicular GPS",
+    icon: "Navigation",
+    content: [
+      {
+        heading: "Tipos de GPS vehicular disponibles en RD",
+        paragraphs: [
+          "El mercado dominicano ofrece diferentes tipos de dispositivos GPS para rastreo vehicular, desde opciones básicas hasta sistemas avanzados con múltiples funcionalidades. La elección depende de tu presupuesto, el tipo de vehículo y el nivel de seguridad que necesitas.",
+          "Los dispositivos OBD (On-Board Diagnostics) se conectan al puerto de diagnóstico del vehículo y son los más fáciles de instalar. Los GPS con cable requieren instalación profesional pero son más difíciles de detectar y desactivar. Los rastreadores portátiles funcionan con batería recargable y pueden colocarse en cualquier parte del vehículo."
+        ],
+        list: [
+          "GPS OBD: RD$3,000 - RD$8,000 + mensualidad de RD$500 - RD$1,200",
+          "GPS con cable (instalación oculta): RD$5,000 - RD$15,000 + mensualidad",
+          "Rastreador portátil con batería: RD$4,000 - RD$10,000 + mensualidad",
+          "GPS con corte de motor remoto: RD$8,000 - RD$20,000 + mensualidad"
+        ]
+      },
+      {
+        heading: "Cómo el GPS ayuda a recuperar vehículos robados",
+        paragraphs: [
+          "En República Dominicana, el robo de vehículos sigue siendo una preocupación importante para los conductores. Un GPS vehicular activo puede ser la diferencia entre recuperar tu vehículo en horas o perderlo definitivamente.",
+          "Cuando un vehículo con GPS es robado, el propietario puede ver su ubicación en tiempo real a través de la app del proveedor de GPS. Esta información se comparte con la Policía Nacional y la DIGESETT, quienes pueden proceder a la recuperación. Los dispositivos más avanzados permiten incluso cortar el motor del vehículo de forma remota, inmovilizándolo hasta que las autoridades lleguen."
+        ]
+      },
+      {
+        heading: "GPS y servicio de grúa: una combinación poderosa",
+        paragraphs: [
+          "El GPS vehicular no solo es útil contra el robo: también facilita los servicios de asistencia vial. Si tu vehículo tiene GPS activo y sufres una avería, la ubicación exacta ya está disponible, lo que agiliza la solicitud de grúa.",
+          "Algunos servicios de GPS empresariales se integran con plataformas de asistencia vial como Grúa RD, permitiendo solicitar servicio de grúa directamente desde la plataforma de rastreo. Para flotas empresariales, esta integración reduce los tiempos de respuesta y simplifica la gestión de incidencias."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "conducir-zona-escolar-normas-rd",
+    title: "Conducir en zonas escolares en RD: normas y precauciones",
+    description: "Todo sobre las normas de tránsito en zonas escolares de República Dominicana: velocidad máxima, señalización, multas y responsabilidad del conductor.",
+    category: "Normas de Tránsito",
+    readTime: 6,
+    date: "2027-03-02",
+    author: "Grúa RD",
+    keywords: "zona escolar tránsito RD, velocidad zona escolar, normas conducir escuela, seguridad vial niños dominicana",
+    icon: "Scale",
+    content: [
+      {
+        heading: "Límite de velocidad en zonas escolares",
+        paragraphs: [
+          "La Ley 63-17 establece un límite máximo de velocidad de 40 km/h en las inmediaciones de centros educativos. Esta restricción aplica durante los horarios de entrada y salida de clases, que generalmente son de 7:00 AM a 8:30 AM y de 12:00 PM a 2:00 PM en jornada matutina, y de 2:00 PM a 6:00 PM en jornada vespertina.",
+          "Las zonas escolares están señalizadas con señales específicas que incluyen la imagen de niños cruzando y el límite de velocidad. Sin embargo, no todas las escuelas en RD cuentan con señalización adecuada, especialmente en zonas rurales. El conductor prudente reduce la velocidad cerca de cualquier centro educativo, esté señalizado o no."
+        ]
+      },
+      {
+        heading: "Responsabilidad del conductor",
+        paragraphs: [
+          "Los niños son impredecibles: pueden cruzar la calle corriendo detrás de una pelota, salir entre vehículos estacionados o no mirar antes de cruzar. Como conductor, tu responsabilidad en una zona escolar es máxima.",
+          "Más allá de la velocidad, debes estar atento a los semáforos peatonales, los cruces de peatones pintados en el pavimento y las indicaciones de los oficiales de tránsito o brigadas escolares que puedan estar dirigiendo el tráfico."
+        ],
+        list: [
+          "Nunca uses el celular al conducir cerca de una escuela",
+          "Reduce la velocidad incluso si no ves niños (pueden aparecer de repente)",
+          "No adelantes otros vehículos en zonas escolares",
+          "Respeta las señales de los brigadas escolares como si fueran agentes de tránsito",
+          "Si debes detenerte para dejar o recoger niños, hazlo en el área designada"
+        ]
+      },
+      {
+        heading: "Multas y sanciones",
+        paragraphs: [
+          "Exceder la velocidad en una zona escolar conlleva sanciones más severas que las infracciones de velocidad regulares. La multa puede ser de 5 a 10 salarios mínimos, y en caso de accidente con lesiones a un menor, las consecuencias legales incluyen responsabilidad penal.",
+          "DIGESETT realiza operativos regulares en zonas escolares, especialmente al inicio del año lectivo y durante eventos especiales. La presencia de cámaras de vigilancia en algunas zonas escolares también puede generar multas automáticas por exceso de velocidad."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "mantenimiento-suspension-carreteras-rd",
+    title: "Mantenimiento de la suspensión para las carreteras de RD",
+    description: "Cómo las condiciones de las carreteras dominicanas afectan la suspensión de tu vehículo y qué mantenimiento preventivo necesitas.",
+    category: "Mantenimiento",
+    readTime: 7,
+    date: "2027-03-16",
+    author: "Grúa RD",
+    keywords: "suspensión vehículo RD, mantenimiento amortiguadores, baches carreteras dominicana, rótulas bujes carro",
+    icon: "Wrench",
+    content: [
+      {
+        heading: "El impacto de las carreteras dominicanas en tu suspensión",
+        paragraphs: [
+          "Las carreteras de República Dominicana son particularmente exigentes con el sistema de suspensión vehicular. Los baches frecuentes, los reductores de velocidad (policías muertos) agresivos, las cunetas sin señalizar y los cambios abruptos de superficie someten los componentes de la suspensión a un estrés constante.",
+          "Un amortiguador que en condiciones ideales duraría 80,000-100,000 km puede necesitar reemplazo a los 40,000-60,000 km en las carreteras dominicanas. Las rótulas, bujes y terminales de dirección también se desgastan más rápidamente, especialmente si conduces frecuentemente por carreteras secundarias o zonas urbanas con pavimento deteriorado."
+        ]
+      },
+      {
+        heading: "Señales de suspensión desgastada",
+        paragraphs: [
+          "Tu suspensión te avisa cuando necesita atención. Estas son las señales más comunes:"
+        ],
+        list: [
+          "El vehículo rebota excesivamente después de pasar un bache",
+          "Se inclina notablemente en las curvas o al frenar",
+          "Escuchas golpes o crujidos al pasar por irregularidades",
+          "Los neumáticos se desgastan de forma irregular (bordes o centro)",
+          "El volante vibra a ciertas velocidades",
+          "El vehículo se siente inestable o flota a velocidades altas",
+          "Notas fugas de aceite en los amortiguadores"
+        ]
+      },
+      {
+        heading: "Componentes clave y costos de reemplazo",
+        paragraphs: [
+          "El sistema de suspensión tiene múltiples componentes que se desgastan a diferentes ritmos. Conocer los costos te ayuda a presupuestar el mantenimiento:"
+        ],
+        list: [
+          "Amortiguadores (par): RD$4,000 - RD$15,000 según marca y vehículo",
+          "Rótulas superiores e inferiores: RD$1,500 - RD$5,000 por par",
+          "Bujes de barra estabilizadora: RD$800 - RD$2,500",
+          "Terminales de dirección: RD$1,200 - RD$3,500 por par",
+          "Resortes (espirales): RD$3,000 - RD$8,000 por par",
+          "Bases de amortiguador: RD$1,500 - RD$4,000 por par",
+          "Mano de obra: RD$2,000 - RD$6,000 según la complejidad"
+        ]
+      },
+      {
+        heading: "Prevención: cómo proteger tu suspensión",
+        paragraphs: [
+          "Aunque no puedes controlar el estado de las carreteras, puedes reducir el desgaste de tu suspensión con hábitos de conducción inteligentes. Reduce la velocidad significativamente antes de pasar por baches y reductores de velocidad en lugar de frenar sobre ellos. Evita subir bordillos (contenes) bruscamente.",
+          "Lleva tu vehículo a una revisión de suspensión cada 20,000 km o cada año. Un mecánico experimentado puede detectar componentes próximos a fallar antes de que causen problemas mayores o afecten la seguridad."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "servicio-grua-emergencias-nocturnas-rd",
+    title: "Servicio de grúa para emergencias nocturnas en RD",
+    description: "Cómo funciona el servicio de grúa durante la noche en República Dominicana: disponibilidad, recargos, seguridad y qué esperar.",
+    category: "Asistencia Vial",
+    readTime: 6,
+    date: "2027-04-06",
+    author: "Grúa RD",
+    keywords: "grúa nocturna RD, emergencia noche carro, servicio grúa madrugada, asistencia vial nocturna dominicana",
+    icon: "Moon",
+    content: [
+      {
+        heading: "Disponibilidad real en horario nocturno",
+        paragraphs: [
+          "Las emergencias vehiculares no respetan horarios, y las que ocurren de noche son particularmente estresantes. La oscuridad, la menor visibilidad y la sensación de vulnerabilidad hacen que una avería nocturna sea mucho más angustiante que una diurna.",
+          "Grúa RD mantiene operadores activos las 24 horas en todas las zonas principales del país. Durante el horario nocturno (10:00 PM a 6:00 AM), la disponibilidad puede ser ligeramente menor que durante el día, pero nuestro sistema de guardia garantiza cobertura continua. En Santo Domingo y Santiago, siempre hay al menos un operador disponible en cada zona."
+        ]
+      },
+      {
+        heading: "Recargos nocturnos: qué esperar",
+        paragraphs: [
+          "El servicio nocturno implica un recargo sobre la tarifa regular, generalmente entre un 25% y un 40%. Este recargo compensa los riesgos adicionales y las condiciones de trabajo más difíciles que enfrentan los operadores durante la noche.",
+          "Con Grúa RD, el recargo nocturno se calcula y muestra automáticamente en la app antes de que confirmes el servicio. No hay sorpresas: el precio que ves es el precio que pagas. Si solicitas servicio a las 9:55 PM y la grúa llega a las 10:10 PM, se aplica la tarifa nocturna porque el servicio se presta después de las 10 PM."
+        ]
+      },
+      {
+        heading: "Seguridad durante la espera nocturna",
+        paragraphs: [
+          "Mientras esperas la grúa de noche, tu seguridad personal es la prioridad absoluta. Sigue estas recomendaciones:"
+        ],
+        list: [
+          "Permanece dentro del vehículo con las puertas cerradas y ventanas subidas",
+          "Mantén las luces de emergencia encendidas permanentemente",
+          "Si es posible, estaciona bajo una luminaria o cerca de un establecimiento abierto",
+          "Comparte tu ubicación GPS con un familiar o amigo de confianza",
+          "No aceptes ayuda de desconocidos que se detengan, especialmente en zonas solitarias",
+          "Si sientes que tu seguridad está en riesgo, llama al 911 además de a Grúa RD"
+        ]
+      },
+      {
+        heading: "Tiempos de respuesta nocturnos",
+        paragraphs: [
+          "Los tiempos de respuesta durante la noche pueden ser ligeramente mayores que durante el día debido a la menor cantidad de operadores activos. Sin embargo, la ventaja es que el tránsito nocturno es significativamente menor, lo que compensa parcialmente este factor.",
+          "En zonas urbanas de Santo Domingo y Santiago, los tiempos nocturnos promedian 20-35 minutos. En carreteras interprovinciales, pueden extenderse a 40-70 minutos dependiendo de la ubicación. Grúa RD siempre te muestra el tiempo estimado real antes de que confirmes tu solicitud."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "combustible-adecuado-vehiculo-rd",
+    title: "Combustible adecuado para tu vehículo en República Dominicana",
+    description: "Guía sobre los tipos de combustible disponibles en RD: gasolina premium vs regular, diesel, GLP y cómo elegir el correcto para tu carro.",
+    category: "Mantenimiento",
+    readTime: 6,
+    date: "2027-05-04",
+    author: "Grúa RD",
+    keywords: "combustible vehículo RD, gasolina premium regular, diesel GLP dominicana, tipo gasolina carro",
+    icon: "Car",
+    content: [
+      {
+        heading: "Tipos de combustible disponibles en RD",
+        paragraphs: [
+          "En República Dominicana, los vehículos utilizan principalmente cuatro tipos de combustible: gasolina premium, gasolina regular, diesel (gasoil) y gas licuado de petróleo (GLP). Cada uno tiene características específicas y no todos son adecuados para todos los vehículos.",
+          "La gasolina premium tiene un octanaje de 95, la regular de 91. El diesel es utilizado por vehículos con motores diésel (principalmente camionetas pickup, SUV grandes y vehículos de carga). El GLP es una alternativa económica que requiere la instalación de un kit de conversión."
+        ]
+      },
+      {
+        heading: "¿Premium o regular? Cómo decidir",
+        paragraphs: [
+          "La diferencia principal entre la gasolina premium y la regular es el octanaje, que indica la resistencia a la detonación prematura (pistoneo). No todos los vehículos necesitan premium:"
+        ],
+        list: [
+          "Vehículos que REQUIEREN premium: motores turbo, de alta compresión, deportivos y de lujo",
+          "Vehículos que funcionan bien con regular: motores atmosféricos estándar, la mayoría de los sedanes y SUV básicos",
+          "Consulta el manual de tu vehículo: dice específicamente qué octanaje mínimo necesita",
+          "Usar regular en un motor que requiere premium puede causar pistoneo y daño a largo plazo",
+          "Usar premium en un motor que no lo requiere no aporta beneficio significativo"
+        ]
+      },
+      {
+        heading: "GLP: la alternativa económica",
+        paragraphs: [
+          "El Gas Licuado de Petróleo (GLP) es significativamente más económico que la gasolina, costando aproximadamente la mitad. Muchos conductores dominicanos instalan kits de GLP en sus vehículos de gasolina para reducir los costos de combustible.",
+          "La instalación de un kit de GLP en RD cuesta entre RD$15,000 y RD$35,000 dependiendo del vehículo y la calidad del kit. Es importante que la instalación sea realizada por un técnico certificado, ya que una instalación deficiente puede ser peligrosa y causar problemas mecánicos."
+        ]
+      },
+      {
+        heading: "Qué hacer si te quedas sin combustible",
+        paragraphs: [
+          "Quedarse sin combustible en la carretera es más común de lo que parece, especialmente en rutas interprovinciales donde las estaciones de servicio pueden estar distanciadas. Si tu indicador de combustible llega a la zona de reserva, busca la estación más cercana inmediatamente.",
+          "Si te quedas sin combustible, Grúa RD ofrece servicio de suministro de emergencia: un operador lleva combustible hasta tu ubicación para que puedas llegar a la estación más cercana. Este servicio está disponible 24/7 y es significativamente más económico que solicitar una grúa completa."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "accidentes-motocicletas-rd-prevencion",
+    title: "Prevención de accidentes de motocicletas en República Dominicana",
+    description: "Estadísticas, causas principales y medidas preventivas para reducir los accidentes de motocicletas en las carreteras dominicanas.",
+    category: "Seguridad Vial",
+    readTime: 8,
+    date: "2027-06-01",
+    author: "Grúa RD",
+    keywords: "accidentes motocicletas RD, seguridad moto dominicana, prevención accidentes moto, casco motocicleta ley",
+    icon: "AlertTriangle",
+    content: [
+      {
+        heading: "La realidad de los accidentes de motocicleta en RD",
+        paragraphs: [
+          "República Dominicana tiene una de las tasas más altas de accidentes de motocicleta en la región del Caribe y Centroamérica. Con más de 2 millones de motocicletas registradas, que representan más del 50% del parque vehicular, los accidentes de moto constituyen la mayoría de los siniestros viales fatales en el país.",
+          "Las principales causas de accidentes de motocicleta en RD incluyen: exceso de velocidad, conducción bajo influencia de alcohol, no uso del casco, adelantamientos imprudentes, falta de luces reflectivas, conducción entre carriles a alta velocidad y uso del celular mientras se conduce."
+        ]
+      },
+      {
+        heading: "Uso obligatorio del casco: la ley y la realidad",
+        paragraphs: [
+          "La Ley 63-17 establece el uso obligatorio del casco de seguridad para conductores y pasajeros de motocicletas. El casco debe cumplir con estándares de seguridad certificados (DOT o ECE) y estar correctamente abrochado. La multa por no uso del casco es de 3 a 5 salarios mínimos.",
+          "A pesar de la ley, el cumplimiento del uso del casco en RD sigue siendo bajo, especialmente en zonas rurales y durante horarios nocturnos. Las estadísticas muestran que el uso correcto del casco reduce el riesgo de lesión craneal fatal en un 42% y el riesgo de lesión facial en un 65%."
+        ]
+      },
+      {
+        heading: "Medidas de seguridad esenciales para motociclistas",
+        paragraphs: [
+          "Además del casco, los motociclistas en RD deben adoptar estas medidas de seguridad:"
+        ],
+        list: [
+          "Usar chaleco reflectivo, especialmente de noche (obligatorio por ley)",
+          "Mantener las luces encendidas siempre, incluso de día",
+          "No exceder el máximo de 2 personas por motocicleta",
+          "No transportar niños menores de 5 años en motocicleta",
+          "Evitar circular entre carriles a alta velocidad",
+          "Realizar mantenimiento regular de frenos, luces y neumáticos",
+          "No consumir alcohol ni sustancias antes de conducir"
+        ]
+      },
+      {
+        heading: "Qué hacer en caso de accidente de motocicleta",
+        paragraphs: [
+          "Si presencias o estás involucrado en un accidente de motocicleta, la prioridad es la atención médica. Llama al 911 inmediatamente si hay heridos. No muevas al motociclista lesionado a menos que haya peligro inminente, ya que puede tener lesiones en la columna vertebral que se agravarían con el movimiento.",
+          "Para el traslado de la motocicleta dañada, Grúa RD ofrece servicio especializado de remolque para motos. La motocicleta se transporta de forma segura en una plataforma con amarres especializados para evitar daños adicionales durante el traslado al taller o al lugar que indiques."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "peajes-autopistas-rd-guia-completa",
+    title: "Peajes en autopistas de República Dominicana: guía completa",
+    description: "Todo sobre el sistema de peajes en RD: ubicaciones, tarifas, formas de pago y qué hacer si tienes una emergencia cerca de un peaje.",
+    category: "Guía Completa",
+    readTime: 7,
+    date: "2027-07-06",
+    author: "Grúa RD",
+    keywords: "peajes autopistas RD, tarifas peaje dominicana, casetas peaje carretera, pago peaje República Dominicana",
+    icon: "DollarSign",
+    content: [
+      {
+        heading: "Sistema de peajes en República Dominicana",
+        paragraphs: [
+          "Las principales autopistas de República Dominicana cuentan con casetas de peaje que financian el mantenimiento y operación de estas vías. El sistema de peajes está administrado por diferentes entidades según la autopista, pero todas operan de forma similar.",
+          "Los peajes se pagan al pasar por la caseta, generalmente en efectivo (pesos dominicanos). Algunas casetas más modernas aceptan pago electrónico. Es recomendable llevar billetes de baja denominación (RD$50, RD$100, RD$200) ya que los cajeros no siempre tienen cambio para billetes grandes."
+        ]
+      },
+      {
+        heading: "Ubicaciones y tarifas principales",
+        paragraphs: [
+          "Las principales casetas de peaje y sus tarifas aproximadas para vehículos livianos (2027):"
+        ],
+        list: [
+          "Autopista Duarte (Santo Domingo-Santiago): 3-4 casetas, RD$75-150 cada una",
+          "Autopista Las Américas (Santo Domingo-Aeropuerto): 1-2 casetas, RD$100-200",
+          "Autopista del Nordeste (hacia Samaná): 2-3 casetas, RD$100-200",
+          "Autopista del Coral (hacia Punta Cana): 2-3 casetas, RD$100-200",
+          "Autopista 6 de Noviembre: 1-2 casetas, RD$75-150",
+          "Nota: vehículos pesados y autobuses pagan tarifas mayores"
+        ]
+      },
+      {
+        heading: "Emergencias cerca de casetas de peaje",
+        paragraphs: [
+          "Si tu vehículo sufre una avería cerca de una caseta de peaje, notifica al personal de la caseta. Ellos pueden ayudarte a señalizar el vehículo y facilitar la coordinación con servicios de asistencia vial. Muchas casetas cuentan con cámaras de vigilancia y comunicación directa con DIGESETT.",
+          "Las inmediaciones de los peajes son zonas donde los vehículos reducen la velocidad, lo que hace que sean relativamente más seguras para detenerse en caso de emergencia. Sin embargo, nunca te detengas en los carriles de paso: busca el hombrillo o el área de estacionamiento adyacente a la caseta."
+        ]
+      },
+      {
+        heading: "Consejos para viajar por autopistas con peaje",
+        paragraphs: [
+          "Prepara el dinero del peaje antes de llegar a la caseta para evitar demoras. Si viajas frecuentemente por autopistas, considera tener un fondo fijo para peajes en la guantera. Recuerda que los peajes son parte del costo total del viaje y calcúlalos en tu presupuesto.",
+          "Si solicitas servicio de grúa para un traslado que incluye autopistas con peaje, recuerda que los peajes de la grúa generalmente corren por cuenta del usuario. Grúa RD te informa sobre estos costos adicionales antes de confirmar el servicio."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "seguridad-estacionamiento-vehiculo-rd",
+    title: "Seguridad al estacionar tu vehículo en República Dominicana",
+    description: "Consejos prácticos para estacionar tu carro de forma segura en RD: zonas seguras, prevención de robo, estacionamientos públicos y qué evitar.",
+    category: "Consejos",
+    readTime: 6,
+    date: "2027-08-03",
+    author: "Grúa RD",
+    keywords: "seguridad estacionar carro RD, prevenir robo vehículo, estacionamiento seguro dominicana, proteger auto estacionado",
+    icon: "ShieldCheck",
+    content: [
+      {
+        heading: "Dónde estacionar de forma segura",
+        paragraphs: [
+          "La elección del lugar de estacionamiento es la primera línea de defensa contra el robo y el vandalismo vehicular en República Dominicana. Siempre que sea posible, utiliza estacionamientos vigilados, preferiblemente con cámaras de seguridad y personal de vigilancia.",
+          "En zonas comerciales como Ágora Mall, Blue Mall, Galería 360, Downtown Center y otros centros comerciales, los estacionamientos techados ofrecen seguridad razonable. En zonas residenciales, estaciona dentro del parqueo del edificio o en áreas bien iluminadas y transitadas."
+        ]
+      },
+      {
+        heading: "Medidas de prevención contra robo",
+        paragraphs: [
+          "Independientemente de dónde estaciones, estas medidas reducen significativamente el riesgo de robo:"
+        ],
+        list: [
+          "Nunca dejes objetos de valor visibles dentro del vehículo",
+          "Sube los vidrios completamente y verifica que todas las puertas estén cerradas",
+          "No dejes el carro encendido mientras haces una diligencia rápida",
+          "Usa el bloqueo del volante (tranca de volante) como disuasivo visual",
+          "Activa la alarma del vehículo si la tiene",
+          "No estaciones en zonas oscuras, solitarias o de alta incidencia delictiva",
+          "Si tienes GPS vehicular, verifica que esté activo antes de alejarte"
+        ]
+      },
+      {
+        heading: "Estacionamiento en la vía pública: normas y multas",
+        paragraphs: [
+          "Estacionar incorrectamente en la vía pública puede resultar en multas y, en casos extremos, en el remolque de tu vehículo por parte de las autoridades. Las zonas de estacionamiento prohibido incluyen: frente a hidrantes, en paradas de autobuses, en doble fila, sobre aceras, en esquinas y en zonas amarillas.",
+          "Si tu vehículo es remolcado por las autoridades, deberás pagar la multa correspondiente más el costo de almacenamiento diario en el depósito vehicular. Con Grúa RD puedes coordinar el traslado de tu vehículo desde el depósito a tu hogar o taller una vez que completes los trámites de liberación."
+        ]
+      },
+      {
+        heading: "Qué hacer si encuentras tu vehículo dañado al regresar",
+        paragraphs: [
+          "Si regresas a tu vehículo estacionado y encuentras daños (rayones, vidrios rotos, golpes), documenta todo con fotos antes de tocar nada. Reporta el incidente a DIGESETT y a tu compañía de seguros. Si el daño impide que el vehículo circule de forma segura, solicita una grúa para trasladarlo al taller.",
+          "Si tu vehículo fue robado, reporta inmediatamente al 911 y a la Policía Nacional. Si tienes GPS vehicular, comparte la ubicación del rastreo con las autoridades. Notifica a tu aseguradora lo antes posible para iniciar el proceso de reclamo."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "viaje-carretera-con-mascotas-rd",
+    title: "Viajar por carretera con mascotas en República Dominicana",
+    description: "Guía para transportar mascotas de forma segura en tu vehículo: preparación, accesorios necesarios, paradas y qué hacer en caso de emergencia vial.",
+    category: "Consejos",
+    readTime: 6,
+    date: "2027-09-07",
+    author: "Grúa RD",
+    keywords: "viajar mascotas carro RD, transportar perro carro, seguridad mascotas vehículo, viaje mascota carretera dominicana",
+    icon: "Car",
+    content: [
+      {
+        heading: "Preparación antes del viaje",
+        paragraphs: [
+          "Viajar con mascotas requiere planificación adicional para garantizar su comodidad y seguridad. Antes del viaje, asegúrate de que tu mascota esté acostumbrada a viajar en carro. Si es su primera vez o viaja pocas veces, haz viajes cortos de práctica en los días previos.",
+          "Visita al veterinario antes de viajes largos para verificar que tu mascota esté en buenas condiciones de salud. Lleva su cartilla de vacunación, especialmente si viajas a zonas rurales. Algunas áreas de RD tienen mayor incidencia de enfermedades transmitidas por garrapatas."
+        ]
+      },
+      {
+        heading: "Accesorios de seguridad para mascotas en el vehículo",
+        paragraphs: [
+          "Una mascota suelta en el vehículo es un peligro tanto para ella como para los ocupantes. En un frenazo brusco o accidente, una mascota sin sujeción se convierte en un proyectil que puede causar lesiones graves."
+        ],
+        list: [
+          "Transportadora (kennel): la opción más segura, especialmente para gatos y perros pequeños",
+          "Arnés vehicular con enganche al cinturón de seguridad: para perros medianos y grandes",
+          "Rejilla separadora de maletero: permite que el perro viaje en el área de carga",
+          "Protector de asiento trasero: protege la tapicería y da espacio cómodo a la mascota",
+          "Nunca dejes que tu mascota viaje en el asiento delantero ni sobre tu regazo"
+        ]
+      },
+      {
+        heading: "Durante el viaje: paradas y cuidados",
+        paragraphs: [
+          "En viajes largos, haz paradas cada 2-3 horas para que tu mascota pueda estirarse, hacer sus necesidades y beber agua fresca. Lleva un recipiente de agua portátil y agua suficiente para todo el viaje.",
+          "NUNCA dejes a tu mascota dentro del vehículo cerrado, especialmente en el clima tropical de RD. La temperatura interior puede superar los 60°C en minutos, causando un golpe de calor fatal. Si necesitas detenerte donde no puedes llevar a tu mascota, un acompañante debe quedarse con el vehículo encendido y el aire acondicionado funcionando."
+        ]
+      },
+      {
+        heading: "Emergencia vial con mascotas a bordo",
+        paragraphs: [
+          "Si sufres una avería o accidente con mascotas en el vehículo, la prioridad es la seguridad de todos los ocupantes, incluyendo los animales. Asegura a tu mascota antes de salir del vehículo: un animal asustado puede huir hacia la carretera y ser atropellado.",
+          "Al solicitar servicio de grúa con Grúa RD, informa que viajas con mascotas. Nuestros operadores están preparados para acomodar a los propietarios con mascotas durante el servicio. La mayoría de las grúas planas permiten que viajes en la cabina con tu mascota de tamaño pequeño o mediano."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "mantenimiento-luces-vehiculo-rd",
+    title: "Mantenimiento del sistema de luces de tu vehículo en RD",
+    description: "Por qué mantener todas las luces de tu carro funcionando es crucial en República Dominicana y cómo diagnosticar y reparar fallas comunes.",
+    category: "Mantenimiento",
+    readTime: 6,
+    date: "2027-10-05",
+    author: "Grúa RD",
+    keywords: "luces vehículo mantenimiento, faros carro RD, luces traseras, sistema iluminación auto dominicana",
+    icon: "Zap",
+    content: [
+      {
+        heading: "Importancia de las luces en las carreteras de RD",
+        paragraphs: [
+          "El sistema de iluminación de tu vehículo cumple dos funciones vitales: permite que veas la carretera por delante y permite que otros te vean a ti. En las carreteras dominicanas, donde muchos tramos carecen de iluminación pública y los peatones frecuentemente caminan por los bordes de la vía sin ropa reflectiva, tener todas las luces en perfecto estado es literalmente una cuestión de vida o muerte.",
+          "La Ley 63-17 exige que todos los sistemas de iluminación del vehículo estén funcionando correctamente. Un faro delantero fundido, una luz trasera apagada o un intermitente que no funciona son motivo de multa y, más importante, de riesgo de accidente."
+        ]
+      },
+      {
+        heading: "Tipos de luces y su función",
+        paragraphs: [
+          "Tu vehículo tiene múltiples sistemas de iluminación, cada uno con una función específica:"
+        ],
+        list: [
+          "Luces bajas (cruce): iluminación principal para conducción nocturna normal",
+          "Luces altas (carretera): para carreteras oscuras sin tráfico de frente",
+          "Luces de posición: indican la presencia del vehículo estacionado",
+          "Intermitentes (direccionales): indican cambios de dirección o carril",
+          "Luces de freno: alertan a los vehículos detrás cuando frenas",
+          "Luz de reversa: ilumina y advierte que estás retrocediendo",
+          "Luces antiniebla: mejoran la visibilidad en lluvia intensa o neblina",
+          "Luces de emergencia (hazard): señalizan una emergencia o detención involuntaria"
+        ]
+      },
+      {
+        heading: "Fallas comunes y soluciones",
+        paragraphs: [
+          "Las fallas más frecuentes en el sistema de luces de vehículos en RD incluyen:",
+          "Bombillas fundidas: la reparación más simple y económica (RD$100-500 por bombilla halógena). Puedes reemplazarla tú mismo en la mayoría de los vehículos consultando el manual. Las bombillas LED duran significativamente más pero cuestan entre RD$800-3,000 por par."
+        ],
+        list: [
+          "Faros opacos: restauración con kit de pulido (RD$300-500) o reemplazo de lente",
+          "Fusible de luces quemado: reemplazo inmediato con fusible del mismo amperaje",
+          "Problemas de cableado: requiere electricista automotriz (RD$1,500-5,000)",
+          "Relay de luces defectuoso: reemplazo (RD$500-1,500)",
+          "Sensor de luces automáticas fallando: diagnóstico electrónico necesario"
+        ]
+      },
+      {
+        heading: "Verificación periódica recomendada",
+        paragraphs: [
+          "Realiza una verificación completa de todas las luces de tu vehículo al menos una vez al mes. Es un proceso simple: estaciona frente a una pared o garaje de noche, enciende cada sistema de luces y verifica que funcione. Para las luces traseras y de freno, pide a alguien que observe mientras pisas el freno.",
+          "Si notas que tus faros delanteros iluminan menos de lo habitual, pueden estar opacos por la exposición al sol tropical. Un servicio de restauración de faros (disponible en la mayoría de los talleres y estaciones de servicio) puede recuperar hasta el 90% de la luminosidad original por menos de RD$1,000."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "transporte-vehiculos-importados-puerto-rd",
+    title: "Transporte de vehículos importados desde el puerto en RD",
+    description: "Cómo trasladar tu vehículo recién importado desde los puertos de Santo Domingo, Haina o Caucedo a tu destino de forma segura con grúa.",
+    category: "Asistencia Vial",
+    readTime: 7,
+    date: "2027-11-02",
+    author: "Grúa RD",
+    keywords: "transporte vehículo puerto RD, grúa puerto Santo Domingo, importar carro dominicana, traslado auto desde Haina Caucedo",
+    icon: "Truck",
+    content: [
+      {
+        heading: "El proceso de retiro del vehículo del puerto",
+        paragraphs: [
+          "Cuando importas un vehículo a República Dominicana, llega a uno de los puertos principales: Puerto de Haina, Puerto de Santo Domingo (Don Diego) o Puerto Multimodal Caucedo. Una vez completados los trámites aduanales y pagados los impuestos correspondientes, debes coordinar el retiro y transporte del vehículo.",
+          "Los vehículos importados, especialmente los usados, frecuentemente llegan en condiciones que no son óptimas para circular: pueden tener baterías descargadas, neumáticos bajos, documentación temporal o simplemente no han pasado la inspección vehicular local. Por estas razones, el transporte en grúa plana desde el puerto es la opción más segura y práctica."
+        ]
+      },
+      {
+        heading: "Por qué usar grúa en lugar de conducirlo",
+        paragraphs: [
+          "Hay varias razones por las que transportar tu vehículo importado en grúa es más conveniente que conducirlo directamente desde el puerto:"
+        ],
+        list: [
+          "El vehículo puede no tener matrícula ni placas dominicanas aún",
+          "La batería puede estar descargada después de semanas en tránsito marítimo",
+          "Los neumáticos pueden estar bajos de presión o deteriorados",
+          "No has verificado el estado mecánico general del vehículo",
+          "Necesitas llevarlo a inspección técnica antes de circularlo legalmente",
+          "El seguro obligatorio puede no estar activo todavía"
+        ]
+      },
+      {
+        heading: "Costos de traslado desde los puertos",
+        paragraphs: [
+          "Los precios de servicio de grúa desde los puertos principales a destinos comunes en RD (tarifas 2027):"
+        ],
+        list: [
+          "Puerto Haina a Santo Domingo (DN): RD$4,000 - RD$7,000",
+          "Puerto Caucedo a Santo Domingo: RD$5,000 - RD$8,000",
+          "Puerto Don Diego a zonas del DN: RD$3,000 - RD$5,000",
+          "Cualquier puerto a Santiago: RD$15,000 - RD$25,000",
+          "Cualquier puerto a Punta Cana: RD$20,000 - RD$32,000",
+          "Descuento por programación anticipada (48+ horas): 10-15%"
+        ]
+      },
+      {
+        heading: "Coordinación con Grúa RD para retiros del puerto",
+        paragraphs: [
+          "Grúa RD ofrece un servicio especializado para retiro de vehículos importados desde los puertos dominicanos. Puedes programar el servicio con anticipación una vez que conozcas la fecha de liberación de tu vehículo por parte de aduanas.",
+          "El proceso es simple: agenda el servicio a través de la app o llamando a nuestro centro de soporte, indica el puerto, el número de contenedor o ubicación del vehículo, y la dirección de destino (tu casa, taller o centro de inspección). Nuestro operador se encarga de la carga y transporte seguro hasta el destino."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "preparar-vehiculo-navidad-ano-nuevo-rd",
+    title: "Preparar tu vehículo para Navidad y Año Nuevo en RD",
+    description: "Checklist de preparación vehicular para las fiestas de fin de año en República Dominicana: viajes, precauciones y asistencia vial durante feriados.",
+    category: "Seguridad Vial",
+    readTime: 7,
+    date: "2027-12-07",
+    author: "Grúa RD",
+    keywords: "preparar carro Navidad RD, viaje fin de año vehículo, seguridad vial diciembre dominicana, fiestas carretera auto",
+    icon: "Car",
+    content: [
+      {
+        heading: "La temporada de mayor movilización vehicular",
+        paragraphs: [
+          "Diciembre es, junto con Semana Santa, el período de mayor movilización vehicular en República Dominicana. Las festividades navideñas, las cenas familiares, las fiestas de empresa y las celebraciones de Año Nuevo generan un incremento significativo en el tránsito, tanto urbano como interprovincial.",
+          "Las carreteras se congestionan especialmente los fines de semana de diciembre, la víspera de Navidad (24 de diciembre) y la víspera de Año Nuevo (31 de diciembre). Planificar tus viajes con anticipación y tener tu vehículo en óptimas condiciones mecánicas es más importante que nunca."
+        ]
+      },
+      {
+        heading: "Revisión mecánica pre-navideña",
+        paragraphs: [
+          "Al menos dos semanas antes de Navidad, lleva tu vehículo a una revisión general. No esperes al último momento porque los talleres se saturan en diciembre y conseguir cita puede ser difícil."
+        ],
+        list: [
+          "Frenos: pastillas, discos y líquido (sistema de seguridad #1)",
+          "Neumáticos: presión, profundidad de dibujo y estado general",
+          "Aceite y filtro: cambiar si está próximo al intervalo",
+          "Sistema de enfriamiento: nivel de anticongelante y estado de mangueras",
+          "Luces: verificar todas las luces, incluyendo las de freno e intermitentes",
+          "Batería: prueba de carga y limpieza de bornes",
+          "Aire acondicionado: verificar funcionamiento (viajes largos con calor)",
+          "Limpiaparabrisas: reemplazar si están desgastados (lluvias de temporada)"
+        ]
+      },
+      {
+        heading: "Conducción segura durante las fiestas",
+        paragraphs: [
+          "Diciembre es el mes con mayor número de accidentes de tránsito relacionados con el consumo de alcohol en República Dominicana. DIGESETT intensifica los operativos de control de alcohol durante todo el mes, especialmente en las noches del 24 y 31 de diciembre.",
+          "Si planeas celebrar con alcohol, designa un conductor responsable, usa taxi, transporte por app o quédate en el lugar de la celebración hasta la mañana siguiente. No hay celebración que valga una vida. La tolerancia de alcohol al volante en RD es de 0.05 g/dl, y las sanciones incluyen multas severas y posible prisión."
+        ]
+      },
+      {
+        heading: "Grúa RD durante las fiestas: cobertura garantizada",
+        paragraphs: [
+          "Grúa RD opera con normalidad durante toda la temporada navideña, incluyendo Nochebuena, Navidad, Nochevieja y Año Nuevo. Nuestros operadores trabajan en turnos especiales para garantizar cobertura las 24 horas durante las fiestas.",
+          "Es importante tener la app instalada y tu cuenta activa antes de las fiestas, ya que la demanda de servicios aumenta significativamente durante este período. Si planeas viajar a una zona rural o con poca cobertura celular, descarga mapas offline y asegúrate de tener carga suficiente en tu power bank."
+        ]
+      }
+    ]
   }
 ];
