@@ -9,6 +9,39 @@ import { getPostBySlug, blogPosts } from "@/data/blog-posts";
 import LandingLayout from "../landing-layout";
 
 const APP_DOMAIN = "https://app.gruard.com";
+const SITE_URL = "https://gruard.com";
+
+function setMetaTag(property: string, content: string, isOg = false) {
+  const attr = isOg ? "property" : "name";
+  let el = document.querySelector(`meta[${attr}="${property}"]`);
+  if (!el) {
+    el = document.createElement("meta");
+    el.setAttribute(attr, property);
+    document.head.appendChild(el);
+  }
+  el.setAttribute("content", content);
+}
+
+function setCanonical(url: string) {
+  let el = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
+  if (!el) {
+    el = document.createElement("link");
+    el.setAttribute("rel", "canonical");
+    document.head.appendChild(el);
+  }
+  el.setAttribute("href", url);
+}
+
+function setJsonLd(data: object) {
+  let el = document.querySelector('script[data-blog-jsonld]') as HTMLScriptElement | null;
+  if (!el) {
+    el = document.createElement("script");
+    el.setAttribute("type", "application/ld+json");
+    el.setAttribute("data-blog-jsonld", "true");
+    document.head.appendChild(el);
+  }
+  el.textContent = JSON.stringify(data);
+}
 
 export default function BlogArticle() {
   const { slug } = useParams<{ slug: string }>();
@@ -16,17 +49,52 @@ export default function BlogArticle() {
 
   useEffect(() => {
     if (post) {
-      document.title = `${post.title} | Blog Grúa RD`;
-      const meta = document.querySelector('meta[name="description"]');
-      if (meta) {
-        meta.setAttribute("content", post.description);
-      }
-      const metaKeywords = document.querySelector('meta[name="keywords"]');
-      if (metaKeywords) {
-        metaKeywords.setAttribute("content", post.keywords);
-      }
+      const title = `${post.title} | Blog Grúa RD`;
+      const url = `${SITE_URL}/blog/${post.slug}`;
+
+      document.title = title;
+      setMetaTag("description", post.description);
+      setMetaTag("keywords", post.keywords);
+      setCanonical(url);
+      setMetaTag("og:title", title, true);
+      setMetaTag("og:description", post.description, true);
+      setMetaTag("og:url", url, true);
+      setMetaTag("og:type", "article", true);
+      setMetaTag("article:published_time", post.date, true);
+      setMetaTag("article:author", post.author, true);
+      setMetaTag("twitter:card", "summary_large_image");
+      setMetaTag("twitter:title", title);
+      setMetaTag("twitter:description", post.description);
+
+      setJsonLd({
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": post.title,
+        "description": post.description,
+        "url": url,
+        "datePublished": post.date,
+        "author": {
+          "@type": "Person",
+          "name": post.author
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Grúa RD",
+          "url": SITE_URL
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": url
+        },
+        "keywords": post.keywords
+      });
     }
     window.scrollTo(0, 0);
+
+    return () => {
+      const jsonLd = document.querySelector('script[data-blog-jsonld]');
+      if (jsonLd) jsonLd.remove();
+    };
   }, [post]);
 
   if (!post) {

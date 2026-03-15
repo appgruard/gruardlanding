@@ -6,6 +6,8 @@ import { blogPosts } from "@/data/blog-posts";
 import LandingLayout from "../landing-layout";
 import { useEffect } from "react";
 
+const SITE_URL = "https://gruard.com";
+
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
   whileInView: { opacity: 1, y: 0 },
@@ -13,14 +15,74 @@ const fadeInUp = {
   transition: { duration: 0.5 }
 };
 
+function setMetaTag(property: string, content: string, isOg = false) {
+  const attr = isOg ? "property" : "name";
+  let el = document.querySelector(`meta[${attr}="${property}"]`);
+  if (!el) {
+    el = document.createElement("meta");
+    el.setAttribute(attr, property);
+    document.head.appendChild(el);
+  }
+  el.setAttribute("content", content);
+}
+
+function setCanonical(url: string) {
+  let el = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
+  if (!el) {
+    el = document.createElement("link");
+    el.setAttribute("rel", "canonical");
+    document.head.appendChild(el);
+  }
+  el.setAttribute("href", url);
+}
+
+function setJsonLd(data: object) {
+  let el = document.querySelector('script[data-blog-jsonld]') as HTMLScriptElement | null;
+  if (!el) {
+    el = document.createElement("script");
+    el.setAttribute("type", "application/ld+json");
+    el.setAttribute("data-blog-jsonld", "true");
+    document.head.appendChild(el);
+  }
+  el.textContent = JSON.stringify(data);
+}
+
 export default function BlogIndex() {
   useEffect(() => {
-    document.title = "Blog - Grúa RD | Guías de Asistencia Vial en República Dominicana";
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) {
-      meta.setAttribute("content", "Artículos y guías sobre servicios de grúa, asistencia vial, seguridad en carretera y mantenimiento vehicular en República Dominicana.");
-    }
+    const title = "Blog - Grúa RD | Guías de Asistencia Vial en República Dominicana";
+    const description = "Artículos y guías sobre servicios de grúa, asistencia vial, seguridad en carretera y mantenimiento vehicular en República Dominicana.";
+    const url = `${SITE_URL}/blog`;
+
+    document.title = title;
+    setMetaTag("description", description);
+    setCanonical(url);
+    setMetaTag("og:title", title, true);
+    setMetaTag("og:description", description, true);
+    setMetaTag("og:url", url, true);
+    setMetaTag("og:type", "website", true);
+    setMetaTag("twitter:card", "summary_large_image");
+    setMetaTag("twitter:title", title);
+    setMetaTag("twitter:description", description);
+
+    setJsonLd({
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Blog Grúa RD",
+      "description": description,
+      "url": url,
+      "publisher": {
+        "@type": "Organization",
+        "name": "Grúa RD",
+        "url": SITE_URL
+      }
+    });
+
     window.scrollTo(0, 0);
+
+    return () => {
+      const jsonLd = document.querySelector('script[data-blog-jsonld]');
+      if (jsonLd) jsonLd.remove();
+    };
   }, []);
 
   return (
