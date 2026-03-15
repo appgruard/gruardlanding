@@ -21,15 +21,19 @@ export function getPostBySlug(slug: string): BlogPost | undefined {
   return blogPosts.find(post => post.slug === slug);
 }
 
+function getTodayRD(): string {
+  return new Date().toLocaleDateString("en-CA", { timeZone: "America/Santo_Domingo" });
+}
+
 export function getPublishedPosts(): BlogPost[] {
-  const today = new Date().toISOString().split("T")[0];
+  const today = getTodayRD();
   return blogPosts
     .filter(post => post.date <= today)
     .sort((a, b) => b.date.localeCompare(a.date));
 }
 
 export function isPostPublished(post: BlogPost): boolean {
-  const today = new Date().toISOString().split("T")[0];
+  const today = getTodayRD();
   return post.date <= today;
 }
 
