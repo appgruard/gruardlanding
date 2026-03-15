@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
-import { Clock, ChevronRight, BookOpen, AlertTriangle, Truck, DollarSign, AlertCircle, ShieldCheck, ClipboardList, Shield, Wrench, FileText, Moon, Zap, Scale, MapPin, Settings, CloudRain, Car, Smartphone, Navigation, Users, Building, Thermometer, Sun, type LucideIcon } from "lucide-react";
+import { Clock, ChevronRight, BookOpen, AlertTriangle, Truck, DollarSign, AlertCircle, ShieldCheck, ClipboardList, Shield, Wrench, FileText, Moon, Zap, Scale, MapPin, Settings, CloudRain, Car, Smartphone, Navigation, Users, Building, Thermometer, Sun, Calendar, X, type LucideIcon } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { getPublishedPosts } from "@/data/blog-posts";
 import LandingLayout from "../landing-layout";
-import { useEffect, useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 const iconMap: Record<string, LucideIcon> = {
   AlertTriangle,
@@ -76,6 +76,16 @@ function setJsonLd(data: object) {
 
 export default function BlogIndex() {
   const publishedPosts = useMemo(() => getPublishedPosts(), []);
+  const [proximamenteDate, setProximamenteDate] = useState<string | null>(null);
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const prox = params.get("proximamente");
+    if (prox) {
+      setProximamenteDate(prox);
+      window.history.replaceState({}, "", "/blog");
+    }
+  }, []);
 
   useEffect(() => {
     const title = "Blog - Grúa RD | Guías de Asistencia Vial en República Dominicana";
@@ -117,6 +127,19 @@ export default function BlogIndex() {
   return (
     <LandingLayout>
       <div className="pt-24 pb-16 bg-background" data-testid="page-blog">
+        {proximamenteDate && (
+          <div className="max-w-3xl mx-auto px-4 md:px-6 mb-6 mt-2">
+            <div className="bg-orange/10 border border-orange/20 rounded-lg p-4 flex items-center gap-3" data-testid="banner-proximamente">
+              <Calendar className="w-5 h-5 text-orange flex-shrink-0" />
+              <p className="text-sm text-foreground flex-1">
+                Este artículo aún no está disponible. Será publicado el <span className="font-semibold">{proximamenteDate}</span>.
+              </p>
+              <button onClick={() => setProximamenteDate(null)} className="text-muted-foreground hover:text-foreground" data-testid="button-close-proximamente">
+                <X className="w-4 h-4" />
+              </button>
+            </div>
+          </div>
+        )}
         <div className="max-w-6xl mx-auto px-4 md:px-6">
           <motion.div {...fadeInUp} className="text-center mb-12">
             <Badge className="bg-orange/10 text-orange border-orange/20 mb-4" data-testid="badge-blog">
