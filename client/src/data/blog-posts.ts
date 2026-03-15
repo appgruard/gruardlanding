@@ -2845,7 +2845,7 @@ export const blogPosts: BlogPost[] = [
     description: "Todo sobre las normas de tránsito en zonas escolares de República Dominicana: velocidad máxima, señalización, multas y responsabilidad del conductor.",
     category: "Normas de Tránsito",
     readTime: 6,
-    date: "2027-03-14",
+    date: "2027-03-16",
     author: "Grúa RD",
     keywords: "zona escolar tránsito RD, velocidad zona escolar, normas conducir escuela, seguridad vial niños dominicana",
     icon: "Scale",
@@ -2886,7 +2886,7 @@ export const blogPosts: BlogPost[] = [
     description: "Cómo las condiciones de las carreteras dominicanas afectan la suspensión de tu vehículo y qué mantenimiento preventivo necesitas.",
     category: "Mantenimiento",
     readTime: 7,
-    date: "2027-04-10",
+    date: "2027-04-13",
     author: "Grúa RD",
     keywords: "suspensión vehículo RD, mantenimiento amortiguadores, baches carreteras dominicana, rótulas bujes carro",
     icon: "Wrench",
@@ -2943,7 +2943,7 @@ export const blogPosts: BlogPost[] = [
     description: "Cómo funciona el servicio de grúa durante la noche en República Dominicana: disponibilidad, recargos, seguridad y qué esperar.",
     category: "Asistencia Vial",
     readTime: 6,
-    date: "2027-05-07",
+    date: "2027-05-11",
     author: "Grúa RD",
     keywords: "grúa nocturna RD, emergencia noche carro, servicio grúa madrugada, asistencia vial nocturna dominicana",
     icon: "Moon",
@@ -2991,7 +2991,7 @@ export const blogPosts: BlogPost[] = [
     description: "Guía sobre los tipos de combustible disponibles en RD: gasolina premium vs regular, diesel, GLP y cómo elegir el correcto para tu carro.",
     category: "Mantenimiento",
     readTime: 6,
-    date: "2027-06-02",
+    date: "2027-06-08",
     author: "Grúa RD",
     keywords: "combustible vehículo RD, gasolina premium regular, diesel GLP dominicana, tipo gasolina carro",
     icon: "Car",
@@ -3038,7 +3038,7 @@ export const blogPosts: BlogPost[] = [
     description: "Estadísticas, causas principales y medidas preventivas para reducir los accidentes de motocicletas en las carreteras dominicanas.",
     category: "Seguridad Vial",
     readTime: 8,
-    date: "2027-06-29",
+    date: "2027-07-06",
     author: "Grúa RD",
     keywords: "accidentes motocicletas RD, seguridad moto dominicana, prevención accidentes moto, casco motocicleta ley",
     icon: "AlertTriangle",
@@ -3087,7 +3087,7 @@ export const blogPosts: BlogPost[] = [
     description: "Todo sobre el sistema de peajes en RD: ubicaciones, tarifas, formas de pago y qué hacer si tienes una emergencia cerca de un peaje.",
     category: "Guía Completa",
     readTime: 7,
-    date: "2027-07-26",
+    date: "2027-08-03",
     author: "Grúa RD",
     keywords: "peajes autopistas RD, tarifas peaje dominicana, casetas peaje carretera, pago peaje República Dominicana",
     icon: "DollarSign",
@@ -3135,7 +3135,7 @@ export const blogPosts: BlogPost[] = [
     description: "Consejos prácticos para estacionar tu carro de forma segura en RD: zonas seguras, prevención de robo, estacionamientos públicos y qué evitar.",
     category: "Consejos",
     readTime: 6,
-    date: "2027-08-22",
+    date: "2027-08-24",
     author: "Grúa RD",
     keywords: "seguridad estacionar carro RD, prevenir robo vehículo, estacionamiento seguro dominicana, proteger auto estacionado",
     icon: "ShieldCheck",
@@ -3184,7 +3184,7 @@ export const blogPosts: BlogPost[] = [
     description: "Guía para transportar mascotas de forma segura en tu vehículo: preparación, accesorios necesarios, paradas y qué hacer en caso de emergencia vial.",
     category: "Consejos",
     readTime: 6,
-    date: "2027-09-17",
+    date: "2027-09-14",
     author: "Grúa RD",
     keywords: "viajar mascotas carro RD, transportar perro carro, seguridad mascotas vehículo, viaje mascota carretera dominicana",
     icon: "Car",
@@ -3231,7 +3231,7 @@ export const blogPosts: BlogPost[] = [
     description: "Por qué mantener todas las luces de tu carro funcionando es crucial en República Dominicana y cómo diagnosticar y reparar fallas comunes.",
     category: "Mantenimiento",
     readTime: 6,
-    date: "2027-10-14",
+    date: "2027-10-12",
     author: "Grúa RD",
     keywords: "luces vehículo mantenimiento, faros carro RD, luces traseras, sistema iluminación auto dominicana",
     icon: "Zap",
@@ -3288,7 +3288,7 @@ export const blogPosts: BlogPost[] = [
     description: "Cómo trasladar tu vehículo recién importado desde los puertos de Santo Domingo, Haina o Caucedo a tu destino de forma segura con grúa.",
     category: "Asistencia Vial",
     readTime: 7,
-    date: "2027-11-10",
+    date: "2027-11-09",
     author: "Grúa RD",
     keywords: "transporte vehículo puerto RD, grúa puerto Santo Domingo, importar carro dominicana, traslado auto desde Haina Caucedo",
     icon: "Truck",
@@ -3383,6 +3383,1353 @@ export const blogPosts: BlogPost[] = [
         paragraphs: [
           "Grúa RD opera con normalidad durante toda la temporada navideña, incluyendo Nochebuena, Navidad, Nochevieja y Año Nuevo. Nuestros operadores trabajan en turnos especiales para garantizar cobertura las 24 horas durante las fiestas.",
           "Es importante tener la app instalada y tu cuenta activa antes de las fiestas, ya que la demanda de servicios aumenta significativamente durante este período. Si planeas viajar a una zona rural o con poca cobertura celular, descarga mapas offline y asegúrate de tener carga suficiente en tu power bank."
+        ]
+      }
+    ]
+  }
+  {
+    slug: "revision-tecnica-vehicular-rd",
+    title: "Revisión técnica vehicular en República Dominicana: qué debes saber",
+    description: "Guía completa sobre la inspección técnica vehicular (ITV) en RD: requisitos, centros autorizados, costos y preparación.",
+    category: "Normas de Tránsito",
+    readTime: 6,
+    date: "2027-02-23",
+    author: "Grúa RD",
+    keywords: "revisión técnica vehicular RD, ITV dominicana, inspección vehículo, centro inspección auto",
+    icon: "ClipboardList",
+    content: [
+      {
+        heading: "Qué es la revisión técnica vehicular",
+        paragraphs: [
+          "La revisión técnica vehicular (también conocida como ITV o inspección técnica) es un proceso obligatorio en República Dominicana para verificar que los vehículos cumplen con las condiciones mínimas de seguridad y emisiones. Este proceso es parte del marco regulatorio establecido por el INTRANT.",
+          "La inspección evalúa componentes críticos del vehículo: frenos, dirección, luces, neumáticos, emisiones, estructura y sistemas de seguridad. El objetivo es garantizar que los vehículos que circulan por las carreteras dominicanas no representen un peligro para sus ocupantes ni para otros usuarios de la vía.",
+        ]
+      },
+      {
+        heading: "Requisitos y documentos necesarios",
+        paragraphs: [
+          "Para realizar la revisión técnica necesitas:",
+        ],
+        list: [
+          "Matrícula del vehículo vigente",
+          "Seguro obligatorio de responsabilidad civil activo",
+          "Cédula del propietario o carta de autorización",
+          "El vehículo en condiciones de circular hasta el centro de inspección",
+          "Pago de la tarifa correspondiente (varía según tipo de vehículo)",
+        ]
+      },
+      {
+        heading: "Cómo preparar tu vehículo",
+        paragraphs: [
+          "Antes de llevar tu vehículo a la inspección, verifica estos puntos comunes de fallo: luces delanteras y traseras funcionando, frenos en buen estado, limpiaparabrisas operativos, cinturones de seguridad funcionales, neumáticos con dibujo suficiente y sin defectos visibles.",
+          "Si algún componente falla, tendrás que repararlo y regresar para una nueva inspección, lo que implica tiempo y costo adicional. Una revisión preventiva en tu taller de confianza antes de la inspección oficial puede ahorrarte ese inconveniente.",
+        ]
+      },
+    ]
+  },
+  {
+    slug: "conducir-con-lluvia-intensa-rd",
+    title: "Cómo conducir con lluvia intensa en República Dominicana",
+    description: "Técnicas y precauciones para conducir de forma segura durante lluvias fuertes y tormentas tropicales en las carreteras de RD.",
+    category: "Seguridad Vial",
+    readTime: 7,
+    date: "2027-03-02",
+    author: "Grúa RD",
+    keywords: "conducir lluvia RD, manejar tormenta tropical, seguridad lluvia carretera, aquaplaning dominicana",
+    icon: "CloudRain",
+    content: [
+      {
+        heading: "Los peligros de la lluvia en carreteras dominicanas",
+        paragraphs: [
+          "Las lluvias tropicales en República Dominicana pueden ser extremadamente intensas, reduciendo la visibilidad a pocos metros y creando acumulaciones de agua en la carretera en cuestión de minutos. Las carreteras dominicanas, muchas con sistemas de drenaje insuficientes, son especialmente propensas a inundaciones repentinas.",
+          "El aquaplaning (hidroplaneo) es uno de los mayores peligros: ocurre cuando los neumáticos pierden contacto con el asfalto debido a una capa de agua, eliminando toda tracción y dirección. A velocidades superiores a 80 km/h, incluso una capa delgada de agua puede causar hidroplaneo.",
+        ]
+      },
+      {
+        heading: "Técnicas de conducción segura bajo lluvia",
+        paragraphs: [
+          "Estas técnicas pueden marcar la diferencia entre llegar seguro o tener un accidente:",
+        ],
+        list: [
+          "Reduce la velocidad al menos un 30% respecto a condiciones secas",
+          "Aumenta la distancia de seguimiento al doble o triple de lo normal",
+          "Usa luces bajas (nunca altas, ya que reflejan y reducen más la visibilidad)",
+          "Evita frenar bruscamente; usa freno suave y progresivo",
+          "No cruces charcos profundos si no puedes ver el fondo",
+          "Si sientes que el carro patina, no gires el volante bruscamente ni frenes",
+          "Mantén el aire acondicionado encendido para desempañar los vidrios",
+        ]
+      },
+      {
+        heading: "Cuándo detenerte y no continuar",
+        paragraphs: [
+          "Hay situaciones en las que la mejor decisión es detenerse y esperar a que pase la lluvia. Si la visibilidad es tan baja que no puedes ver el vehículo de adelante, si el agua en la carretera supera la mitad de la altura de tus neumáticos, o si estás en una zona propensa a deslizamientos de tierra, busca un lugar seguro y detente.",
+          "Si te quedas varado por inundación, no intentes arrancar el motor si el agua ha entrado al sistema de admisión. Solicita servicio de grúa para trasladar tu vehículo a un taller sin riesgo de daño adicional al motor.",
+        ]
+      },
+    ]
+  },
+  {
+    slug: "tipos-seguros-vehiculares-rd",
+    title: "Tipos de seguros vehiculares disponibles en República Dominicana",
+    description: "Guía completa sobre los diferentes tipos de seguros de vehículos en RD: obligatorio, todo riesgo, terceros y coberturas adicionales.",
+    category: "Guía Completa",
+    readTime: 7,
+    date: "2027-03-09",
+    author: "Grúa RD",
+    keywords: "seguros vehiculares RD, seguro carro dominicana, cobertura auto, seguro todo riesgo terceros",
+    icon: "Shield",
+    content: [
+      {
+        heading: "Seguro obligatorio de responsabilidad civil",
+        paragraphs: [
+          "En República Dominicana, todo vehículo que circule por las vías públicas debe contar con un seguro obligatorio de responsabilidad civil. Este seguro cubre los daños que puedas causar a terceros (personas y propiedades) en caso de accidente.",
+          "El costo del seguro obligatorio varía según el tipo de vehículo y la aseguradora, pero generalmente oscila entre RD$3,000 y RD$8,000 anuales para vehículos livianos. Es importante saber que este seguro NO cubre los daños a tu propio vehículo ni tus lesiones personales.",
+        ]
+      },
+      {
+        heading: "Seguro todo riesgo vs terceros ampliado",
+        paragraphs: [
+          "Más allá del obligatorio, puedes optar por coberturas adicionales:",
+        ],
+        list: [
+          "Seguro todo riesgo: cubre daños propios, robo, incendio, fenómenos naturales y responsabilidad civil ampliada",
+          "Terceros ampliado: cubre responsabilidad civil más robo e incendio de tu vehículo",
+          "Cobertura de asistencia vial: incluye grúa, cerrajería, envío de combustible y cambio de neumático",
+          "Casco parcial: cubre robo total, incendio y algunos riesgos específicos",
+          "Deducible: monto que pagas de tu bolsillo en cada siniestro antes de que la aseguradora cubra",
+        ]
+      },
+      {
+        heading: "Cómo elegir el seguro adecuado",
+        paragraphs: [
+          "La elección del seguro depende del valor de tu vehículo, tu presupuesto y tu tolerancia al riesgo. Para vehículos nuevos o de alto valor, el todo riesgo es generalmente la mejor opción. Para vehículos usados de menor valor, un terceros ampliado puede ser suficiente.",
+          "Compara cotizaciones de al menos 3 aseguradoras antes de decidir. Presta atención no solo al precio sino también a las exclusiones, los deducibles, la red de talleres autorizados y la reputación de la aseguradora en el pago de reclamaciones.",
+        ]
+      },
+    ]
+  },
+  {
+    slug: "carreteras-peligrosas-rd-precauciones",
+    title: "Las carreteras más peligrosas de RD y cómo transitar con precaución",
+    description: "Análisis de los tramos de carreteras con mayor incidencia de accidentes en República Dominicana y precauciones específicas para cada uno.",
+    category: "Seguridad Vial",
+    readTime: 8,
+    date: "2027-03-23",
+    author: "Grúa RD",
+    keywords: "carreteras peligrosas RD, tramos accidentes dominicana, seguridad vial carretera, rutas peligrosas",
+    icon: "AlertTriangle",
+    content: [
+      {
+        heading: "Tramos con mayor incidencia de accidentes",
+        paragraphs: [
+          "Según las estadísticas de DIGESETT y el INTRANT, ciertos tramos de las carreteras dominicanas concentran un número desproporcionado de accidentes fatales. Conocer estos tramos te permite extremar precauciones al transitarlos.",
+        ],
+        list: [
+          "Autopista Duarte (tramo La Vega - Santiago): curvas pronunciadas y alta velocidad",
+          "Carretera Sánchez (tramo Baní - Azua): tramo recto que invita a exceso de velocidad",
+          "Autopista Las Américas (tramo completo): alto volumen de tráfico mixto",
+          "Carretera Nagua-Samaná: curvas cerradas en zona montañosa",
+          "Carretera Jarabacoa-Constanza: altitud, neblina y precipicios",
+        ]
+      },
+      {
+        heading: "Factores que hacen peligrosas estas vías",
+        paragraphs: [
+          "Los accidentes en estos tramos no son aleatorios: responden a factores específicos que se combinan. El exceso de velocidad es el factor número uno en las carreteras rectas, mientras que las curvas mal señalizadas dominan en las zonas montañosas.",
+          "Otros factores incluyen: vehículos pesados compartiendo carril con vehículos livianos, peatones y animales en la vía (especialmente en zonas rurales), iluminación deficiente en horario nocturno, y pavimento deteriorado que puede sorprender al conductor.",
+        ]
+      },
+      {
+        heading: "Precauciones específicas",
+        paragraphs: [
+          "Para transitar estos tramos de forma segura:",
+        ],
+        list: [
+          "Planifica tu viaje para transitar de día siempre que sea posible",
+          "Mantén velocidad moderada incluso si la vía parece invitar a acelerar",
+          "En zonas montañosas, usa el motor como freno en las bajadas",
+          "Mantén distancia extra con vehículos pesados (camiones, patanas)",
+          "Lleva tu teléfono cargado y con la app de Grúa RD instalada",
+          "Informa a alguien tu ruta y hora estimada de llegada",
+        ]
+      },
+    ]
+  },
+  {
+    slug: "bateria-carro-mantenimiento-rd",
+    title: "Mantenimiento de la batería del carro en el clima de RD",
+    description: "Cómo el calor tropical afecta la batería de tu vehículo y qué hacer para prolongar su vida útil en República Dominicana.",
+    category: "Mantenimiento",
+    readTime: 6,
+    date: "2027-03-30",
+    author: "Grúa RD",
+    keywords: "batería carro RD, mantenimiento batería vehículo, calor tropical batería, cambiar batería auto dominicana",
+    icon: "Zap",
+    content: [
+      {
+        heading: "El efecto del calor tropical en la batería",
+        paragraphs: [
+          "Contrario a la creencia popular, el calor extremo es más dañino para las baterías que el frío. En el clima tropical de República Dominicana, con temperaturas que regularmente superan los 30°C y pueden llegar a 35-40°C bajo el capó, la vida útil de una batería se reduce significativamente.",
+          "El calor acelera la reacción química dentro de la batería, causando una descarga más rápida y la evaporación del electrolito. Una batería que duraría 4-5 años en clima templado puede durar solo 2-3 años en RD.",
+        ]
+      },
+      {
+        heading: "Señales de que tu batería está fallando",
+        paragraphs: [
+          "Estas señales indican que necesitas revisar o cambiar tu batería:",
+        ],
+        list: [
+          "El motor tarda más de lo normal en arrancar",
+          "Las luces del tablero se atenúan al encender accesorios",
+          "El carro no arranca después de estar estacionado varias horas",
+          "Bornes con acumulación de sulfato (polvo blanco-verdoso)",
+          "La batería tiene más de 2 años en RD",
+          "Hinchazón visible en la carcasa de la batería",
+        ]
+      },
+      {
+        heading: "Costos y opciones de reemplazo",
+        paragraphs: [
+          "Las baterías para vehículos en RD varían según la marca, capacidad y tipo:",
+          "Para baterías estándar de ácido-plomo: RD$4,000 - RD$8,000. Baterías de gel o AGM (mayor duración): RD$8,000 - RD$15,000. Baterías para SUV y camionetas: RD$6,000 - RD$12,000.",
+          "Si tu batería se descarga en la carretera, Grúa RD ofrece servicio de arranque con cables (jump start) disponible 24/7. Un técnico llega con equipo de arranque portátil para que puedas encender tu vehículo y llegar al punto de venta de baterías más cercano.",
+        ]
+      },
+    ]
+  },
+  {
+    slug: "app-movil-asistencia-vial-rd",
+    title: "Apps móviles de asistencia vial en República Dominicana",
+    description: "Cómo las aplicaciones móviles están transformando los servicios de asistencia vial en RD: ventajas, funcionalidades y por qué usarlas.",
+    category: "Tecnología",
+    readTime: 6,
+    date: "2027-04-06",
+    author: "Grúa RD",
+    keywords: "app asistencia vial RD, aplicación grúa dominicana, solicitar grúa celular, tecnología asistencia vehicular",
+    icon: "Smartphone",
+    content: [
+      {
+        heading: "La transformación digital de la asistencia vial",
+        paragraphs: [
+          "Hace unos años, solicitar una grúa en República Dominicana significaba llamar a múltiples números, negociar precios sin referencia, y esperar sin saber cuándo llegaría el servicio. Las apps de asistencia vial como Grúa RD han transformado completamente esta experiencia.",
+          "Hoy puedes solicitar servicio desde tu teléfono, ver el precio antes de confirmar, rastrear la grúa en tiempo real y pagar de forma segura. Todo sin hacer una sola llamada telefónica si lo prefieres.",
+        ]
+      },
+      {
+        heading: "Funcionalidades clave de Grúa RD",
+        paragraphs: [
+          "La app de Grúa RD ofrece funcionalidades diseñadas específicamente para el contexto dominicano:",
+        ],
+        list: [
+          "Solicitud en 3 toques: tipo de servicio, ubicación y confirmación",
+          "Precio transparente mostrado antes de confirmar",
+          "Rastreo GPS en tiempo real de la grúa asignada",
+          "Chat directo con el operador asignado",
+          "Historial de servicios y facturas digitales",
+          "Múltiples métodos de pago: efectivo, tarjeta, transferencia",
+          "Soporte 24/7 en español",
+        ]
+      },
+      {
+        heading: "Ventajas sobre el método tradicional",
+        paragraphs: [
+          "La principal ventaja de usar la app es la transparencia. No hay sorpresas de precio, no hay tiempos de espera desconocidos y no hay necesidad de negociar. El sistema asigna automáticamente el operador más cercano y calcula el precio basado en distancia y tipo de servicio.",
+          "Además, cada servicio queda registrado digitalmente, lo que facilita reclamos al seguro, control de gastos y garantía de calidad. Si un servicio no cumple los estándares, puedes calificar al operador y reportar incidencias directamente desde la app.",
+        ]
+      },
+    ]
+  },
+  {
+    slug: "multas-transito-rd-como-pagarlas",
+    title: "Multas de tránsito en RD: tipos, montos y cómo pagarlas",
+    description: "Guía actualizada sobre las multas de tránsito en República Dominicana: infracciones comunes, costos, dónde pagar y cómo evitarlas.",
+    category: "Normas de Tránsito",
+    readTime: 7,
+    date: "2027-04-20",
+    author: "Grúa RD",
+    keywords: "multas tránsito RD, pagar multas DIGESETT, infracciones tránsito dominicana, costo multas vehiculares",
+    icon: "Scale",
+    content: [
+      {
+        heading: "Infracciones más comunes y sus montos",
+        paragraphs: [
+          "Las multas de tránsito en República Dominicana se calculan en base al salario mínimo del sector privado no sectorizado. Las infracciones más frecuentes y sus montos aproximados:",
+        ],
+        list: [
+          "Exceso de velocidad: 3-10 salarios mínimos según gravedad",
+          "No uso del cinturón de seguridad: 3-5 salarios mínimos",
+          "Uso del celular al volante: 3-5 salarios mínimos",
+          "Estacionamiento prohibido: 1-3 salarios mínimos",
+          "Conducir sin licencia vigente: 5-10 salarios mínimos",
+          "Conducir bajo influencia de alcohol: 10-20 salarios mínimos + retención del vehículo",
+          "No respetar semáforo en rojo: 5-10 salarios mínimos",
+          "Circular sin seguro obligatorio: 5-10 salarios mínimos",
+        ]
+      },
+      {
+        heading: "Dónde y cómo pagar las multas",
+        paragraphs: [
+          "Las multas de DIGESETT se pueden pagar en las oficinas de DIGESETT, en bancos autorizados, y a través de plataformas digitales. Es importante pagar dentro del plazo establecido para evitar recargos.",
+          "Si tu vehículo fue remolcado por la autoridad debido a una infracción grave, deberás pagar la multa más los cargos de almacenamiento en el depósito vehicular antes de poder retirarlo. Grúa RD puede ayudarte con el traslado de tu vehículo desde el depósito a tu destino una vez liberado.",
+        ]
+      },
+      {
+        heading: "Cómo evitar multas",
+        paragraphs: [
+          "La mejor estrategia es conocer y respetar las normas de tránsito. Mantén tu documentación al día (licencia, matrícula, seguro), respeta los límites de velocidad, no uses el celular mientras conduces y siempre usa el cinturón de seguridad.",
+          "Recuerda que las cámaras de vigilancia de tránsito se están expandiendo en Santo Domingo y otras ciudades. Las multas por cámaras llegan directamente a tu domicilio o se vinculan a tu matrícula, sin necesidad de que un agente te detenga.",
+        ]
+      },
+    ]
+  },
+  {
+    slug: "viajar-carro-alquilado-rd",
+    title: "Consejos para viajar con carro alquilado en República Dominicana",
+    description: "Todo lo que debes saber antes de alquilar un vehículo en RD: seguros, condiciones de carreteras, documentos y precauciones esenciales.",
+    category: "Consejos",
+    readTime: 7,
+    date: "2027-04-27",
+    author: "Grúa RD",
+    keywords: "alquilar carro RD, rent a car dominicana, viajar auto alquilado, rental vehículo turista",
+    icon: "Car",
+    content: [
+      {
+        heading: "Documentos necesarios para alquilar",
+        paragraphs: [
+          "Para alquilar un vehículo en República Dominicana necesitas: licencia de conducir vigente (nacional o internacional), tarjeta de crédito a nombre del conductor, pasaporte o cédula vigente, y ser mayor de 25 años (algunas agencias aceptan desde 21 con recargo).",
+          "Lee detenidamente el contrato de alquiler antes de firmar. Presta especial atención a las cláusulas sobre deducible, cobertura geográfica (algunas agencias prohíben ciertas carreteras), kilómetros incluidos y política de combustible.",
+        ]
+      },
+      {
+        heading: "Tipos de seguro del rental",
+        paragraphs: [
+          "Las agencias de alquiler ofrecen varios niveles de cobertura:",
+        ],
+        list: [
+          "CDW/LDW (Collision/Loss Damage Waiver): reduce o elimina tu responsabilidad por daños al vehículo",
+          "SLI (Supplemental Liability Insurance): cobertura adicional de responsabilidad civil",
+          "PAI (Personal Accident Insurance): cobertura médica para ocupantes",
+          "Cobertura total (full coverage): incluye todo lo anterior",
+          "Tu tarjeta de crédito puede incluir cobertura de rental; verifica con tu banco antes",
+        ]
+      },
+      {
+        heading: "Qué hacer si tienes un percance con el rental",
+        paragraphs: [
+          "Si sufres un accidente o avería con el vehículo alquilado, notifica inmediatamente a la agencia de alquiler. La mayoría tienen línea de asistencia 24/7. Documenta todo con fotos y reporta a DIGESETT si hay accidente.",
+          "Si necesitas servicio de grúa, verifica primero si la agencia de alquiler tiene su propio servicio incluido. Si no, puedes solicitar a través de Grúa RD. Guarda todos los recibos ya que la agencia de alquiler o tu seguro pueden reembolsar estos gastos.",
+        ]
+      },
+    ]
+  },
+  {
+    slug: "mantenimiento-frenos-vehiculo-rd",
+    title: "Mantenimiento de frenos: tu sistema de seguridad #1",
+    description: "Por qué el mantenimiento de frenos es crítico en RD, cuándo cambiar pastillas y discos, y costos de servicio en talleres dominicanos.",
+    category: "Mantenimiento",
+    readTime: 6,
+    date: "2027-05-04",
+    author: "Grúa RD",
+    keywords: "mantenimiento frenos RD, cambiar pastillas freno, discos freno carro, taller frenos dominicana",
+    icon: "Settings",
+    content: [
+      {
+        heading: "Por qué los frenos se desgastan más rápido en RD",
+        paragraphs: [
+          "El sistema de frenos es el componente de seguridad más importante de tu vehículo, y en las condiciones de manejo de República Dominicana, se somete a un estrés superior al promedio. El tráfico congestionado de Santo Domingo y Santiago implica frenados constantes, mientras que las carreteras montañosas hacia Jarabacoa, Constanza o Samaná exigen un uso intensivo del freno en las bajadas.",
+          "Las pastillas de freno que en condiciones normales durarían 50,000-70,000 km pueden necesitar reemplazo a los 30,000-50,000 km en RD. Los discos tienen una vida útil de 2-3 juegos de pastillas, pero el sobrecalentamiento por uso intensivo puede deformarlos prematuramente.",
+        ]
+      },
+      {
+        heading: "Señales de frenos desgastados",
+        paragraphs: [
+          "No ignores estas señales de advertencia:",
+        ],
+        list: [
+          "Chirrido o rechinido al frenar (metal contra metal)",
+          "El pedal de freno se siente esponjoso o baja demasiado",
+          "Vibración en el volante o pedal al frenar",
+          "El vehículo se desvía hacia un lado al frenar",
+          "Testigo luminoso de freno encendido en el tablero",
+          "Mayor distancia de frenado de lo habitual",
+        ]
+      },
+      {
+        heading: "Costos de mantenimiento de frenos en RD",
+        paragraphs: [
+          "Los costos varían según la marca y modelo del vehículo:",
+        ],
+        list: [
+          "Pastillas delanteras: RD$1,500 - RD$5,000 por juego",
+          "Pastillas traseras: RD$1,200 - RD$4,000 por juego",
+          "Discos delanteros: RD$3,000 - RD$10,000 por par",
+          "Líquido de frenos (cambio): RD$800 - RD$2,000",
+          "Mano de obra completa (pastillas + discos): RD$2,000 - RD$5,000",
+          "Revisión y ajuste básico: RD$500 - RD$1,500",
+        ]
+      },
+    ]
+  },
+  {
+    slug: "flotas-empresariales-asistencia-vial-rd",
+    title: "Asistencia vial para flotas empresariales en República Dominicana",
+    description: "Cómo las empresas dominicanas pueden optimizar la gestión de emergencias vehiculares de sus flotas con servicios de asistencia vial organizados.",
+    category: "Asistencia Vial",
+    readTime: 6,
+    date: "2027-05-18",
+    author: "Grúa RD",
+    keywords: "flotas empresariales RD, asistencia vial empresas, gestión flota vehicular, grúa corporativa dominicana",
+    icon: "Building",
+    content: [
+      {
+        heading: "Desafíos de las flotas vehiculares en RD",
+        paragraphs: [
+          "Las empresas dominicanas que operan flotas vehiculares (distribuidoras, empresas de logística, ventas en campo, transporte ejecutivo) enfrentan desafíos únicos: averías en horarios críticos de entrega, accidentes en rutas interprovinciales, neumáticos dañados por el estado de las vías y la necesidad de minimizar el tiempo fuera de servicio de cada unidad.",
+          "Sin un plan organizado de asistencia vial, cada emergencia se convierte en un problema individual que consume tiempo de supervisores, genera costos no presupuestados y afecta la operación general.",
+        ]
+      },
+      {
+        heading: "Plan corporativo de Grúa RD",
+        paragraphs: [
+          "Grúa RD ofrece planes corporativos diseñados para flotas de 5 o más vehículos, con beneficios específicos:",
+        ],
+        list: [
+          "Tarifas preferenciales según volumen de flota",
+          "Dashboard de gestión para visualizar todas las solicitudes",
+          "Facturación consolidada mensual",
+          "Atención prioritaria con tiempos de respuesta garantizados",
+          "Reportes mensuales de incidencias para análisis preventivo",
+          "Línea directa corporativa 24/7",
+          "Cobertura nacional sin cargos adicionales por zona",
+        ]
+      },
+      {
+        heading: "ROI de la asistencia vial organizada",
+        paragraphs: [
+          "Invertir en un plan de asistencia vial corporativa no es un gasto, es una inversión que se paga sola. El costo de una hora de inactividad de un vehículo de reparto puede superar el costo mensual del plan completo.",
+          "Las empresas que implementan planes de asistencia organizada reportan reducción del 40% en tiempos de resolución de emergencias, mejor control de costos (precio conocido vs. negociación en cada incidente) y menor estrés para conductores y supervisores.",
+        ]
+      },
+    ]
+  },
+  {
+    slug: "que-hacer-accidente-transito-rd",
+    title: "Qué hacer paso a paso en un accidente de tránsito en RD",
+    description: "Protocolo detallado de acción para accidentes de tránsito en República Dominicana: desde los primeros segundos hasta la resolución con seguros.",
+    category: "Guía Completa",
+    readTime: 8,
+    date: "2027-05-25",
+    author: "Grúa RD",
+    keywords: "accidente tránsito RD, qué hacer choque, protocolo accidente vehicular, reporte DIGESETT",
+    icon: "AlertCircle",
+    content: [
+      {
+        heading: "Los primeros minutos: seguridad ante todo",
+        paragraphs: [
+          "Los primeros minutos después de un accidente son críticos. Antes de pensar en daños materiales o culpables, asegura la seguridad de todos los involucrados: verifica si hay heridos, enciende las luces de emergencia, y si es posible y seguro, mueve los vehículos fuera del flujo de tráfico.",
+          "Si hay heridos, llama al 911 inmediatamente. No muevas a personas lesionadas a menos que haya peligro inminente (fuego, vehículo en posición inestable). Coloca triángulos de emergencia o cualquier objeto visible a 50 metros antes del accidente para alertar al tráfico que se aproxima.",
+        ]
+      },
+      {
+        heading: "Documentación del accidente",
+        paragraphs: [
+          "La documentación es crucial para tu reclamo de seguro y cualquier proceso legal:",
+        ],
+        list: [
+          "Toma fotos de todos los vehículos involucrados desde múltiples ángulos",
+          "Fotografía las placas de todos los vehículos",
+          "Documenta las condiciones de la vía (mojada, baches, señalización)",
+          "Obtén nombres y teléfonos de testigos presenciales",
+          "Anota el nombre y placa del agente de DIGESETT que atiende",
+          "No muevas los vehículos hasta que llegue DIGESETT (excepto si bloquean tráfico de forma peligrosa)",
+          "Solicita copia del reporte o acta de DIGESETT",
+        ]
+      },
+      {
+        heading: "Reclamo al seguro y traslado del vehículo",
+        paragraphs: [
+          "Notifica a tu aseguradora lo antes posible, preferiblemente el mismo día del accidente. La mayoría de las aseguradoras tienen líneas de atención 24/7 para reportar siniestros. Ten a mano tu número de póliza, el reporte de DIGESETT y las fotos del accidente.",
+          "Si tu vehículo no puede circular, necesitarás servicio de grúa. Algunas pólizas de seguro incluyen cobertura de grúa; verifica con tu aseguradora antes de solicitar por tu cuenta. Si no está cubierto, Grúa RD puede trasladar tu vehículo al taller autorizado por tu aseguradora.",
+        ]
+      },
+    ]
+  },
+  {
+    slug: "sistema-electrico-vehiculo-problemas-rd",
+    title: "Problemas eléctricos comunes en vehículos en RD",
+    description: "Los problemas eléctricos más frecuentes en carros en República Dominicana: causas, diagnóstico y soluciones.",
+    category: "Guía Técnica",
+    readTime: 6,
+    date: "2027-06-01",
+    author: "Grúa RD",
+    keywords: "problemas eléctricos carro RD, sistema eléctrico vehículo, fallas eléctricas auto, electricista automotriz dominicana",
+    icon: "Zap",
+    content: [
+      {
+        heading: "Por qué los problemas eléctricos son comunes en RD",
+        paragraphs: [
+          "Los vehículos en República Dominicana son particularmente propensos a problemas eléctricos por varios factores: la humedad tropical acelera la corrosión de conexiones, las fluctuaciones de voltaje en la red eléctrica pueden dañar cargadores y sistemas, y muchos vehículos importados usados llegan con cableado ya deteriorado.",
+          "Además, las instalaciones de accesorios no originales (alarmas, GPS, equipos de audio, luces LED) realizadas por técnicos no certificados frecuentemente causan cortocircuitos, fusibles fundidos y drenaje de batería.",
+        ]
+      },
+      {
+        heading: "Fallas eléctricas más frecuentes",
+        paragraphs: [
+          "Estos son los problemas eléctricos que más vemos en vehículos en RD:",
+        ],
+        list: [
+          "Batería descargada por drenaje parásito (consumo con el carro apagado)",
+          "Alternador defectuoso que no carga la batería",
+          "Fusibles fundidos repetidamente (indica cortocircuito)",
+          "Luces intermitentes o que parpadean",
+          "Ventanas eléctricas que no suben o bajan",
+          "Radio/pantalla que se apaga sola",
+          "Sensores que dan lecturas incorrectas",
+          "Motor de arranque que hace clic pero no gira",
+        ]
+      },
+      {
+        heading: "Cuándo necesitas un profesional",
+        paragraphs: [
+          "Los problemas eléctricos pueden ser difíciles de diagnosticar sin equipo especializado. Si tienes fusibles que se funden repetidamente, olores a quemado en el sistema eléctrico, o el carro no arranca sin causa aparente, necesitas un electricista automotriz con equipo de diagnóstico.",
+          "Si tu vehículo queda inmovilizado por un problema eléctrico, no intentes hacer puentes o manipular el cableado sin conocimiento. Solicita servicio de grúa para trasladarlo a un taller con especialista eléctrico.",
+        ]
+      },
+    ]
+  },
+  {
+    slug: "conducir-noche-carreteras-rd",
+    title: "Conducir de noche por las carreteras de República Dominicana",
+    description: "Riesgos específicos y precauciones esenciales para la conducción nocturna en las carreteras dominicanas.",
+    category: "Seguridad Vial",
+    readTime: 6,
+    date: "2027-06-15",
+    author: "Grúa RD",
+    keywords: "conducir noche RD, manejar oscuro carretera, peligros nocturnos conducir, seguridad vial nocturna dominicana",
+    icon: "Moon",
+    content: [
+      {
+        heading: "Los riesgos únicos de conducir de noche en RD",
+        paragraphs: [
+          "Conducir de noche en República Dominicana presenta riesgos significativamente mayores que en muchos otros países. La falta de iluminación en la mayoría de las carreteras interprovinciales, la presencia de peatones vestidos con ropa oscura caminando por los bordes de la vía, y los vehículos circulando sin luces son peligros reales y frecuentes.",
+          "Los animales sueltos en la vía (vacas, caballos, perros) son otro riesgo importante en zonas rurales. A velocidad de carretera, el impacto con un animal grande puede ser fatal. La visibilidad reducida hace que estos obstáculos sean prácticamente invisibles hasta que es demasiado tarde.",
+        ]
+      },
+      {
+        heading: "Precauciones esenciales",
+        paragraphs: [
+          "Si debes conducir de noche en RD, estas precauciones son imprescindibles:",
+        ],
+        list: [
+          "Verifica que todas tus luces funcionen antes de salir",
+          "Mantén los faros limpios y correctamente alineados",
+          "Reduce la velocidad al menos un 30% respecto al día",
+          "Usa luces altas solo en carreteras sin tráfico de frente",
+          "Estate especialmente atento en zonas rurales (animales, peatones)",
+          "No detengas el vehículo en zonas oscuras y solitarias",
+          "Lleva el tanque de combustible lleno o al menos a 3/4",
+          "Mantén tu celular cargado con la app de Grúa RD instalada",
+        ]
+      },
+      {
+        heading: "Alternativas a conducir de noche",
+        paragraphs: [
+          "Siempre que sea posible, planifica tus viajes interprovinciales para llegar a tu destino antes del anochecer. Si un imprevisto te obliga a viajar de noche, considera opciones alternativas como pernoctar en un hotel de carretera y continuar al amanecer.",
+          "Si conduces de noche y experimentas una avería, no intentes reparar el vehículo en la oscuridad a menos que sea absolutamente seguro. Solicita servicio de grúa y permanece dentro del vehículo con las luces de emergencia encendidas hasta que llegue la ayuda.",
+        ]
+      },
+    ]
+  },
+  {
+    slug: "cambio-aceite-motor-intervalos-rd",
+    title: "Cambio de aceite del motor: intervalos recomendados para RD",
+    description: "Cada cuántos kilómetros cambiar el aceite en el clima de RD, tipos de aceite, costos y por qué los intervalos del fabricante pueden no aplicar aquí.",
+    category: "Mantenimiento",
+    readTime: 6,
+    date: "2027-06-22",
+    author: "Grúa RD",
+    keywords: "cambio aceite motor RD, intervalo aceite carro, aceite sintético dominicana, lubricante motor vehículo",
+    icon: "Settings",
+    content: [
+      {
+        heading: "Por qué los intervalos del fabricante no siempre aplican en RD",
+        paragraphs: [
+          "Los fabricantes de vehículos recomiendan intervalos de cambio de aceite basados en condiciones de conducción normales en países con climas templados. Sin embargo, las condiciones de RD se clasifican como conducción severa: altas temperaturas ambientales, tráfico congestionado con paradas frecuentes, calles con polvo y partículas, y recorridos cortos que no permiten que el motor alcance su temperatura óptima.",
+          "Bajo estas condiciones, el intervalo recomendado por el fabricante debe reducirse. Si el manual dice cada 10,000 km, en RD conviene hacerlo cada 5,000-7,500 km. Si dice cada 15,000 km con aceite sintético, considere hacerlo cada 7,500-10,000 km.",
+        ]
+      },
+      {
+        heading: "Tipos de aceite y sus ventajas",
+        paragraphs: [
+          "Elegir el aceite correcto es tan importante como cambiarlo a tiempo:",
+        ],
+        list: [
+          "Mineral: el más económico (RD$800-1,500), cambio cada 3,000-5,000 km",
+          "Semi-sintético: equilibrio calidad-precio (RD$1,200-2,500), cambio cada 5,000-7,500 km",
+          "Sintético completo: la mejor protección (RD$2,000-4,500), cambio cada 7,500-10,000 km",
+          "Siempre usa la viscosidad recomendada por el fabricante (5W-30, 10W-40, etc.)",
+          "En motores con más de 150,000 km, considera aceites para alto millaje",
+        ]
+      },
+      {
+        heading: "Señales de aceite que necesita cambio",
+        paragraphs: [
+          "No esperes al intervalo si notas estas señales: el aceite en la varilla está negro y espeso (debería ser ámbar/dorado), el testigo de aceite se enciende en el tablero, escuchas ruidos inusuales del motor (golpeteo, taqueteo), o notas olor a aceite quemado.",
+          "Un cambio de aceite tardío puede causar daños graves al motor cuya reparación cuesta cientos de miles de pesos. El costo de un cambio de aceite con filtro (RD$2,000-5,000 con todo incluido) es insignificante comparado con una reparación de motor.",
+        ]
+      },
+    ]
+  },
+  {
+    slug: "servicio-grua-playa-arena-rd",
+    title: "Servicio de grúa para vehículos atascados en arena y playa en RD",
+    description: "Qué hacer cuando tu vehículo queda atascado en la arena en las playas de República Dominicana y cómo el servicio de grúa puede ayudarte.",
+    category: "Asistencia Vial",
+    readTime: 5,
+    date: "2027-06-29",
+    author: "Grúa RD",
+    keywords: "carro atascado arena playa RD, grúa playa dominicana, vehículo arena, rescate auto playa",
+    icon: "Sun",
+    content: [
+      {
+        heading: "Por qué los vehículos se atascan en la arena",
+        paragraphs: [
+          "República Dominicana tiene algunas de las playas más hermosas del Caribe, y muchas permiten acceso vehicular o tienen estacionamientos en arena. Cada fin de semana y feriado, decenas de vehículos quedan atascados en la arena, especialmente aquellos sin tracción en las cuatro ruedas.",
+          "La arena suelta actúa como una trampa: las ruedas giran pero el vehículo se hunde más. Los intentos de salir con aceleración agresiva solo empeoran la situación, enterrando el vehículo hasta los ejes y potencialmente dañando la transmisión y los componentes de la parte inferior.",
+        ]
+      },
+      {
+        heading: "Qué hacer antes de llamar la grúa",
+        paragraphs: [
+          "Antes de solicitar grúa, intenta estos métodos:",
+        ],
+        list: [
+          "Desinfla los neumáticos a 15-20 PSI para aumentar la superficie de contacto",
+          "Coloca tablas, alfombras del carro o ramas bajo las ruedas para tracción",
+          "Pide a varias personas que empujen mientras aceleras suavemente",
+          "No aceleres bruscamente: usa primera marcha o modo arena si tu vehículo lo tiene",
+          "Si el vehículo está enterrado hasta los ejes, no intentes más: llama a la grúa",
+        ]
+      },
+      {
+        heading: "Servicio de rescate en playa con Grúa RD",
+        paragraphs: [
+          "Grúa RD tiene experiencia en rescates de vehículos en arena. Nuestros operadores en zonas costeras cuentan con equipo específico para este tipo de rescate: cables de acero, eslingas, placas de recuperación y experiencia en terreno arenoso.",
+          "El costo del servicio de rescate en playa varía según la ubicación y la severidad del atascamiento, pero generalmente es menor que un servicio de grúa completo ya que el vehículo solo necesita ser extraído, no transportado. Solicita el servicio a través de la app indicando que es un rescate en arena.",
+        ]
+      },
+    ]
+  },
+  {
+    slug: "documentos-llevar-vehiculo-rd",
+    title: "Documentos que siempre debes llevar en tu vehículo en RD",
+    description: "Lista completa de documentos obligatorios y recomendados que todo conductor debe tener en su vehículo en República Dominicana.",
+    category: "Normas de Tránsito",
+    readTime: 5,
+    date: "2027-07-13",
+    author: "Grúa RD",
+    keywords: "documentos vehículo RD, papeles carro dominicana, licencia matrícula seguro, documentación conducir",
+    icon: "FileText",
+    content: [
+      {
+        heading: "Documentos obligatorios por ley",
+        paragraphs: [
+          "La Ley 63-17 de Movilidad, Transporte Terrestre, Tránsito y Seguridad Vial establece que todo conductor debe portar ciertos documentos al volante. No tener estos documentos puede resultar en multas, retención del vehículo o ambas:",
+        ],
+        list: [
+          "Licencia de conducir vigente de la categoría correspondiente",
+          "Matrícula (tarjeta de circulación) del vehículo vigente",
+          "Seguro obligatorio de responsabilidad civil vigente",
+          "Marbete vigente (si aplica en tu vehículo)",
+        ]
+      },
+      {
+        heading: "Documentos recomendados adicionales",
+        paragraphs: [
+          "Además de los obligatorios, es altamente recomendable llevar:",
+        ],
+        list: [
+          "Copia de la póliza de seguro completa (todo riesgo si la tienes)",
+          "Números de emergencia: seguro, asistencia vial, familiar de contacto",
+          "Información médica relevante (alergias, tipo de sangre, condiciones)",
+          "Manual del vehículo (al menos la sección de emergencias)",
+          "Registro de mantenimiento reciente",
+        ]
+      },
+      {
+        heading: "Qué pasa si DIGESETT te detiene sin documentos",
+        paragraphs: [
+          "Si un agente de DIGESETT te detiene y no puedes presentar alguno de los documentos obligatorios, las consecuencias varían según el documento faltante. Sin licencia, la multa es severa y pueden retener el vehículo. Sin matrícula vigente, multa y posible retención. Sin seguro, multa y retención hasta que demuestres cobertura.",
+          "Si tu vehículo es retenido, necesitarás regularizar la documentación faltante, pagar las multas correspondientes y luego coordinar el retiro del vehículo del depósito. Grúa RD puede ayudarte con el traslado una vez completados los trámites de liberación.",
+        ]
+      },
+    ]
+  },
+  {
+    slug: "aire-acondicionado-vehicular-rd",
+    title: "Mantenimiento del aire acondicionado vehicular en el clima de RD",
+    description: "Cómo mantener el sistema de aire acondicionado de tu carro funcionando eficientemente en el calor tropical de República Dominicana.",
+    category: "Mantenimiento",
+    readTime: 6,
+    date: "2027-07-20",
+    author: "Grúa RD",
+    keywords: "aire acondicionado carro RD, AC vehículo mantenimiento, recarga gas AC auto, clima tropical aire auto",
+    icon: "Thermometer",
+    content: [
+      {
+        heading: "La importancia del AC en el clima dominicano",
+        paragraphs: [
+          "En República Dominicana, el aire acondicionado del vehículo no es un lujo sino una necesidad. Con temperaturas que regularmente superan los 30°C y humedad relativa del 70-80%, conducir sin AC no solo es incómodo sino potencialmente peligroso: el calor excesivo causa fatiga, reduce la concentración y aumenta el riesgo de accidentes.",
+          "El sistema de AC en RD trabaja considerablemente más duro que en climas templados. Mientras en un país con estaciones el AC se usa 4-5 meses al año, en RD se usa prácticamente los 12 meses, lo que acelera el desgaste de los componentes.",
+        ]
+      },
+      {
+        heading: "Mantenimiento preventivo del AC",
+        paragraphs: [
+          "Para mantener tu AC funcionando eficientemente:",
+        ],
+        list: [
+          "Recarga de gas refrigerante cada 1-2 años (RD$2,000-4,500)",
+          "Cambio del filtro de cabina cada 15,000 km (RD$500-1,500)",
+          "Limpieza del evaporador y conductos anti-bacterias anual",
+          "Revisión de correa del compresor en cada servicio mecánico",
+          "Verifica que el condensador (frente al radiador) esté libre de obstrucciones",
+          "Usa el AC al menos 10 minutos semanales incluso en días frescos para lubricar sellos",
+        ]
+      },
+      {
+        heading: "Señales de problemas y costos de reparación",
+        paragraphs: [
+          "Si tu AC sopla aire tibio, tiene mal olor, hace ruidos inusuales o gotea agua dentro del vehículo, necesita atención. Los costos de reparación comunes:",
+          "Recarga de gas: RD$2,000-4,500. Reemplazo de compresor: RD$8,000-25,000. Reparación de fuga: RD$3,000-8,000. Reemplazo de condensador: RD$5,000-15,000. Reemplazo de evaporador: RD$8,000-20,000.",
+          "Un AC deficiente que no enfría correctamente consume más combustible porque el compresor trabaja constantemente sin lograr la temperatura deseada. Invertir en el mantenimiento del AC ahorra combustible y prolonga la vida del sistema.",
+        ]
+      },
+    ]
+  },
+  {
+    slug: "zonas-inundables-santo-domingo-rd",
+    title: "Zonas inundables de Santo Domingo: rutas alternas cuando llueve",
+    description: "Mapa de las zonas que se inundan con lluvia fuerte en Santo Domingo y rutas alternativas para evitar quedar atrapado.",
+    category: "Zonas de RD",
+    readTime: 6,
+    date: "2027-07-27",
+    author: "Grúa RD",
+    keywords: "zonas inundables Santo Domingo, calles inundadas lluvia, rutas alternas inundación, áreas anegadas capital RD",
+    icon: "MapPin",
+    content: [
+      {
+        heading: "Zonas con mayor riesgo de inundación",
+        paragraphs: [
+          "Santo Domingo tiene múltiples zonas que se inundan con lluvias moderadas a fuertes. Conocer estas áreas te permite planificar rutas alternas y evitar quedar atrapado en agua que puede dañar tu vehículo.",
+        ],
+        list: [
+          "Avenida 27 de Febrero (tramos bajos): acumulación rápida de agua",
+          "Malecón de Santo Domingo: oleaje y drenaje insuficiente",
+          "Zona del Río Ozama (Villa Duarte, Los Mina): desbordamientos",
+          "Avenida Máximo Gómez (zona baja): drenaje colapsado en lluvias fuertes",
+          "Los Alcarrizos y Santo Domingo Norte: infraestructura de drenaje limitada",
+          "Autopista Las Américas (tramos sin drenaje): pozas de agua en carriles",
+          "Zona Colonial: calles estrechas con drenaje antiguo",
+        ]
+      },
+      {
+        heading: "Cuándo evitar conducir",
+        paragraphs: [
+          "No todo aguacero justifica salir a la carretera. Si el ONAMET emite alertas rojas o naranjas para tu zona, considera posponer los viajes no esenciales. Las lluvias intensas de más de 30 minutos pueden crear condiciones peligrosas en cuestión de minutos.",
+          "Si ya estás en la carretera cuando comienza una lluvia intensa, busca un lugar seguro y elevado para estacionar y espera a que la intensidad disminuya. Nunca intentes cruzar áreas inundadas si no puedes ver el pavimento.",
+        ]
+      },
+      {
+        heading: "Si tu vehículo queda atrapado en agua",
+        paragraphs: [
+          "Si el agua alcanza la mitad inferior de las puertas, no intentes conducir más. Apaga el motor inmediatamente si el agua comienza a entrar al vehículo. Un motor que aspira agua sufre un daño catastrófico llamado golpe de agua (hydrolock) cuya reparación puede costar más que el valor del vehículo.",
+          "Si necesitas abandonar el vehículo, hazlo solo si puedes caminar hacia terreno seco y seguro. Solicita servicio de grúa a través de Grúa RD indicando que es un rescate por inundación. Nuestros operadores tienen experiencia en estas situaciones y cuentan con equipo para extraer vehículos de zonas anegadas.",
+        ]
+      },
+    ]
+  },
+  {
+    slug: "viaje-interprovincial-rd-planificacion",
+    title: "Planificación de viajes interprovinciales en RD",
+    description: "Cómo planificar un viaje por carretera entre provincias de República Dominicana: rutas, paradas, costos y precauciones.",
+    category: "Consejos",
+    readTime: 7,
+    date: "2027-08-10",
+    author: "Grúa RD",
+    keywords: "viaje interprovincial RD, carretera entre provincias, planificar viaje carro, ruta autopista dominicana",
+    icon: "Navigation",
+    content: [
+      {
+        heading: "Planificación de la ruta",
+        paragraphs: [
+          "República Dominicana tiene una red de carreteras que conecta todas las provincias, pero la calidad y seguridad varían considerablemente. Antes de partir, investiga el estado actual de la ruta que planeas tomar. Las redes sociales y grupos de viajeros dominicanos son excelentes fuentes de información sobre condiciones de carreteras, obras en progreso y tramos problemáticos.",
+          "Google Maps y Waze funcionan bien en RD para navegación, pero recuerda que los tiempos estimados pueden ser optimistas. Agrega un 20-30% al tiempo que indique la app para tener un estimado más realista.",
+        ]
+      },
+      {
+        heading: "Presupuesto del viaje en carretera",
+        paragraphs: [
+          "Calcula estos costos para tu viaje:",
+        ],
+        list: [
+          "Combustible: calcula el consumo de tu vehículo × distancia × precio por galón",
+          "Peajes: consulta las casetas en tu ruta (RD$75-200 cada una)",
+          "Comidas y paradas: presupuesta RD$500-1,500 por persona",
+          "Estacionamiento en el destino: RD$100-500 según la zona",
+          "Fondo de emergencia: al menos RD$3,000-5,000 para imprevistos",
+          "Si es ida y vuelta el mismo día, multiplica combustible y peajes por 2",
+        ]
+      },
+      {
+        heading: "Kit esencial para el viaje",
+        paragraphs: [
+          "Antes de partir en un viaje interprovincial, verifica que llevas:",
+        ],
+        list: [
+          "Documentos del vehículo y licencia de conducir",
+          "Neumático de repuesto inflado y herramientas para cambio",
+          "Agua potable suficiente para todos los pasajeros",
+          "Cargador de celular vehicular",
+          "Botiquín básico de primeros auxilios",
+          "Efectivo para peajes y emergencias (no todas las estaciones aceptan tarjeta)",
+          "La app de Grúa RD instalada y con cuenta activa",
+        ]
+      },
+    ]
+  },
+  {
+    slug: "vehiculos-electricos-hibridos-rd",
+    title: "Vehículos eléctricos e híbridos en República Dominicana",
+    description: "Estado actual de los vehículos eléctricos e híbridos en RD: modelos disponibles, infraestructura de carga, beneficios fiscales y desafíos.",
+    category: "Tecnología",
+    readTime: 7,
+    date: "2027-08-17",
+    author: "Grúa RD",
+    keywords: "vehículos eléctricos RD, carros híbridos dominicana, estaciones carga eléctrica, autos eléctricos impuestos",
+    icon: "Zap",
+    content: [
+      {
+        heading: "Mercado actual de vehículos eléctricos en RD",
+        paragraphs: [
+          "El mercado de vehículos eléctricos e híbridos en República Dominicana está creciendo, aunque aún representa una fracción pequeña del parque vehicular. Marcas como BYD, Tesla, Hyundai, Kia y Toyota ofrecen modelos eléctricos e híbridos a través de distribuidores autorizados en el país.",
+          "Los vehículos eléctricos e híbridos gozan de beneficios fiscales significativos en RD: exención parcial o total de impuestos de importación según la categoría del vehículo. Esto puede representar un ahorro de entre RD$200,000 y RD$1,000,000 comparado con un vehículo de combustión equivalente.",
+        ]
+      },
+      {
+        heading: "Infraestructura de carga",
+        paragraphs: [
+          "La infraestructura de carga para vehículos eléctricos en RD está en expansión pero todavía es limitada:",
+        ],
+        list: [
+          "Carga en casa: la opción más práctica, usando tomacorriente de 220V",
+          "Estaciones de carga rápida: disponibles en centros comerciales principales de Santo Domingo y Santiago",
+          "Carga en hoteles: algunos hoteles y resorts ofrecen estaciones para huéspedes",
+          "Carga en oficinas: empresas progresistas están instalando puntos de carga para empleados",
+          "Autonomía típica: 200-400 km por carga completa según modelo y uso de AC",
+        ]
+      },
+      {
+        heading: "Desafíos y asistencia vial para eléctricos",
+        paragraphs: [
+          "Los vehículos eléctricos tienen desafíos únicos en RD: las fluctuaciones de voltaje de la red eléctrica pueden afectar la carga, la autonomía se reduce significativamente con el uso del AC (esencial en el clima dominicano), y la red de talleres especializados en vehículos eléctricos es aún pequeña.",
+          "Si tu vehículo eléctrico se queda sin carga en la carretera, necesita transporte en grúa plana (nunca de arrastre). Grúa RD cuenta con grúas planas aptas para transportar vehículos eléctricos de forma segura, protegiendo los componentes de alto voltaje del tren motriz.",
+        ]
+      },
+    ]
+  },
+  {
+    slug: "seguridad-ninos-vehiculo-rd",
+    title: "Seguridad de niños en vehículos en República Dominicana",
+    description: "Normas, sillas infantiles y mejores prácticas para transportar niños de forma segura en tu vehículo en RD.",
+    category: "Seguridad Vial",
+    readTime: 6,
+    date: "2027-08-31",
+    author: "Grúa RD",
+    keywords: "seguridad niños carro RD, silla infantil vehículo, car seat dominicana, niños cinturón seguridad",
+    icon: "Users",
+    content: [
+      {
+        heading: "Normativa sobre transporte de menores",
+        paragraphs: [
+          "La ley dominicana establece que los niños menores de 12 años deben viajar en el asiento trasero del vehículo. Sin embargo, la regulación específica sobre sillas infantiles (car seats) en RD no está tan desarrollada como en otros países. Esto no significa que no debas usarlas: la evidencia es contundente sobre la reducción de lesiones y muertes.",
+          "Las estadísticas internacionales muestran que el uso correcto de sillas infantiles reduce el riesgo de muerte en accidente en un 71% para bebés y un 54% para niños de 1-4 años. Invertir en una silla de calidad es invertir en la vida de tu hijo.",
+        ]
+      },
+      {
+        heading: "Tipos de sillas según la edad",
+        paragraphs: [
+          "Cada etapa del crecimiento requiere un tipo específico de retención:",
+        ],
+        list: [
+          "Bebé (0-1 año, hasta 13 kg): silla orientada hacia atrás (portabebé)",
+          "Niño pequeño (1-4 años, 9-18 kg): silla orientada hacia adelante con arnés",
+          "Niño (4-8 años, 15-36 kg): asiento elevador (booster) con cinturón del vehículo",
+          "Niño mayor (8-12 años): cinturón de seguridad del vehículo si la correa pasa por el hombro",
+          "La regla general: usa la silla infantil hasta que el niño sea lo suficientemente grande para el cinturón",
+        ]
+      },
+      {
+        heading: "Errores comunes que debes evitar",
+        paragraphs: [
+          "Los errores más frecuentes al transportar niños en vehículos en RD:",
+        ],
+        list: [
+          "Llevar al niño en el regazo del acompañante (extremadamente peligroso)",
+          "No ajustar correctamente los arneses de la silla (deben estar firmes)",
+          "Instalar la silla en el asiento delantero (riesgo de airbag)",
+          "Usar una silla de segunda mano sin verificar su historial de accidentes",
+          "Dejar que niños pequeños usen el cinturón sin asiento elevador",
+          "Nunca dejar niños solos dentro del vehículo, ni por minutos",
+        ]
+      },
+    ]
+  },
+  {
+    slug: "transporte-vehiculo-entre-ciudades-rd",
+    title: "Transporte de vehículos entre ciudades de República Dominicana",
+    description: "Opciones y costos para transportar tu vehículo entre ciudades de RD sin conducirlo: grúa plana, transporte en plataforma y logística.",
+    category: "Precios",
+    readTime: 6,
+    date: "2027-09-07",
+    author: "Grúa RD",
+    keywords: "transporte vehículo entre ciudades RD, grúa Santo Domingo Santiago, traslado carro interprovincial, enviar auto otra ciudad dominicana",
+    icon: "Truck",
+    content: [
+      {
+        heading: "Cuándo tiene sentido transportar en lugar de conducir",
+        paragraphs: [
+          "Hay múltiples situaciones donde transportar tu vehículo en grúa entre ciudades es más práctico que conducirlo: cuando compras un vehículo en otra ciudad, cuando te mudas y quieres evitar el desgaste de un viaje largo, cuando el vehículo necesita reparación en un taller específico de otra ciudad, o cuando vendes un vehículo a un comprador en otra provincia.",
+          "También es la opción ideal para vehículos de colección, clásicos o de alto valor que quieres proteger del desgaste del camino y los riesgos de las carreteras interprovinciales.",
+        ]
+      },
+      {
+        heading: "Tarifas de referencia entre ciudades principales",
+        paragraphs: [
+          "Estos son precios aproximados de transporte en grúa plana entre las principales ciudades (2027):",
+        ],
+        list: [
+          "Santo Domingo ↔ Santiago: RD$15,000 - RD$25,000",
+          "Santo Domingo ↔ Punta Cana: RD$20,000 - RD$32,000",
+          "Santo Domingo ↔ La Romana: RD$10,000 - RD$18,000",
+          "Santo Domingo ↔ Puerto Plata: RD$18,000 - RD$28,000",
+          "Santo Domingo ↔ Samaná: RD$18,000 - RD$30,000",
+          "Santiago ↔ Puerto Plata: RD$8,000 - RD$15,000",
+          "Los precios varían según el tamaño del vehículo y la disponibilidad",
+        ]
+      },
+      {
+        heading: "Cómo solicitar el servicio",
+        paragraphs: [
+          "Con Grúa RD puedes programar el transporte entre ciudades con anticipación. Indica la ciudad de origen, la dirección de recogida, la ciudad de destino y la dirección de entrega. El sistema te muestra el precio total antes de confirmar.",
+          "Para traslados programados (no emergencia), puedes obtener un descuento del 10-15% al agendar con 48 horas o más de anticipación. Nuestros operadores coordinan la hora de recogida y entrega según tu conveniencia.",
+        ]
+      },
+    ]
+  },
+  {
+    slug: "preparar-vehiculo-huracanes-rd",
+    title: "Preparar tu vehículo para la temporada de huracanes en RD",
+    description: "Checklist de preparación vehicular para la temporada ciclónica en República Dominicana: antes, durante y después de un huracán.",
+    category: "Seguridad Vial",
+    readTime: 7,
+    date: "2027-09-21",
+    author: "Grúa RD",
+    keywords: "preparar carro huracán RD, temporada ciclónica vehículo, proteger auto tormenta, huracanes dominicana auto",
+    icon: "CloudRain",
+    content: [
+      {
+        heading: "Antes de la temporada de huracanes (junio-noviembre)",
+        paragraphs: [
+          "La temporada de huracanes en el Caribe va oficialmente del 1 de junio al 30 de noviembre, con mayor actividad entre agosto y octubre. Preparar tu vehículo antes de esta temporada puede significar la diferencia entre tener transporte funcional después de una tormenta o quedarte varado.",
+          "Realiza una revisión mecánica completa antes de junio: frenos, neumáticos, batería, limpiaparabrisas, luces y sistema eléctrico. Un vehículo en buen estado tiene más probabilidades de funcionar correctamente después de condiciones extremas.",
+        ]
+      },
+      {
+        heading: "Checklist de preparación",
+        paragraphs: [
+          "Prepara estos elementos y ten un plan:",
+        ],
+        list: [
+          "Tanque de combustible lleno (las estaciones pueden cerrar durante y después del evento)",
+          "Kit de emergencia completo en el vehículo",
+          "Documentos del vehículo en bolsa impermeable",
+          "Identifica estacionamientos techados o garajes seguros cerca de tu hogar",
+          "Si tu estacionamiento es al aire libre, identifica zonas alejadas de árboles y postes",
+          "Cubre el vehículo si estará expuesto (protección contra objetos volantes)",
+          "Asegura objetos sueltos cerca del vehículo que puedan convertirse en proyectiles",
+        ]
+      },
+      {
+        heading: "Después del huracán",
+        paragraphs: [
+          "Después de un huracán, inspecciona tu vehículo antes de intentar conducirlo. Verifica que no haya ramas sobre el vehículo, que los neumáticos no tengan objetos clavados, que el sistema eléctrico funcione y que no haya agua dentro del motor o del habitáculo.",
+          "Si tu vehículo sufrió daños por el huracán, documenta todo con fotos para tu reclamo de seguro antes de mover nada. Si el vehículo no puede circular, Grúa RD estará operando tan pronto las condiciones lo permitan para asistir a los conductores afectados.",
+        ]
+      },
+    ]
+  },
+  {
+    slug: "traslado-vehiculo-taller-mecanico-rd",
+    title: "Cómo elegir el traslado correcto de tu vehículo al taller",
+    description: "Grúa plana vs arrastre vs dolly: cuál es el método correcto para trasladar tu vehículo al taller según su tipo de tracción y condición.",
+    category: "Guía Técnica",
+    readTime: 6,
+    date: "2027-09-28",
+    author: "Grúa RD",
+    keywords: "traslado vehículo taller RD, grúa plana arrastre, tipo grúa carro, remolcar auto correctamente",
+    icon: "Truck",
+    content: [
+      {
+        heading: "Tipos de grúa y cuándo usar cada una",
+        paragraphs: [
+          "No todas las grúas son iguales, y usar el tipo incorrecto puede causar daños adicionales a tu vehículo. Conocer la diferencia te ayuda a solicitar el servicio correcto:",
+        ],
+        list: [
+          "Grúa plana (plataforma): el vehículo se sube completamente a la plataforma. Es el método más seguro para cualquier tipo de vehículo.",
+          "Grúa de arrastre (gancho): levanta una parte del vehículo y las otras ruedas van por el suelo. No apta para vehículos 4x4 o AWD.",
+          "Dolly (carrito auxiliar): se coloca bajo las ruedas traseras cuando la grúa levanta las delanteras. Alternativa al arrastre.",
+          "Cama baja: para vehículos pesados, maquinaria o múltiples vehículos.",
+        ]
+      },
+      {
+        heading: "Qué tipo de grúa necesita tu vehículo",
+        paragraphs: [
+          "La elección correcta depende del tipo de tracción de tu vehículo:",
+        ],
+        list: [
+          "Tracción delantera (FWD): puede remolcarse levantando el frente, ruedas traseras en el suelo",
+          "Tracción trasera (RWD): puede remolcarse levantando el trasero, ruedas delanteras en el suelo",
+          "Tracción total (AWD/4WD): SIEMPRE usar grúa plana. El arrastre daña la transmisión y el diferencial",
+          "Vehículos eléctricos/híbridos: SIEMPRE grúa plana para proteger el tren motriz eléctrico",
+          "Transmisión automática: preferir grúa plana; si no disponible, verificar manual del vehículo para límites de remolque",
+        ]
+      },
+      {
+        heading: "Solicitar el servicio correcto con Grúa RD",
+        paragraphs: [
+          "Al solicitar servicio con Grúa RD, la app te pregunta el tipo de vehículo y el tipo de avería para asignar automáticamente la grúa adecuada. Si tienes un vehículo AWD, 4x4 o eléctrico, asegúrate de indicarlo para que se envíe una grúa plana.",
+          "Si no estás seguro del tipo de tracción de tu vehículo, menciónalo en los comentarios de la solicitud y nuestro equipo verificará antes de despachar la grúa adecuada. Nunca permitas que una grúa de arrastre remolque tu vehículo AWD o eléctrico.",
+        ]
+      },
+    ]
+  },
+  {
+    slug: "turismo-interno-rd-mejores-rutas",
+    title: "Turismo interno en RD: las mejores rutas en vehículo propio",
+    description: "Las rutas más populares y escénicas para explorar República Dominicana en tu propio vehículo: destinos, distancias y recomendaciones.",
+    category: "Zonas de RD",
+    readTime: 8,
+    date: "2027-10-05",
+    author: "Grúa RD",
+    keywords: "turismo interno RD carro, rutas carretera dominicana, viajar vehículo propio, destinos turísticos manejar",
+    icon: "MapPin",
+    content: [
+      {
+        heading: "Ruta Santo Domingo - Samaná (vía autopista del Nordeste)",
+        paragraphs: [
+          "Esta ruta de aproximadamente 230 km te lleva a una de las regiones más hermosas de RD. La autopista del Nordeste es moderna y en buen estado, con 2-3 casetas de peaje. El viaje toma aproximadamente 2.5-3 horas.",
+          "Paradas recomendadas: Sabana de la Mar (ferry a Samaná), Los Haitises (excursión en bote), Las Terrenas (playas y pueblo costero), El Limón (cascada). La temporada de avistamiento de ballenas jorobadas (enero-marzo) es una razón especial para visitar Samaná.",
+        ]
+      },
+      {
+        heading: "Ruta Santiago - Puerto Plata (carretera turística)",
+        paragraphs: [
+          "La carretera de Santiago a Puerto Plata atraviesa la Cordillera Septentrional con vistas espectaculares. Son aproximadamente 60 km pero el recorrido toma 1-1.5 horas por las curvas de montaña.",
+          "Destinos en la costa norte: Sosúa (playas y snorkeling), Cabarete (capital del windsurf), Playa Dorada (resort zone), Puerto Plata (teleférico al Pico Isabel de Torres, Fortaleza San Felipe). La carretera puede tener neblina en las partes altas, especialmente temprano en la mañana.",
+        ]
+      },
+      {
+        heading: "Ruta Santo Domingo - Jarabacoa - Constanza",
+        paragraphs: [
+          "Esta ruta te lleva a los Alpes dominicanos. Jarabacoa está a unos 150 km de Santo Domingo (2-2.5 horas) y Constanza a unos 80 km adicionales por una carretera de montaña más exigente.",
+          "Actividades: rafting en el río Yaque del Norte, senderismo al Pico Duarte (punto más alto del Caribe), cascadas Jimenoa y Baiguate, aguas termales. Tu vehículo debería estar en buen estado mecánico, especialmente frenos y suspensión, para las carreteras de montaña.",
+        ]
+      },
+      {
+        heading: "Preparación del vehículo para turismo interno",
+        paragraphs: [
+          "Antes de cualquier viaje de turismo interno, verifica: neumáticos (incluyendo el de repuesto), frenos, niveles de fluidos, luces, y lleva un kit de emergencia. Descarga la app de Grúa RD antes de salir, ya que la cobertura celular puede ser limitada en zonas rurales.",
+          "Ten en cuenta que las estaciones de servicio pueden estar distanciadas en rutas rurales. Llena el tanque antes de entrar a zonas montañosas o rurales. Lleva efectivo para peajes y gasolina, ya que no todos los establecimientos aceptan tarjeta.",
+        ]
+      },
+    ]
+  },
+  {
+    slug: "diagnostico-obd-vehiculo-rd",
+    title: "Diagnóstico OBD: qué es y por qué importa para tu vehículo",
+    description: "Cómo el diagnóstico por computadora (OBD) puede identificar problemas en tu vehículo antes de que se conviertan en averías costosas.",
+    category: "Guía Técnica",
+    readTime: 6,
+    date: "2027-10-19",
+    author: "Grúa RD",
+    keywords: "diagnóstico OBD RD, escáner automotriz, computadora vehículo, códigos error carro dominicana",
+    icon: "Settings",
+    content: [
+      {
+        heading: "Qué es el sistema OBD",
+        paragraphs: [
+          "OBD (On-Board Diagnostics) es el sistema de autodiagnóstico que tienen todos los vehículos modernos (fabricados después de 1996). Este sistema monitorea constantemente los principales componentes del motor, transmisión, emisiones y otros sistemas, y genera códigos de error cuando detecta anomalías.",
+          "Cuando se enciende la luz de Check Engine en tu tablero, el sistema OBD ha detectado un problema y almacenado uno o más códigos de error. Un escáner OBD puede leer estos códigos y traducirlos en un diagnóstico específico del problema.",
+        ]
+      },
+      {
+        heading: "Beneficios del diagnóstico OBD regular",
+        paragraphs: [
+          "No esperes a que se encienda la luz de Check Engine:",
+        ],
+        list: [
+          "Detecta problemas antes de que se conviertan en averías costosas",
+          "Optimiza el consumo de combustible identificando sensores defectuosos",
+          "Verifica que las reparaciones realizadas resolvieron el problema",
+          "Monitora la salud general del motor y la transmisión",
+          "Los escáneres portátiles cuestan desde RD$2,000 y se conectan por Bluetooth al celular",
+          "El diagnóstico en taller profesional cuesta RD$500-2,000 por sesión",
+        ]
+      },
+      {
+        heading: "Códigos comunes en vehículos en RD",
+        paragraphs: [
+          "Los códigos de error más frecuentes en vehículos en República Dominicana incluyen:",
+          "P0420 (eficiencia del catalizador): muy común, puede ser catalítico gastado o sensor de oxígeno. P0300-P0304 (fallo de encendido): bujías, cables o bobinas desgastadas. P0171/P0174 (mezcla pobre): fugas de vacío, filtro de aire sucio o sensor MAF sucio. P0442 (fuga del sistema EVAP): tapa de gasolina suelta o mal sellada.",
+          "Antes de gastar en reparaciones costosas, un buen diagnóstico OBD puede confirmar exactamente cuál es el problema. Muchos talleres en RD cobran por diagnóstico y luego aplican ese monto a la reparación si la haces con ellos.",
+        ]
+      },
+    ]
+  },
+  {
+    slug: "comprar-vehiculo-usado-rd-inspeccion",
+    title: "Inspección antes de comprar un vehículo usado en RD",
+    description: "Checklist detallado para inspeccionar un vehículo usado antes de comprarlo en República Dominicana: mecánica, documentos y señales de alerta.",
+    category: "Consejos",
+    readTime: 8,
+    date: "2027-10-26",
+    author: "Grúa RD",
+    keywords: "comprar carro usado RD, inspeccionar vehículo segunda mano, verificar auto antes comprar, checklist compra carro dominicana",
+    icon: "ClipboardList",
+    content: [
+      {
+        heading: "Inspección visual exterior e interior",
+        paragraphs: [
+          "Antes de encender el motor, dedica tiempo a inspeccionar el vehículo detenidamente:",
+        ],
+        list: [
+          "Pintura uniforme: diferencias de tono indican reparación por accidente",
+          "Paneles alineados: puertas, capó y maletero deben cerrar sin esfuerzo",
+          "Neumáticos: desgaste uniforme (desgaste irregular = problemas de suspensión/alineación)",
+          "Vidrios: busca fisuras, chips o reemplazos no originales",
+          "Debajo del vehículo: busca fugas de aceite, líquido de transmisión o refrigerante",
+          "Interior: funcionamiento de todos los botones, ventanas, AC, radio, cinturones",
+          "Olores: aceite quemado, refrigerante o moho indican problemas",
+        ]
+      },
+      {
+        heading: "Prueba de manejo esencial",
+        paragraphs: [
+          "Una prueba de manejo de al menos 20 minutos revelará problemas que no se ven estacionado:",
+        ],
+        list: [
+          "Arranque en frío: el motor debe encender sin dificultad ni ruidos extraños",
+          "Aceleración: debe ser suave sin tirones ni vacilaciones",
+          "Frenos: no deben vibrar, hacer ruido ni tirar hacia un lado",
+          "Dirección: sin juego excesivo ni vibraciones",
+          "Transmisión (automática): cambios suaves sin golpes",
+          "Suspensión: no debe rebotar excesivamente ni hacer ruidos en baches",
+          "Velocidad de crucero: sin vibraciones a 80-100 km/h",
+        ]
+      },
+      {
+        heading: "Verificación de documentos y antecedentes",
+        paragraphs: [
+          "La documentación es tan importante como el estado mecánico:",
+        ],
+        list: [
+          "Matrícula a nombre del vendedor (verifica con cédula)",
+          "Sin gravámenes ni embargos (verifica en DGII)",
+          "Historial de accidentes (pregunta directamente y verifica con carfax si fue importado de USA)",
+          "Verificación de VIN: que coincida en matrícula, parabrisas y placa de identificación",
+          "Pago de impuestos vehiculares al día",
+          "Si es importado: documentación de aduana y desaduanaje",
+        ]
+      },
+    ]
+  },
+  {
+    slug: "cinturon-seguridad-salva-vidas-rd",
+    title: "El cinturón de seguridad salva vidas: datos y normativa en RD",
+    description: "Por qué el cinturón de seguridad es el dispositivo de seguridad más importante en tu vehículo y las normas en República Dominicana.",
+    category: "Seguridad Vial",
+    readTime: 5,
+    date: "2027-11-02",
+    author: "Grúa RD",
+    keywords: "cinturón seguridad RD, norma cinturón carro, seguridad pasiva vehículo, multa cinturón dominicana",
+    icon: "ShieldCheck",
+    content: [
+      {
+        heading: "La física detrás del cinturón",
+        paragraphs: [
+          "En un choque a 50 km/h, un pasajero sin cinturón golpea el interior del vehículo con una fuerza equivalente a caer de un tercer piso. A 80 km/h, la fuerza es equivalente a caer de un séptimo piso. El cinturón de seguridad distribuye estas fuerzas en las partes más resistentes del cuerpo (pelvis, pecho, hombros) y mantiene al ocupante en posición para que el airbag funcione correctamente.",
+          "Las estadísticas globales son contundentes: el cinturón reduce el riesgo de muerte en un 45% para los ocupantes delanteros y un 25% para los traseros. En República Dominicana, donde los accidentes de tránsito son una causa principal de muerte, el cinturón es literalmente la línea entre la vida y la muerte en un choque.",
+        ]
+      },
+      {
+        heading: "Normativa en República Dominicana",
+        paragraphs: [
+          "La Ley 63-17 establece el uso obligatorio del cinturón de seguridad para el conductor y todos los pasajeros del vehículo. La multa por no uso es de 3-5 salarios mínimos.",
+          "A pesar de la ley, el cumplimiento es bajo, especialmente en asientos traseros. Las excusas comunes (incomodidad, viajes cortos, baja velocidad) no tienen sustento: la mayoría de accidentes fatales ocurren a menos de 40 km/h y cerca del hogar.",
+        ],
+        list: [
+          "Conductor: cinturón obligatorio siempre",
+          "Pasajero delantero: cinturón obligatorio siempre",
+          "Pasajeros traseros: cinturón obligatorio (frecuentemente ignorado)",
+          "Niños: sistema de retención apropiado según edad y peso",
+          "Embarazadas: cinturón obligatorio, correa inferior debajo del vientre",
+        ]
+      },
+      {
+        heading: "Mantenimiento del cinturón",
+        paragraphs: [
+          "El cinturón de seguridad necesita funcionar perfectamente en la fracción de segundo del impacto. Verifica periódicamente que se extiende y retrae sin trabarse, que la hebilla cierra con un clic firme y que la correa no tenga cortes ni deshilachados.",
+          "Si tu vehículo ha estado involucrado en un accidente, los cinturones deben ser inspeccionados y posiblemente reemplazados, ya que el mecanismo pretensor puede haberse activado y no funcionar en un segundo impacto.",
+        ]
+      },
+    ]
+  },
+  {
+    slug: "costos-mantenimiento-anual-vehiculo-rd",
+    title: "Costos anuales de mantenimiento vehicular en República Dominicana",
+    description: "Presupuesto realista de lo que cuesta mantener un vehículo al año en RD: servicios, seguros, impuestos y costos fijos.",
+    category: "Precios",
+    readTime: 7,
+    date: "2027-11-16",
+    author: "Grúa RD",
+    keywords: "costo mantenimiento carro RD, presupuesto vehículo anual, gastos auto dominicana, precio mantener carro",
+    icon: "DollarSign",
+    content: [
+      {
+        heading: "Costos fijos anuales",
+        paragraphs: [
+          "Independientemente de cuánto uses tu vehículo, estos costos son recurrentes cada año:",
+        ],
+        list: [
+          "Seguro obligatorio: RD$3,000 - RD$8,000",
+          "Seguro todo riesgo (si aplica): RD$25,000 - RD$80,000+ según valor del vehículo",
+          "Marbete: RD$2,000 - RD$5,000 según cilindrada",
+          "Impuesto de circulación vehicular: variable según año y tipo",
+          "Revisión técnica: RD$1,500 - RD$3,000",
+          "Estacionamiento mensual (si no tienes propio): RD$3,000 - RD$8,000/mes",
+        ]
+      },
+      {
+        heading: "Costos de mantenimiento periódico",
+        paragraphs: [
+          "El mantenimiento preventivo regular es la forma más económica de mantener tu vehículo:",
+        ],
+        list: [
+          "Cambio de aceite y filtro (3-4 veces/año): RD$2,000 - RD$5,000 cada uno",
+          "Neumáticos (cada 2-3 años): RD$4,000 - RD$15,000 por neumático",
+          "Pastillas de freno (cada 1-2 años): RD$1,500 - RD$5,000",
+          "Filtro de aire (1-2 veces/año): RD$500 - RD$1,500",
+          "Alineación y balanceo (2 veces/año): RD$1,000 - RD$2,500",
+          "Batería (cada 2-3 años): RD$4,000 - RD$12,000",
+          "AC (recarga y limpieza anual): RD$2,500 - RD$5,000",
+        ]
+      },
+      {
+        heading: "Costo total estimado por categoría de vehículo",
+        paragraphs: [
+          "Estos son estimados anuales totales de mantenimiento (sin incluir combustible):",
+        ],
+        list: [
+          "Sedán compacto (Toyota Yaris, Hyundai Accent): RD$35,000 - RD$65,000/año",
+          "Sedán mediano (Toyota Corolla, Honda Civic): RD$45,000 - RD$85,000/año",
+          "SUV compacta (Hyundai Tucson, Toyota RAV4): RD$55,000 - RD$100,000/año",
+          "SUV grande (Toyota 4Runner, Jeep Grand Cherokee): RD$70,000 - RD$130,000/año",
+          "Pickup (Toyota Hilux, Mitsubishi L200): RD$60,000 - RD$120,000/año",
+          "Estos montos no incluyen reparaciones mayores no previstas",
+        ]
+      },
+    ]
+  },
+  {
+    slug: "lavado-vehiculo-profesional-rd",
+    title: "Lavado profesional vs casero: cuidar la pintura de tu vehículo en RD",
+    description: "Cómo el clima tropical y las condiciones de RD afectan la pintura de tu vehículo y las mejores prácticas de lavado para protegerla.",
+    category: "Mantenimiento",
+    readTime: 5,
+    date: "2027-11-23",
+    author: "Grúa RD",
+    keywords: "lavado carro RD, pintura vehículo cuidar, car wash dominicana, proteger pintura auto tropical",
+    icon: "Car",
+    content: [
+      {
+        heading: "El impacto del clima tropical en la pintura",
+        paragraphs: [
+          "El sol intenso, la salinidad del aire (especialmente en zonas costeras), la lluvia ácida y el polvo de las carreteras dominicanas son enemigos constantes de la pintura de tu vehículo. Sin protección adecuada, la pintura se oxida, pierde brillo y desarrolla manchas permanentes en pocos años.",
+          "Los excrementos de pájaros, la savia de árboles y los insectos aplastados también dañan la pintura si no se remueven rápidamente. En el clima cálido de RD, estos contaminantes se hornean literalmente sobre la superficie, haciéndolos más difíciles de eliminar con cada día que pasa."
+        ]
+      },
+      {
+        heading: "Lavado profesional vs casero",
+        paragraphs: [
+          "Ambas opciones tienen ventajas. El lavado profesional ofrece equipos y productos especializados, pero no todos los car wash cuidan la pintura:"
+        ],
+        list: [
+          "Evita car wash automáticos con cepillos giratorios (rayan la pintura)",
+          "Prefiere car wash de lavado a mano o sin contacto (touchless)",
+          "En casa: usa dos cubetas (una con jabón, otra para enjuagar la esponja)",
+          "Nunca laves el carro al sol directo (el jabón se seca y mancha)",
+          "Usa jabón específico para vehículos, no detergente de cocina",
+          "Seca con paño de microfibra, nunca con trapo o al aire"
+        ]
+      },
+      {
+        heading: "Protección adicional recomendada",
+        paragraphs: [
+          "Para máxima protección de la pintura en el clima dominicano, considera aplicar cera protectora cada 3-4 meses (RD$500-1,500 por aplicación) o un sellador cerámico profesional que puede durar 1-3 años (RD$5,000-25,000 según la calidad).",
+          "Si estacionas al aire libre regularmente, una funda para vehículo transpirable puede proteger la pintura del sol y los contaminantes. Las fundas de buena calidad cuestan entre RD$2,000 y RD$6,000 y son una inversión que se paga con creces en la preservación del valor de tu vehículo."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "emergencias-carretera-numeros-importantes-rd",
+    title: "Números de emergencia en carretera en República Dominicana",
+    description: "Directorio completo de números telefónicos de emergencia para conductores en RD: policía, bomberos, ambulancias y asistencia vial.",
+    category: "Asistencia Vial",
+    readTime: 5,
+    date: "2027-11-30",
+    author: "Grúa RD",
+    keywords: "números emergencia RD, teléfonos emergencia carretera, 911 dominicana, asistencia vial teléfono",
+    icon: "Smartphone",
+    content: [
+      {
+        heading: "Números de emergencia principales",
+        paragraphs: [
+          "En una emergencia vehicular, cada segundo cuenta. Tener los números correctos guardados en tu teléfono puede acelerar significativamente la respuesta. Estos son los números que todo conductor en RD debe tener:"
+        ],
+        list: [
+          "911 - Emergencias generales (policía, bomberos, ambulancia)",
+          "809-688-1443 - DIGESETT (Dirección General de Seguridad de Tránsito)",
+          "809-200-0911 - AMET / INTRANT",
+          "809-472-0909 - Defensa Civil",
+          "809-754-3333 - Cruz Roja Dominicana",
+          "Grúa RD - Disponible 24/7 a través de la app"
+        ]
+      },
+      {
+        heading: "Cuándo llamar a cada número",
+        paragraphs: [
+          "El 911 es el número universal para cualquier emergencia que ponga en riesgo la vida: accidentes con heridos, incendios vehiculares, asaltos o situaciones de peligro inminente. Los operadores del 911 coordinan la respuesta de policía, bomberos y ambulancias según la situación.",
+          "DIGESETT es la entidad encargada de los accidentes de tránsito sin heridos graves, regulación del tráfico y documentación de incidentes viales. Si tienes un choque menor sin lesiones, DIGESETT es quien debe documentar el evento para tu reclamo de seguro."
+        ]
+      },
+      {
+        heading: "La importancia de tener la app de Grúa RD",
+        paragraphs: [
+          "Mientras los números de emergencia te conectan con las autoridades, necesitas un servicio adicional para mover tu vehículo. Grúa RD complementa los servicios de emergencia al encargarse del traslado seguro de tu vehículo una vez que la emergencia inmediata ha sido atendida.",
+          "Instala la app antes de necesitarla. Crea tu cuenta, registra tu vehículo y familiarízate con el proceso de solicitud. En un momento de estrés, tener la app lista te ahorra tiempo valioso y te permite solicitar ayuda con solo unos toques en la pantalla."
         ]
       }
     ]
