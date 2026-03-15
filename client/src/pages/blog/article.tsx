@@ -195,7 +195,7 @@ export default function BlogArticle() {
                     Descarga la app de Grúa RD y ten acceso a asistencia vial 24/7 en toda la República Dominicana. GPS en tiempo real, operadores verificados y precios transparentes.
                   </p>
                   <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-                    <a href={`${APP_DOMAIN}/onboarding`}>
+                    <a href={`${APP_DOMAIN}/app`}>
                       <Button size="lg" className="bg-orange text-orange-foreground hover:bg-orange/90" data-testid="button-cta-register">
                         <Download className="w-5 h-5 mr-2" />
                         Descargar Grúa RD

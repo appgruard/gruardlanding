@@ -37,7 +37,7 @@ export default function Header() {
               Iniciar Sesión
             </Button>
           </a>
-          <a href={`${APP_DOMAIN}/onboarding`} data-testid="link-register">
+          <a href={`${APP_DOMAIN}/app`} data-testid="link-register">
             <Button size="sm" className="bg-orange text-orange-foreground">
               <UserPlus className="w-4 h-4 mr-2" />
               Registrarse
@@ -72,7 +72,7 @@ export default function Header() {
                 Iniciar Sesión
               </Button>
             </a>
-            <a href={`${APP_DOMAIN}/onboarding`} className="w-full" data-testid="link-register-mobile">
+            <a href={`${APP_DOMAIN}/app`} className="w-full" data-testid="link-register-mobile">
               <Button className="w-full bg-orange text-orange-foreground">
                 <UserPlus className="w-4 h-4 mr-2" />
                 Registrarse

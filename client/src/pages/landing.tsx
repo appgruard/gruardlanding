@@ -83,7 +83,7 @@ function HeroSection() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
-              <a href={`${APP_DOMAIN}/onboarding`} className="w-full sm:w-auto">
+              <a href={`${APP_DOMAIN}/app`} className="w-full sm:w-auto">
                 <Button 
                   size="lg" 
                   className="w-full sm:w-auto bg-orange text-orange-foreground h-14 px-8 text-lg font-semibold"
