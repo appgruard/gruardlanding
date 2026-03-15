@@ -1,10 +1,21 @@
 import { motion } from "framer-motion";
-import { Clock, ChevronRight, BookOpen } from "lucide-react";
+import { Clock, ChevronRight, BookOpen, AlertTriangle, Truck, DollarSign, AlertCircle, ShieldCheck, ClipboardList, Shield, type LucideIcon } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { blogPosts } from "@/data/blog-posts";
 import LandingLayout from "../landing-layout";
 import { useEffect } from "react";
+
+const iconMap: Record<string, LucideIcon> = {
+  AlertTriangle,
+  Truck,
+  DollarSign,
+  BookOpen,
+  AlertCircle,
+  ShieldCheck,
+  ClipboardList,
+  Shield,
+};
 
 const SITE_URL = "https://gruard.com";
 
@@ -115,7 +126,7 @@ export default function BlogIndex() {
                   <Card className="h-full border border-border hover:border-orange/40 hover:shadow-lg transition-all duration-300 overflow-hidden">
                     <div className="bg-primary/5 p-6 flex items-center justify-center h-40">
                       <div className="w-16 h-16 rounded-full bg-orange/10 flex items-center justify-center">
-                        <BookOpen className="w-8 h-8 text-orange" />
+                        {(() => { const Icon = iconMap[post.icon] || BookOpen; return <Icon className="w-8 h-8 text-orange" />; })()}
                       </div>
                     </div>
                     <CardContent className="p-5">
