@@ -3386,7 +3386,7 @@ export const blogPosts: BlogPost[] = [
         ]
       }
     ]
-  }
+  },
   {
     slug: "revision-tecnica-vehicular-rd",
     title: "Revisión técnica vehicular en República Dominicana: qué debes saber",
