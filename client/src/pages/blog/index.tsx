@@ -88,8 +88,8 @@ export default function BlogIndex() {
   }, []);
 
   useEffect(() => {
-    const title = "Blog - Grúa RD | Guías de Asistencia Vial en República Dominicana";
-    const description = "Artículos y guías sobre servicios de grúa, asistencia vial, seguridad en carretera y mantenimiento vehicular en República Dominicana.";
+    const title = "Blog Grúa RD | Asistencia Vial en República Dominicana";
+    const description = "Artículos sobre grúas y asistencia vial en República Dominicana. Guías de seguridad vial, mantenimiento y consejos para conductores.";
     const url = `${SITE_URL}/blog`;
 
     document.title = title;
