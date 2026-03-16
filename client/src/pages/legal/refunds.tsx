@@ -1,9 +1,21 @@
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 import { CreditCard, AlertCircle, Clock, CheckCircle2, HelpCircle } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import LandingLayout from "../landing-layout";
+import { setLegalPageMeta, removePageJsonLd } from "@/lib/seo";
 
 export default function RefundPolicy() {
+  useEffect(() => {
+    setLegalPageMeta({
+      title: "Política de Reembolsos",
+      description: "Información sobre la política de reembolsos y cancelaciones de Grúa RD: plazos, condiciones y proceso de devolución.",
+      path: "/reembolsos",
+    });
+    window.scrollTo(0, 0);
+    return () => removePageJsonLd();
+  }, []);
+
   return (
     <LandingLayout>
       <div className="pt-24 pb-16 min-h-[calc(100vh-400px)] bg-background">

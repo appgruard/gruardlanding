@@ -1,7 +1,19 @@
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 import LandingLayout from "../landing-layout";
+import { setLegalPageMeta, removePageJsonLd } from "@/lib/seo";
 
 export default function TermsAndConditions() {
+  useEffect(() => {
+    setLegalPageMeta({
+      title: "Términos y Condiciones",
+      description: "Lee los términos y condiciones de uso de la plataforma Grúa RD: obligaciones, responsabilidades y condiciones del servicio.",
+      path: "/terminos",
+    });
+    window.scrollTo(0, 0);
+    return () => removePageJsonLd();
+  }, []);
+
   return (
     <LandingLayout>
       <div className="pt-24 pb-16 min-h-[calc(100vh-400px)] bg-background">

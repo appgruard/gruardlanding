@@ -1,8 +1,20 @@
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 import { Truck, Globe, CheckCircle, AlertTriangle, MapPin } from "lucide-react";
 import LandingLayout from "../landing-layout";
+import { setLegalPageMeta, removePageJsonLd } from "@/lib/seo";
 
 export default function DeliveryPolicy() {
+  useEffect(() => {
+    setLegalPageMeta({
+      title: "Política de Entrega del Servicio",
+      description: "Política de entrega del servicio de Grúa RD: zonas de cobertura en República Dominicana, tiempos de respuesta y condiciones de operación.",
+      path: "/entrega",
+    });
+    window.scrollTo(0, 0);
+    return () => removePageJsonLd();
+  }, []);
+
   return (
     <LandingLayout>
       <div className="pt-24 pb-16 min-h-[calc(100vh-400px)] bg-background">
