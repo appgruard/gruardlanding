@@ -1,9 +1,21 @@
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 import { Shield, Lock, FileCheck, Server, EyeOff } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import LandingLayout from "../landing-layout";
+import { setLegalPageMeta, removePageJsonLd } from "@/lib/seo";
 
 export default function SecurityPolicy() {
+  useEffect(() => {
+    setLegalPageMeta({
+      title: "Políticas de Seguridad",
+      description: "Estándares y políticas de seguridad de Grúa RD para proteger tus datos y garantizar transacciones seguras en la plataforma.",
+      path: "/seguridad",
+    });
+    window.scrollTo(0, 0);
+    return () => removePageJsonLd();
+  }, []);
+
   return (
     <LandingLayout>
       <div className="pt-24 pb-16 min-h-[calc(100vh-400px)] bg-background">

@@ -1,7 +1,19 @@
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 import LandingLayout from "../landing-layout";
+import { setLegalPageMeta, removePageJsonLd } from "@/lib/seo";
 
 export default function PrivacyPolicy() {
+  useEffect(() => {
+    setLegalPageMeta({
+      title: "Política de Privacidad",
+      description: "Conoce cómo Grúa RD recopila, usa y protege tus datos personales conforme a la ley dominicana de protección de datos.",
+      path: "/privacidad",
+    });
+    window.scrollTo(0, 0);
+    return () => removePageJsonLd();
+  }, []);
+
   return (
     <LandingLayout>
       <div className="pt-24 pb-16 min-h-[calc(100vh-400px)] bg-background">
