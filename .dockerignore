@@ -9,5 +9,4 @@ dist
 replit.nix
 .upm
 .config
-attached_assets
 *.log
