@@ -57,36 +57,36 @@ const APP_STORE_URL = "https://apps.apple.com/do/app/gr%C3%BAa-rd/id6759132391";
 
 function HeroSection() {
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-20" data-testid="section-hero">
+    <section className="landing-hero relative isolate flex items-center overflow-hidden bg-primary pt-28 pb-14 sm:pt-32 sm:pb-20 lg:pt-40 lg:pb-24" data-testid="section-hero">
       <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/95 to-primary/90" />
       <div className="absolute inset-0 opacity-20 overflow-hidden">
         <div className="absolute top-10 left-5 sm:top-20 sm:left-10 w-48 sm:w-72 h-48 sm:h-72 bg-orange/30 rounded-full blur-3xl" />
         <div className="absolute bottom-10 right-5 sm:bottom-20 sm:right-10 w-64 sm:w-96 h-64 sm:h-96 bg-orange/20 rounded-full blur-3xl" />
       </div>
       
-      <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-6 py-12">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           <motion.div 
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-center lg:text-left"
+            className="text-left"
           >
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-[1.1]" data-testid="text-hero-title">
+            <h1 className="text-[2.5rem] sm:text-5xl xl:text-[4.25rem] font-bold tracking-tight text-white mb-5 leading-[1.06]" data-testid="text-hero-title">
               Asistencia Vial{" "}
-              <span className="text-orange">Cuando Más</span>{" "}
-              La Necesitas
+              <span className="block text-orange">Cuando Más</span>{" "}
+              <span className="block">La Necesitas</span>
             </h1>
-            <p className="text-lg sm:text-xl text-white/80 mb-8 max-w-xl mx-auto lg:mx-0" data-testid="text-hero-subtitle">
+            <p className="text-base sm:text-lg leading-relaxed text-white/80 mb-8 max-w-xl" data-testid="text-hero-subtitle">
               La plataforma emergente de servicios de grúa en República Dominicana. 
               Conectamos clientes con operadores certificados de forma rápida.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
+            <div className="flex flex-col sm:flex-row gap-3 mb-7">
               <a href={`${APP_DOMAIN}/app`} className="w-full sm:w-auto">
                 <Button 
                   size="lg" 
-                  className="w-full sm:w-auto bg-orange text-orange-foreground h-14 px-8 text-lg font-semibold"
+                  className="w-full sm:w-auto rounded-xl bg-orange text-orange-foreground h-14 px-6 text-base font-semibold shadow-[0_8px_24px_-10px_rgba(245,158,11,0.7)]"
                   data-testid="button-register-hero"
                 >
                   <UserPlus className="w-5 h-5 mr-2" />
@@ -97,7 +97,7 @@ function HeroSection() {
                 <Button 
                   size="lg" 
                   variant="outline" 
-                  className="w-full sm:w-auto h-14 px-8 text-lg font-semibold border-white/30 text-white bg-white/10 backdrop-blur-sm"
+                  className="w-full sm:w-auto rounded-xl h-14 px-6 text-base font-semibold border-white/25 text-white bg-white/5 backdrop-blur-sm"
                   data-testid="button-login-hero"
                 >
                   <LogIn className="w-5 h-5 mr-2" />
@@ -106,7 +106,7 @@ function HeroSection() {
               </a>
             </div>
 
-            <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
+            <div className="flex flex-wrap gap-3">
               <a 
                 href={GOOGLE_PLAY_URL}
                 target="_blank"
@@ -143,7 +143,8 @@ function HeroSection() {
             className="flex justify-center"
           >
             <div className="relative w-full max-w-lg">
-              <div className="w-full h-[350px] sm:h-[500px] bg-card rounded-3xl shadow-2xl overflow-hidden relative border-4 border-foreground/10">
+              <div aria-hidden="true" className="absolute -inset-5 rounded-full bg-orange/10 blur-3xl" />
+              <div className="w-full h-[300px] sm:h-[420px] lg:h-[460px] bg-card rounded-[1.75rem] shadow-[0_24px_64px_-16px_rgba(0,0,0,0.4)] overflow-hidden relative border-4 border-white/20">
                 <DominicanMap />
               </div>
             </div>
@@ -202,7 +203,7 @@ function ServicesSection() {
   ];
 
   return (
-    <section id="servicios" className="py-12 sm:py-20 md:py-32 bg-background" data-testid="section-servicios">
+    <section id="servicios" className="py-16 sm:py-20 md:py-24 bg-background" data-testid="section-servicios">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         <motion.div {...fadeInUp} className="text-center mb-10 sm:mb-16">
           <Badge className="mb-4 bg-orange/10 text-orange border-orange/20" data-testid="badge-servicios">
@@ -226,9 +227,9 @@ function ServicesSection() {
         >
           {services.map((service) => (
             <motion.div key={service.id} variants={fadeInUp}>
-              <Card className="h-full hover-elevate transition-all duration-300" data-testid={`card-service-${service.id}`}>
+              <Card className="landing-card h-full rounded-2xl border-border/80 bg-white" data-testid={`card-service-${service.id}`}>
                 <CardContent className="p-6 md:p-8">
-                  <div className={`w-14 h-14 rounded-xl ${service.iconBg} flex items-center justify-center mb-6`}>
+                  <div className={`w-14 h-14 rounded-2xl ${service.iconBg} flex items-center justify-center mb-6 shadow-sm`}>
                     <service.icon className="w-7 h-7 text-white" />
                   </div>
                   <h3 className="text-xl font-bold text-foreground mb-2">{service.title}</h3>
@@ -398,7 +399,7 @@ function HowItWorksSection() {
           >
             {steps.map((step, index) => (
               <motion.div key={index} variants={fadeInUp} className="relative">
-                <Card className="text-center h-full" data-testid={`step-${index + 1}`}>
+                <Card className="landing-card rounded-2xl text-center h-full" data-testid={`step-${index + 1}`}>
                   <CardContent className="p-5 sm:p-8">
                     <div className="relative inline-block mb-4 sm:mb-6">
                       <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-orange flex items-center justify-center mx-auto">
@@ -469,7 +470,7 @@ function BenefitsSection() {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
             >
-              <Card className="h-full border-none shadow-sm hover-elevate">
+              <Card className="landing-card rounded-2xl h-full border-border/70 bg-background">
                 <CardContent className="p-6 text-center">
                   <div className="w-12 h-12 rounded-full bg-orange/10 flex items-center justify-center mx-auto mb-4">
                     <benefit.icon className="w-6 h-6 text-orange" />
@@ -652,7 +653,7 @@ function AppInfoSection() {
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.08 }}
                 >
-                  <Card className="h-full hover-elevate" data-testid={`card-whats-new-${index}`}>
+                  <Card className="landing-card rounded-2xl h-full" data-testid={`card-whats-new-${index}`}>
                     <CardContent className="p-4">
                       <div className="w-9 h-9 rounded-lg bg-orange/10 flex items-center justify-center mb-3">
                         <item.icon className="w-4 h-4 text-orange" />

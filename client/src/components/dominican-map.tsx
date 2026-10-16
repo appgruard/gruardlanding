@@ -53,15 +53,16 @@ export function DominicanMap() {
               }
 
               map.current = L.map(mapContainer.current, {
-                attributionControl: false,
+                attributionControl: true,
                 scrollWheelZoom: false,
                 touchZoom: 'center',
                 zoomControl: false,
-              }).setView([18.8, -70.3], 8);
+                zoomSnap: 0.5,
+              }).fitBounds([[17.4, -72.1], [20.1, -68.2]], { padding: [20, 20] });
 
-              L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+              L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 maxZoom: 19,
-                subdomains: 'abcd',
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
               }).addTo(map.current);
 
               PROVINCES.forEach((province) => {
@@ -120,6 +121,8 @@ export function DominicanMap() {
   return (
     <div
       ref={mapContainer}
+      role="region"
+      aria-label="Mapa de cobertura en República Dominicana"
       data-testid="dominican-map"
       style={{
         width: '100%',
