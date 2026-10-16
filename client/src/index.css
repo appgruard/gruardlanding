@@ -306,10 +306,67 @@
 }
 
 @layer components {
+  .landing-site section[id] {
+    scroll-margin-top: 6rem;
+  }
+
+  .landing-site a:focus-visible {
+    outline: 3px solid hsl(var(--orange));
+    outline-offset: 4px;
+    border-radius: 6px;
+  }
+
+  .skip-link {
+    position: fixed;
+    top: 0.75rem;
+    left: 1rem;
+    z-index: 100;
+    transform: translateY(-160%);
+    padding: 0.75rem 1rem;
+    border-radius: 0.75rem;
+    color: hsl(var(--primary));
+    background: hsl(var(--orange));
+    font-weight: 600;
+  }
+
+  .skip-link:focus {
+    transform: translateY(0);
+  }
+
+  .landing-card {
+    box-shadow: 0 4px 20px -8px hsl(var(--primary) / 0.1);
+    transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+  }
+
+  .landing-footer h4 {
+    font-size: 0.875rem;
+    letter-spacing: 0.01em;
+    margin-bottom: 1rem;
+  }
+
   .store-btn-dark {
-    @apply flex items-center gap-3 bg-black/50 backdrop-blur-sm border border-white/10 rounded-xl px-5 py-3 transition-transform hover:scale-105;
+    @apply flex items-center gap-3 bg-black/30 backdrop-blur-sm border border-white/20 rounded-xl px-5 py-3 transition-colors hover:bg-black/50;
   }
   .store-btn-light {
     @apply flex items-center gap-3 bg-foreground/90 text-background rounded-xl px-5 py-3 transition-transform hover:scale-105;
+  }
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .landing-card:hover {
+    transform: translateY(-4px);
+    border-color: hsl(var(--orange) / 0.4);
+    box-shadow: 0 16px 32px -16px hsl(var(--primary) / 0.25);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .landing-site *,
+  .landing-site *::before,
+  .landing-site *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }

@@ -262,7 +262,7 @@ export const blogPosts: BlogPost[] = [
         list: [
           "911 - Sistema Nacional de Atención a Emergencias y Seguridad",
           "809-688-1001 - AMET (Autoridad Metropolitana de Transporte)",
-          "829-351-9324 - Grúa RD (Asistencia vial 24/7)",
+          "809 753 3796 - Grúa RD (Asistencia vial 24/7)",
           "*462 - DIGESETT (Dirección General de Seguridad de Tránsito y Transporte Terrestre)"
         ]
       },
@@ -2776,7 +2776,7 @@ export const blogPosts: BlogPost[] = [
         list: [
           "Número de la póliza de seguro y teléfono de la aseguradora",
           "App de Grúa RD instalada en sus teléfonos con la cuenta familiar activa",
-          "Números de emergencia: 911, DIGESETT (*462), Grúa RD (829-351-9324)",
+          "Números de emergencia: 911, DIGESETT (*462), Grúa RD (809 753 3796)",
           "Ubicación de los triángulos reflectivos y herramientas del vehículo",
           "Tipo de transmisión del vehículo (para solicitar la grúa correcta)",
           "Dirección del taller mecánico de confianza de la familia",

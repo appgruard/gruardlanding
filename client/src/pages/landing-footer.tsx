@@ -8,13 +8,11 @@ import { SiVisa, SiMastercard } from "react-icons/si";
 import { Badge } from "@/components/ui/badge";
 import logoImage from "@assets/20251126_144937_0000_1765970748932.png";
 
-const APP_DOMAIN = "https://app.gruard.com";
-
 export default function Footer() {
   return (
-    <footer className="bg-primary pt-10 sm:pt-16 pb-8 border-t border-white/10" data-testid="section-footer">
+    <footer className="landing-footer bg-primary pt-12 sm:pt-16 pb-8 border-t border-white/10" data-testid="section-footer">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-8 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.15fr_1.35fr_1fr_1fr_1fr] gap-8 lg:gap-8 mb-12">
           <div className="space-y-4">
             <div className="flex items-center gap-3">
               <img src={logoImage} alt="Grúa RD" className="h-10 w-10 rounded-lg" />
@@ -36,11 +34,11 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-orange flex-shrink-0" />
-                <span className="text-white/60 text-xs sm:text-sm">829-351-9324</span>
+                <a href="tel:+18097533796" className="text-white/80 text-sm font-medium hover:text-orange transition-colors" data-testid="link-phone-footer">809 753 3796</a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-orange flex-shrink-0" />
-                <span className="text-white/60 text-xs sm:text-sm">info@gruard.com</span>
+                <a href="mailto:info@gruard.com" className="text-white/80 text-xs sm:text-sm hover:text-orange transition-colors">info@gruard.com</a>
               </li>
             </ul>
           </div>
