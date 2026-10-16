@@ -36,7 +36,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-orange flex-shrink-0" />
-                <span className="text-white/60 text-xs sm:text-sm">809-753-3796</span>
+                <span className="text-white/60 text-xs sm:text-sm">809 753 3796</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-orange flex-shrink-0" />
